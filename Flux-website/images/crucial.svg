@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_479179" data-name="Path 479179" d="M0,0H74V74H0Z" transform="translate(-5226 -2581)" fill="#4e4c4c" opacity="0.43" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="crucial" transform="translate(5226 2581)" clip-path="url(#clip-path)">
+    <g id="_5fadb921de423ea6cb86e64f_icon-about-drive-4-crypto-template" data-name="5fadb921de423ea6cb86e64f_icon-about-drive-4-crypto-template" transform="translate(-5211.356 -2566.356)">
+      <path id="Path_479177" data-name="Path 479177" d="M45.131,22.744A22.388,22.388,0,1,1,22.744.356,22.387,22.387,0,0,1,45.131,22.744" fill="#aec6f7"/>
+      <path id="Path_479178" data-name="Path 479178" d="M31.385,15.367,27.758,26.829a1.459,1.459,0,0,1-.985.987L15.355,31.4A1,1,0,0,1,14.1,30.143l3.582-11.485a1.5,1.5,0,0,1,.985-.985l11.463-3.582a1,1,0,0,1,1.254,1.276" fill="#4c80ee"/>
+    </g>
+  </g>
+</svg>

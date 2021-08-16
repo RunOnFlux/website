@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_479187" data-name="Path 479187" d="M0,0H74V74H0Z" transform="translate(-4917 -2322)" fill="#4e4c4c" opacity="0.43" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="shied" transform="translate(4917 2322)" clip-path="url(#clip-path)">
+    <g id="Group_10879" data-name="Group 10879" transform="translate(-4.8 78.464)">
+      <path id="Path_479184" data-name="Path 479184" d="M17.632,57.16,2.475,62.717A2.526,2.526,0,0,0,.77,65.092v14.6S.694,93.018,17.632,100.8Z" transform="translate(-4892.945 -2442.624)" fill="#4c80ee" fill-rule="evenodd"/>
+      <path id="Path_479185" data-name="Path 479185" d="M14.128,57.16l15.157,5.557a2.526,2.526,0,0,1,1.655,2.375v14.6S31.015,93.018,14.09,100.8Z" transform="translate(-4889.441 -2442.624)" fill="#aec6f7" fill-rule="evenodd"/>
+      <path id="Path_479186" data-name="Path 479186" d="M34.461,65V79.651c0,.24-.076,13.376-16.862,21.106C.826,92.977.75,79.841.75,79.651V65A2.526,2.526,0,0,1,2.4,62.625l13.742-5.052a4.256,4.256,0,0,1,2.905,0l13.755,5.052A2.526,2.526,0,0,1,34.461,65Z" transform="translate(-4892.95 -2442.583)" fill="none" stroke="#4c80ee" stroke-miterlimit="10" stroke-width="3" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

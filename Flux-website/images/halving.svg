@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_479161" data-name="Path 479161" d="M0,0H74V74H0Z" transform="translate(-5135 -2670)" fill="#4e4c4c" opacity="0.43" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="halving" transform="translate(5135 2670)" clip-path="url(#clip-path)">
+    <g id="halving-2" data-name="halving" transform="translate(-92.902 240)">
+      <path id="Path_479189" data-name="Path 479189" d="M16.858,0A16.858,16.858,0,1,1,0,16.858,16.858,16.858,0,0,1,16.858,0Z" transform="translate(-4988.382 -2896) rotate(90)" fill="#4c80ee"/>
+      <path id="Path_479190" data-name="Path 479190" d="M16.858,0A16.858,16.858,0,1,1,0,16.858,16.858,16.858,0,0,1,16.858,0Z" transform="translate(-4988.382 -2883.578) rotate(90)" fill="#709af2"/>
+      <path id="Intersection_8" data-name="Intersection 8" d="M0,10.647a16.865,16.865,0,0,1,31.353,0A16.865,16.865,0,0,1,0,10.647Z" transform="translate(-5020.917 -2883.579)" fill="#aec6f7"/>
+    </g>
+  </g>
+</svg>

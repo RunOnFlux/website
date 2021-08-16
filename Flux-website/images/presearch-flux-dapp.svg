@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104.688" height="104.688" viewBox="0 0 104.688 104.688">
+  <defs>
+    <filter id="Path_475682" x="0" y="0" width="104.688" height="104.688" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#242c60" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="presearch-flux-dapp" transform="translate(19.057 14.057)">
+    <g transform="matrix(1, 0, 0, 1, -19.06, -14.06)" filter="url(#Path_475682)">
+      <path id="Path_475682-2" data-name="Path 475682" d="M29.844,0A29.844,29.844,0,1,1,0,29.844,29.844,29.844,0,0,1,29.844,0Z" transform="translate(22.5 17.5)" fill="none"/>
+    </g>
+    <circle id="Ellipse_1027" data-name="Ellipse 1027" cx="33.287" cy="33.287" r="33.287" transform="translate(0 0)" fill="none"/>
+    <g id="Group_9685" data-name="Group 9685" transform="translate(13.721 15.667)">
+      <path id="Path_472476" data-name="Path 472476" d="M12.142,21.557H15.57a6.623,6.623,0,0,0,2.834-.641,7.09,7.09,0,0,0,2.2-1.691,7.824,7.824,0,0,0,1.4-2.46,8.092,8.092,0,0,0,.513-2.845,7.066,7.066,0,0,0-.548-2.752,8.524,8.524,0,0,0-1.481-2.414,7.381,7.381,0,0,0-2.251-1.737A6.087,6.087,0,0,0,15.4,6.34H6.37V28.25H12.2Zm0-9.923h2.915a1.563,1.563,0,0,1,1.061.513A2.565,2.565,0,0,1,16.666,14a2.472,2.472,0,0,1-.5,1.784,1.306,1.306,0,0,1-.979.513H12.142Z" transform="translate(1.058 1.053)" fill="#2d8eff"/>
+      <path id="Path_472477" data-name="Path 472477" d="M0,2.111V34.62a2.111,2.111,0,0,0,2.111,2.111H34.62a2.111,2.111,0,0,0,2.111-2.111V2.111A2.111,2.111,0,0,0,34.62,0H2.111A2.111,2.111,0,0,0,0,2.111ZM30.318,32.428H6.39a2.111,2.111,0,0,1-2.111-2.111V6.39A2.111,2.111,0,0,1,6.39,4.279H30.318A2.111,2.111,0,0,1,32.428,6.39V30.318A2.111,2.111,0,0,1,30.318,32.4Z" transform="translate(0 0)" fill="#2d8eff"/>
+      <rect id="Rectangle_847" data-name="Rectangle 847" width="13.515" height="4.151" transform="translate(15.776 25.187)" fill="#2d8eff"/>
+    </g>
+  </g>
+</svg>

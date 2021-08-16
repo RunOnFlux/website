@@ -1,0 +1,490 @@
+<!DOCTYPE html><!--  Last Published: Mon Aug 16 2021 13:18:03 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="60fbd867d37134d2ea50e1cf" data-wf-site="60c73eaed3399e074029d643">
+<head>
+  <meta charset="utf-8">
+  <title>Bug Bounty Program</title>
+  <meta content="Bug Bounty Program" property="og:title">
+  <meta content="https://uploads-ssl.webflow.com/60c73eaed3399e074029d643/60ff188fe30044e9029e28fd_fluxwhite%20contrast%20%E2%80%93%2016-min.png" property="og:image">
+  <meta content="Bug Bounty Program" property="twitter:title">
+  <meta content="https://uploads-ssl.webflow.com/60c73eaed3399e074029d643/60ff188fe30044e9029e28fd_fluxwhite%20contrast%20%E2%80%93%2016-min.png" property="twitter:image">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/fluxui.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body-7">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-in" data-easing2="ease-out" role="banner" class="navbar new w-nav">
+    <div class="div-block-6">
+      <div class="div-block">
+        <a href="index.html" id="w-node-_8a53da83-dfc5-aab0-f34f-da2290f960d1-90f960ce" data-w-id="8a53da83-dfc5-aab0-f34f-da2290f960d1" class="brand w-nav-brand"><img src="images/Flux_white-blue.svg" loading="lazy" alt="Flux-Logo
+" class="image-2"></a>
+        <nav role="navigation" id="w-node-_8a53da83-dfc5-aab0-f34f-da2290f960d3-90f960ce" class="nav-menu w-nav-menu">
+          <div data-hover="1" data-delay="0" class="deploy w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="text-block">EXPLORE</div>
+              <div class="icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="dropdown_list w-dropdown-list">
+              <a href="http://home.runonflux.io" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">App</p>
+                <p class="paragraph-5">Discover how to launch an app on the Flux network.</p>
+              </a>
+              <a href="https://medium.com/zelinsights/zelnode-setup-the-easy-peasy-lemon-squeezy-way-fd89706ea03c" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Node</p>
+                <p class="paragraph-5">Become a FluxNode operator with our easy to follow guides.</p>
+              </a>
+              <a href="mining.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Miner</p>
+                <p class="paragraph-5">Learn how to mine Flux with your GPU and what pools to join.</p>
+              </a>
+              <a href="http://runonflux.io/flux#exchanges" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Buy Flux</p>
+                <p class="paragraph-5">Learn how to  trade, buy, swap or stake Flux.</p>
+              </a>
+            </nav>
+          </div>
+          <div data-hover="1" data-delay="0" class="deploy w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="text-block">DISCOVER</div>
+              <div class="icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="dropdown_list w-dropdown-list">
+              <a href="https://fluxwhitepaper.app.runonflux.io/" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Whitepaper</p>
+                <p class="paragraph-5">Read the Flux whitepaper and discover the scope of the project</p>
+              </a>
+              <a href="roadmap.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Roadmap</p>
+                <p class="paragraph-5">Check out the Flux roadmap and our plans for this year and beyond.</p>
+              </a>
+              <a href="team.html" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Team</p>
+                <p class="paragraph-5">Meet the members of the fully distributed Flux team.</p>
+              </a>
+              <a href="partners.html" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Partners</p>
+                <p class="paragraph-5">Collaboration is at the heart of Flux and our partners are key to that.</p>
+              </a>
+              <a href="https://wiki.runonflux.io/" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Documentation</p>
+                <p class="paragraph-5">Read the Flux docs and get building on Flux today.</p>
+              </a>
+              <a href="https://explorer.runonflux.io/" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Block Explorer</p>
+                <p class="paragraph-5">View blocks mined, statistics, pools, nodes and status of the network.</p>
+              </a>
+            </nav>
+          </div>
+          <div data-hover="1" data-delay="0" class="deploy w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="text-block">ECOSYSTEM</div>
+              <div class="icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="dropdown_list w-dropdown-list">
+              <a href="fluxos.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">FluxOS</p>
+                <p class="paragraph-5">Flux&#x27;s revolutionary second-layer operating system that is the heart of Flux</p>
+              </a>
+              <a href="http://runonflux.io/fluxos#dapps-section" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Apps</p>
+                <p class="paragraph-5">Explore some of the applications running on Flux</p>
+              </a>
+              <a href="flux-nodes.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">FluxNodes</p>
+                <p class="paragraph-5">Learn more about the independently run FluxNodes that power the Flux network.</p>
+              </a>
+              <a href="flux.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Flux</p>
+                <p class="paragraph-5">Our Proof-of-Work cryptocurrency that powers the Flux ecosystem</p>
+              </a>
+              <a href="https://zelcore.io/" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Zelcore</p>
+                <p class="paragraph-5">A multi-asset, multi-platform wallet with a long list of market leading features.</p>
+              </a>
+              <a href="https://home.runonflux.io/" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Dashboard</p>
+                <p class="paragraph-5">Explore the latest stats on the Flux network via the Flux dashboard</p>
+              </a>
+              <a href="xdao.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">XDAO</p>
+                <p class="paragraph-5">Discover Flux decentralized governance organization</p>
+              </a>
+            </nav>
+          </div>
+          <div data-hover="1" data-delay="0" class="deploy w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="text-block">Community</div>
+              <div class="icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="dropdown_list w-dropdown-list">
+              <a href="https://fluxofficial.medium.com/" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Blog</p>
+                <p class="paragraph-5">Discover all the latest news on the official Flux blog on Medium.</p>
+              </a>
+              <a href="https://github.com/runonflux" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Github</p>
+                <p class="paragraph-5">Explore the code that powers Flux in our Github repositories.</p>
+              </a>
+              <a href="https://github.com/RunOnFlux/press" target="_blank" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Resources</p>
+                <p class="paragraph-5">Our press kit and other related resources.</p>
+              </a>
+              <a href="careers.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Careers</p>
+                <p class="paragraph-5">See current open positions and come to work with Flux.</p>
+              </a>
+              <a href="bug-bounty-program.html" aria-current="page" class="div-block-22 w-inline-block w--current">
+                <p class="dropdown_link">Bug bounty</p>
+                <p class="paragraph-5">Get rewarded for finding bugs and exploits.</p>
+              </a>
+              <a href="donate.html" class="div-block-22 w-inline-block">
+                <p class="dropdown_link">Donate</p>
+                <p class="paragraph-5">Help us grow the Flux project and contribute to the foundation funds.</p>
+              </a>
+            </nav>
+          </div>
+          <h6 class="heading-4 m">Flux Socials</h6>
+          <div class="div-block-24">
+            <div class="div-block-23">
+              <a id="w-node-_8a53da83-dfc5-aab0-f34f-da2290f9614f-90f960ce" href="https://twitter.com/RunOnFlux" target="_blank" class="flux_social_link w-inline-block"><img src="images/twitter_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://discord.io/runonflux" target="_blank" class="flux_social_link w-inline-block"><img src="images/discord_fux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://www.facebook.com/ruonflux/" target="_blank" class="flux_social_link w-inline-block"><img src="images/facebook_flux_grey2x.png" loading="lazy" width="28" alt="" class="social_img_mob"></a>
+              <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank" class="flux_social_link w-inline-block"><img src="images/bitcointalk_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://t.me/zelhub" class="flux_social_link w-inline-block"><img src="images/telegram_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://github.com/RunOnFlux" target="_blank" class="flux_social_link w-inline-block"><img src="images/github_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw" target="_blank" class="flux_social_link w-inline-block"><img src="images/youtube_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://www.reddit.com/r/RunOnFlux/" target="_blank" class="flux_social_link w-inline-block"><img src="images/reddit_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://fluxofficial.medium.com/" target="_blank" class="flux_social_link w-inline-block"><img src="images/medium_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://www.linkedin.com/company/flux-official/mycompany/" target="_blank" class="flux_social_link w-inline-block"><img src="images/linkdin.svg" loading="lazy" width="26" alt="" class="social_img_mob"></a>
+              <a href="https://www.twitch.tv/runonflux" target="_blank" class="flux_social_link w-inline-block"><img src="images/Mask-Group-972x.png" loading="lazy" width="26" alt="" class="social_img_mob"></a>
+            </div>
+          </div>
+          <div class="wallet_download">
+            <a href="#" class="link-block w-inline-block"><img src="images/zelcore_wallet.png" loading="lazy" width="125" alt="Zelcore wallet is a multi asset crypto wallet and platform with more than 270 assets and blockchains" class="image-15"></a>
+            <h6 class="heading-4 m2">Download multi asset <br>crypto wallet</h6>
+            <div class="div-block-19">
+              <a href="https://apps.apple.com/us/app/zelcore/id1436296839" target="_blank" class="w-inline-block"><img src="images/app-store-badge.svg" loading="lazy" alt=""></a>
+              <a href="https://play.google.com/store/apps/details?id=com.zelcash.zelcore" target="_blank" class="w-inline-block"><img src="images/google-play-badge.svg" loading="lazy" alt=""></a>
+            </div>
+            <h6 class="heading-4 m3">Zelcore socials</h6>
+            <div class="socials_zelcore">
+              <a href="https://twitter.com/zelcore_io" target="_blank" class="zelcore_link w-inline-block"><img src="images/twitter_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://www.facebook.com/zelcore.io" target="_blank" class="zelcore_link w-inline-block"><img src="images/facebook_flux_grey2x.png" loading="lazy" width="27" alt="" class="social_img_mob"></a>
+              <a href="https://medium.zelcore.io/" target="_blank" class="zelcore_link w-inline-block"><img src="images/medium_flux_grey2x.png" loading="lazy" alt="" class="social_img_mob"></a>
+              <a href="https://www.linkedin.com/company/zelcore-technologies-inc/mycompany/" target="_blank" class="zelcore_link w-inline-block"><img src="images/linkdin.svg" loading="lazy" width="27" alt="" class="social_img_mob"></a>
+            </div>
+            <h6 class="heading-4 rights">©2021 Zel Technologies GmbH.<br>All rights reserved.</h6>
+          </div>
+        </nav>
+        <div id="w-node-_8a53da83-dfc5-aab0-f34f-da2290f9617c-90f960ce" class="div-block-2">
+          <a data-w-id="8a53da83-dfc5-aab0-f34f-da2290f9617d" href="https://zelcore.io/" target="_blank" class="button_zelcore_round2 w-button">Download Zelcore<br>‍</a>
+        </div>
+        <div id="w-node-_8a53da83-dfc5-aab0-f34f-da2290f96181-90f960ce" class="menu-button w-nav-button">
+          <div class="icon-2 w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section_general bug_bounty wf-section">
+    <div class="container bug">
+      <div class="title_left">
+        <h5 class="heading-2 mob"><strong>BUG BOUNTY</strong></h5>
+        <h2 class="h2_head"><strong class="bold-text-11">Flux bug bounty program</strong></h2>
+      </div>
+      <div id="w-node-_89002756-f6a1-ebc1-3810-c4477442dd85-ea50e1cf" class="text_right">
+        <p class="paragraph-3 bug">The Flux Community and Foundation are happy to announce the Flux bug bounty program to reward security researchers and developers who invest their time and effort into finding bugs or exploits in Flux.</p>
+      </div>
+    </div>
+    <div class="container bugg">
+      <div class="title_left flux_os">
+        <p class="h3 bug">What can you earn?</p>
+      </div>
+      <p class="paragraph-3 bug">All bugs will be evaluated according to the CVSS scoring scale and rewarded accordingly. The CVSS levels are :</p>
+      <div class="cvss_levels">
+        <p class="p_h5">Severity</p>
+        <p class="p_h5">Level/Score</p>
+        <p class="p_h5">Reward</p>
+        <p id="w-node-a2890dba-62b2-978e-79d8-4c8add01335d-dd013356" class="p_info">Critical</p>
+        <p class="p_info">9.0-10</p>
+        <p class="p_info">3000-5000 Flux</p>
+        <p class="p_info">High</p>
+        <p class="p_info">7.0-8.9</p>
+        <p class="p_info">1000-3000 Flux</p>
+        <p class="p_info">Medium</p>
+        <p class="p_info">4.0-6.9</p>
+        <p class="p_info">250-1000 Flux</p>
+        <p class="p_info">Low</p>
+        <p class="p_info">0.1-3.9</p>
+        <p class="p_info">250 Flux</p>
+        <p class="p_info">None</p>
+        <p class="p_info">0</p>
+        <p class="p_info">10 Flux</p>
+      </div>
+      <p class="h3 bug">How it works</p>
+      <div id="w-node-_89002756-f6a1-ebc1-3810-c4477442ddb3-ea50e1cf" class="text_right node">
+        <p class="paragraph-3 bug">You will receive rewards based on the severity of the issue found if you:</p>
+        <ol role="list" class="list-2">
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">Make all possible effort to not interrupt or degrade our service.</p>
+          </li>
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">Do not attempt to gain unauthorized access to user accounts, assets or information (use your own account/accounts to test against).</p>
+          </li>
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">Do not copy or modify any files or data, including permissions, and do not intentionally view or access any data beyond what is needed to prove the vulnerability.</p>
+          </li>
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">Do not exploit a security issue you discover beyond the point of validation on own accounts/nodes.</p>
+          </li>
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">We publish a list of researchers who have submitted valid security reports.<br></p>
+          </li>
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">However, should you wish to remain anonymous, we will respect your privacy.</p>
+          </li>
+          <li class="list_bug">
+            <p class="paragraph-3 bug_2">We reserve the right to determine timeframes for publishing reports (and accompanying updates) pertaining to each instance. However, we will provide best effort information to you on all such issues.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="paragraph-3 bug">Additionally, in order to qualify for rewards you must adhere to the following responsible disclosure policy:</p>
+      <ol role="list" class="list-2">
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">For Zelcore related issues: exploits and bugs are restricted to your own account or instance of the Zelcore wallet and have been carried out for validation purposes only.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">For website related issues: No data is removed from the website upon discovery.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">The Flux Blockchain and nodes: Any and all exploits be confined to a private testnet or regtest for validation purposes. Any code modifications carried out to run exploits need to be disclosed along with the effects for full validation.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">For the FluxOS distributed operating system, any and all exploits are confined to their own nodes for validation purposes. Should additional nodes be required to fully validate more serious exploits, the Flux team will assist with a private testnet.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Submissions can only be made to <a href="mailto:security@runonflux.io" class="link-10"><strong class="link-3">security@runonflux.io</strong></a> or via direct message to a developer on Discord in either case using the attached <a href="#pgp_key">PGP keys</a> for encryption is a requirement.<br></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Include an email for responses in your report.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Adhere to timeframes laid out in initial confirmation of report emails.</p>
+        </li>
+      </ol>
+      <p class="paragraph-3 bug">Please note that we have the right to remove you from the bug bounty program and disqualify you from receiving any bounty rewards if you are in violation of any national, state, or local law or regulation.</p>
+      <p class="h3 bug">Qualifying bugs</p>
+      <p class="paragraph-3 bug">The following list is by no means exhaustive so, if you have a bug that is not on either the qualifying or non-qualifying lists, report it, it will be covered.<br></p>
+      <ol role="list" class="list-2">
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Injection flaws such as SQL, noSQL, Mongodb, OS injection that tricks command interpreter into executing unintended commands without proper authorization.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Broken authentication/session management that allows compromise of passwords, keys or session tokens.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Sensitive data exposure due to improper protection of data via insecure API or flaw in cryptography implementation.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Cross-Site Request Forgery (CSRF) for sensitive functions in a privileged context.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Remote Code Execution (RCE).<br></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Insecure <span class="text-span-18">direct object references.</span></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Privilege <span class="text-span-19">escalation.</span></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Significant <span class="text-span-20">security misconfiguration</span> (when not caused by user).</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Directory <span class="text-span-21">traversal.</span></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Open <span class="text-span-22">redirects.</span></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Spoofing enablement</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Any significant abuse-related methodologies that could lead to significant harm.</p>
+        </li>
+      </ol>
+      <p class="h3 bug">Non-qualifying bugs</p>
+      <ol role="list" class="list-2">
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Non-original or previously disclosed/reported bugs (with fixes currently underway).</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Non-technical attacks such as social engineering, phishing, or physical attacks against entities or infrastructure.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Any degrading/damaging the reliability or integrity of our services (such as DDoS attacks, man in the middle attacks, spamming, and similar questionable acts).</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Any software not directly produced by the Flux team.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Domains hosted by third parties (e.g.: Github, Gitlab, etc).<br></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Subdomains operated by third parties (e.g: info.runonflux.io).</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Any Flux branded services operated by third parties.</p>
+        </li>
+      </ol>
+      <p class="h3 bug">How to report a bug</p>
+      <p class="paragraph-3 bug">Send an email using the below <a href="#pgp_key">PGP keys</a> to <a href="mailto:security@runonflux.io" class="link-3">security@runonflux.io</a> and no other email address. Failing to use the attached <a href="#pgp_key">PGP keys</a> for the bug report will invalidate any security issues higher than level 2 on the CVSS scale.</p>
+      <p class="h3 bug final">Process to follow</p>
+      <ol role="list" class="list-2">
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Write up a report on your findings.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">PGP Encrypt the report with keys from URL.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Within 24 hours you will have an acknowledgement.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Adhere to timeline and additional information requests from the Flux team outlined in the acknowledgement email.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Discuss publication times and names.<br></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Collect bounty.</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Get published.</p>
+        </li>
+      </ol>
+      <p class="h3 bug final">PGP key</p>
+      <div id="pgp_key" class="wrap_pgp_key">
+        <p class="pgp_key_p">-----BEGIN PGP PUBLIC KEY BLOCK----- </p>
+        <p class="pgp_key_p">mQENBF9aW/oBCACeTz66NgwhKzlGVNN65SlwFwUbrhBljDC393ww0pO1kdjDtIBu VkHknJeTaXbeGSKYXskQgL8hORIhoOxSsbRSFaq6s3e/dHukUOR3g2tp1myFMvsK stATCdWzWQNAe/7EMEnvenW6B9NwZd2bCXweIVneXZGzqwMaMqKGwR+cH47ngve7 LtpJC9NLQ3hOAoyRTKmvaCkSCVAek4uGa4QYiRJgr866QYuag09sTUUOVMpq8H/T kiRHGRDLvFWeObvreBM9eJv5zwhwTItqNtb6mIzkL8InJYhsRqR8+bHdH7z3QtMb eRaG0A8mGKaGXIQXL+6eGUJasKqaEpeonIYRABEBAAG0K3NlY3VyaXR5QHplbC5u ZXR3b3JrIDxzZWN1cml0eUB6ZWwubmV0d29yaz6JAU4EEwEIADgWIQSRhMlBCliD ig7+bBCgOr/bRBsxiQUCX1pb+gIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAK CRCgOr/bRBsxiRbsB/40/fxFiDgp9cXcfciQOEAMoZ6APMEUFLj3+RTJeJuRA+Xf w4/6Z3kvxcDWXxWPh94QPWFzZtt1LKYDhs/p0CG7IyWN5k3fKCJ0XobjND7MDycp DrOVD8D13Ez2xV2ZeRhJoTPron6mCy8xhU2e7lTduvyxnjKSWEAxZj3Gh58b/Jqa A7t1Y+gH1QFAAKNVutPgmEtwbBiXk/VCEricy0SOq43vaN2YrW56GAhtbrdRFmiw CrwqA5wU7ZkcFRq2YHHb6S+u4p4bA7/aezgvlM/oZCbH1PbdASApEkztRk46D72o PCq799tb4lKvDh2eqX1Z7Fvbh2poacY72/xc/EaLuQENBF9aW/oBCAD7CDpbaiME txr2aHw6O2oAfhZ+FhAZYgnPhy5aHwt0C/3I8Kc7SdvigEhKlhdmwjGxvh9i6h/3 xQ5no5eH7YsPDqU/00G2igVl5Ph3N5wJYmqe1MNP8eCNd9jTLuNhnK07Vbdjfo33 +88hxOFYf78gcv/O/SgX1EHecl6DFrNZZaqzLr1wIDAJZbeLZe4mQpIyTZ2wC2ys anZlF7Y4MJixWE9prpIjd4JPfxhj1kp1+MLGWxj6/YbRexeU8jS153EO92Yvepbf 2bQf5X2UZyhcacTSLtvXFW5S80BBqDLYA/elzHhyhNQz3MCxFUrWQwlie1iOnNHY Yakei53UczZzABEBAAGJATYEGAEIACAWIQSRhMlBCliDig7+bBCgOr/bRBsxiQUC X1pb+gIbDAAKCRCgOr/bRBsxiWc3B/4iMsGrhNMyB8ab8jUwTuW4JXF8Et5X6gvJ I5pTR33euZgtupRF3H/QyqpL2u5vc/vLFpqH4khjuvAaLHt8gNRCoMqJoPQi3Oli 3J2bIKOFz5JXsVTFyWCYYOzJENgoxkfOV+qxvvzBWcTbyZoHTsY1/BqDGEnE49rt YG9XJ9OWkTp1MMOSHKmTfxR1JSIxlr1HUDDBnEef4qzR/TnQZW6PVqZQpc6LlZFb D0ko5jJrW5uU9d4NYySO5/lr07PxQ10DbJL3RAQCKiNczP/pU8YhJ+BGgod5kZi5 tCuvxUjUzXCP0d7/0o7anQN7meq/P+JLKZRZmIzCH1ISwsDztyur =crmk <br></p>
+        <p class="pgp_key_p">-----END PGP PUBLIC KEY BLOCK-----</p>
+      </div>
+    </div>
+  </div>
+  <footer class="fotter_section a">
+    <div data-w-id="9b56e3a6-d60b-f76b-09d3-85897d94bf93" class="popup_wraps">
+      <div data-w-id="9b56e3a6-d60b-f76b-09d3-85897d94bf94" class="overlay-close"></div>
+      <div data-w-id="9b56e3a6-d60b-f76b-09d3-85897d94bf95" class="popup_case">
+        <div class="div-block-95">
+          <div class="popup_left">
+            <div>
+              <h3 class="popup_title _1">Tell us more</h3>
+              <p class="popup_p _1">If you have any suggestion, review or you think we can impove. Please let us know.</p>
+            </div>
+            <div class="div-block-91">
+              <div class="div-block-23 footer arrow_blue popup">
+                <a href="https://twitter.com/RunOnFlux" target="_blank" class="social_fotter w-inline-block"><img src="images/twitter_flux_grey2x.png" loading="lazy" alt=""></a>
+                <a href="https://discord.io/runonflux" target="_blank" class="social_fotter w-inline-block"><img src="images/discord_fux_grey2x.png" loading="lazy" alt=""></a>
+                <a href="https://t.me/zelhub" class="social_fotter w-inline-block"><img src="images/telegram_flux_grey2x.png" loading="lazy" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="popup_right">
+            <h3 class="popup_title _2">Leave us a review</h3>
+            <div class="popup-form w-form">
+              <form id="wf-form-Popup-2-Form" name="wf-form-Popup-2-Form" data-name="Popup 2 Form" class="form-popup"><input type="email" class="text_input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email" id="Email-Popup" required=""><textarea name="field" maxlength="5000" id="field" placeholder="Write your message" required="" class="textarea w-input"></textarea><input type="submit" value="Send Message" data-wait="Please wait..." class="subscribe-button w-button"></form>
+              <div class="success-message---brix w-form-done">
+                <div>Check your mail for the download link!</div>
+              </div>
+              <div class="error-message---brix w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div><img src="images/close-icon-popups-webflow-cloneable-template-brix-templates.svg" data-w-id="9b56e3a6-d60b-f76b-09d3-85897d94bfb3" width="26" height="16" alt="" class="close-popup">
+      </div>
+    </div>
+    <div class="div-block-28 a">
+      <div id="w-node-de3b65b5-bfaf-fbe1-eb18-a61812643ad0-12643ace" class="div-block-30 a">
+        <a href="#" class="w-inline-block"><img src="images/Flux_white_logo.svg" loading="lazy" width="131" alt="flux-logo"></a>
+        <p class="paragraph-6 b">Flux is a decentralized cloud service comprised of user-operated, scalable and globally distributed computational nodes.</p>
+        <div class="div-block-91">
+          <div class="div-block-23 footer social_class">
+            <a href="https://twitter.com/RunOnFlux" target="_blank" class="social_fotter w-inline-block"><img src="images/twitter_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://discord.io/runonflux" target="_blank" class="social_fotter w-inline-block"><img src="images/discord_fux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://www.facebook.com/ruonflux/" target="_blank" class="social_fotter w-inline-block"><img src="images/facebook_flux_grey2x.png" loading="lazy" width="27" alt="" class="img_social"></a>
+            <a href="https://bitcointalk.org/index.php?topic=2853688.0" target="_blank" class="social_fotter w-inline-block"><img src="images/bitcointalk_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://t.me/zelhub" class="social_fotter w-inline-block"><img src="images/telegram_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://github.com/RunOnFlux" target="_blank" class="social_fotter w-inline-block"><img src="images/github_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw" target="_blank" class="social_fotter w-inline-block"><img src="images/youtube_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://www.reddit.com/r/RunOnFlux/" target="_blank" class="social_fotter w-inline-block"><img src="images/reddit_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://fluxofficial.medium.com/" target="_blank" class="social_fotter w-inline-block"><img src="images/medium_flux_grey2x.png" loading="lazy" alt="" class="img_social"></a>
+            <a href="https://www.linkedin.com/company/flux-official/mycompany/" target="_blank" class="social_fotter w-inline-block"><img src="images/linkdin.svg" loading="lazy" width="27" alt="" class="img_social"></a>
+            <a href="https://www.twitch.tv/runonflux" target="_blank" class="social_fotter w-inline-block"><img src="images/Mask-Group-972x.png" loading="lazy" width="27" alt="" class="img_social"></a>
+          </div>
+          <div class="div-block-92">
+            <a href="#" class="review_button w-inline-block">
+              <div class="text-block-7">Want to tell us something?</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="w-node-de3b65b5-bfaf-fbe1-eb18-a61812643aea-12643ace" class="div-block-29 a">
+        <div id="w-node-de3b65b5-bfaf-fbe1-eb18-a61812643aeb-12643ace">
+          <h4 class="text-block footer b">DEPLOY</h4>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLY7MJqSZc21I1ZeV8hpwPOLd5JGpgCc1ZDevBZ_z-U8oHjw/viewform" target="_blank" class="link b">App</a>
+          <a href="https://medium.com/zelinsights/zelnode-setup-the-easy-peasy-lemon-squeezy-way-fd89706ea03c" target="_blank" class="link b">Node</a>
+          <a href="mining.html" class="link b">Miner</a>
+        </div>
+        <div>
+          <h4 class="text-block footer b">DISCOVER</h4>
+          <a href="https://fluxwhitepaper.app.runonflux.io/" target="_blank" class="link b">Whitepaper</a>
+          <a href="roadmap.html" class="link b">Roadmap</a>
+          <a href="team.html" class="link b">Team</a>
+          <a href="https://docs.runonflux.io/" target="_blank" class="link b">Documentation</a>
+          <a href="partners.html" target="_blank" class="link b">Partners</a>
+        </div>
+        <div>
+          <h4 class="text-block footer b">ECOSYSTEM</h4>
+          <a href="fluxos.html" class="link b">FluxOS</a>
+          <a href="fluxos.html" class="link b">Apps</a>
+          <a href="flux-nodes.html" class="link b">FluxNodes</a>
+          <a href="flux.html" class="link b">Flux</a>
+          <a href="https://zelcore.io/" target="_blank" class="link b">Zelcore</a>
+          <a href="https://home.runonflux.io/dashboard" class="link b">Dashboard</a>
+        </div>
+        <div>
+          <h4 class="text-block footer b">COMMUNITY</h4>
+          <a href="https://fluxofficial.medium.com/" target="_blank" class="link b">Blog</a>
+          <a href="https://github.com/RunOnFlux" target="_blank" class="link b">Github</a>
+          <a href="https://github.com/RunOnFlux/press" target="_blank" class="link b">Resources</a>
+          <a href="bug-bounty-program.html" aria-current="page" class="link b w--current">Bug bounty</a>
+          <a href="donate.html" class="link b">Donate</a>
+        </div>
+      </div>
+      <div id="w-node-de3b65b5-bfaf-fbe1-eb18-a61812643b1b-12643ace" class="div-block-32 b">
+        <p class="paragraph-7 footer b">©2021 Zel Technologies GmbH. <br>All rights reserved.</p>
+        <div class="div-block-69">
+          <a href="term-conditions.html" class="w-inline-block">
+            <p class="paragraph-7 links b">Terms and Conditions</p>
+          </a>
+          <a href="privacy-policy.html" class="w-inline-block">
+            <p class="paragraph-7 links mid b">Privacy Policy</p>
+          </a>
+          <a href="bug-bounty-program.html" aria-current="page" class="w-inline-block w--current">
+            <p class="paragraph-7 links b">Bug Bounty Program</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60c73eaed3399e074029d643" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>

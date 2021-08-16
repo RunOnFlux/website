@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_479188" data-name="Path 479188" d="M0,0H74V74H0Z" transform="translate(-4687 -2670)" fill="#4e4c4c" opacity="0.43" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="max_supply" data-name="max supply" transform="translate(4687 2670)" clip-path="url(#clip-path)">
+    <g id="max_supply-2" data-name="max)supply" transform="translate(282.317 175.931)">
+      <rect id="Rectangle_2050" data-name="Rectangle 2050" width="8" height="8" rx="1.5" transform="translate(-4949.817 -2804.931)" fill="#4c80ee"/>
+      <rect id="Rectangle_2051" data-name="Rectangle 2051" width="8" height="19" rx="1.5" transform="translate(-4936.817 -2815.931)" fill="#709af2"/>
+      <rect id="Rectangle_2052" data-name="Rectangle 2052" width="8" height="32" rx="1.5" transform="translate(-4922.817 -2828.931)" fill="#aec6f7"/>
+      <rect id="Rectangle_2053" data-name="Rectangle 2053" width="4.116" height="48" rx="1.5" transform="translate(-4908.317 -2793.75) rotate(90)" fill="#4c80ee"/>
+    </g>
+  </g>
+</svg>

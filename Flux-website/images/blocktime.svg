@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_479181" data-name="Path 479181" d="M0,0H74V74H0Z" transform="translate(-4766 -2670)" fill="#4e4c4c" opacity="0.43" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="blocktime" transform="translate(4766 2670)" clip-path="url(#clip-path)">
+    <g id="blocktime-2" data-name="blocktime" transform="translate(-18 239)">
+      <g id="Group_10876" data-name="Group 10876" transform="translate(-330 705.355)">
+        <path id="Path_479180" data-name="Path 479180" d="M51,31A20,20,0,1,0,31,51,20,20,0,0,0,51,31Z" transform="translate(-4412 -3608.355)" fill="#aec6f7" stroke="#4c80ee" stroke-width="3" fill-rule="evenodd"/>
+        <g id="Group_10875" data-name="Group 10875" transform="translate(-4381 -3589.813)">
+          <line id="Line_439" data-name="Line 439" y1="15.496" transform="translate(0)" fill="none" stroke="#4c80ee" stroke-linecap="round" stroke-width="3"/>
+          <line id="Line_440" data-name="Line 440" y1="4.615" x2="7.692" transform="translate(0 10.881)" fill="none" stroke="#4c80ee" stroke-linecap="round" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
