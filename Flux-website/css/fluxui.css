@@ -86,8 +86,8 @@ a {
   grid-auto-columns: 1fr;
   grid-column-gap: 0em;
   grid-row-gap: 16px;
-  -ms-grid-columns: 20% 55% 25%;
-  grid-template-columns: 20% 55% 25%;
+  -ms-grid-columns: 20% 52% 28%;
+  grid-template-columns: 20% 52% 28%;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   box-shadow: 0 1px 20px 6px rgba(37, 44, 97, 0.09);
@@ -481,8 +481,8 @@ a {
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: auto 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -1788,6 +1788,7 @@ a {
   width: 100%;
   min-width: 100%;
   margin-top: 0.5em;
+  margin-bottom: 0.1em;
   line-height: 1.2em;
   text-align: left;
 }
@@ -5353,6 +5354,8 @@ a {
 }
 
 .div-block-23.footer.social_class {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
   -ms-grid-columns: 1em 1em 1em 1em 1em 1em 1em;
   grid-template-columns: 1em 1em 1em 1em 1em 1em 1em;
   background-image: none;
@@ -9777,6 +9780,10 @@ a {
 
 .card_exchanges._16 {
   z-index: 85;
+}
+
+.card_exchanges._17 {
+  z-index: 84;
 }
 
 .div-block-61 {
@@ -14821,7 +14828,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 8em;
+  width: 9em;
   max-width: none;
   padding: 0.5em 0px;
   -webkit-box-pack: center;
@@ -14833,12 +14840,12 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 0.2em;
-  background-color: rgba(217, 219, 233, 0.09);
+  background-color: rgba(217, 219, 233, 0.06);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.04);
-  -webkit-transition: box-shadow 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
-  transition: box-shadow 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
-  transition: transform 300ms ease, box-shadow 300ms ease, background-color 300ms ease;
-  transition: transform 300ms ease, box-shadow 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+  -webkit-transition: box-shadow 300ms ease, background-color 475ms ease, -webkit-transform 300ms ease;
+  transition: box-shadow 300ms ease, background-color 475ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, box-shadow 300ms ease, background-color 475ms ease;
+  transition: transform 300ms ease, box-shadow 300ms ease, background-color 475ms ease, -webkit-transform 300ms ease;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   line-height: 20px;
@@ -17098,10 +17105,10 @@ a {
 
 .bugs_wrapper {
   position: relative;
-  left: 1em;
+  left: 0em;
   z-index: 1;
   display: block;
-  margin-top: 0px;
+  margin-top: 0em;
   margin-left: 0em;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
@@ -18473,6 +18480,40 @@ a {
   color: #65efc1;
 }
 
+.image-41 {
+  width: 1.7em;
+  height: auto;
+  max-width: none;
+  opacity: 1;
+}
+
+.link-block-8 {
+  width: auto;
+  cursor: pointer;
+}
+
+.bag_button {
+  width: auto;
+  cursor: pointer;
+}
+
+.more_exchange {
+  color: #5d91ff;
+  font-weight: 700;
+}
+
+.div-block-110 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
 @media screen and (min-width: 1920px) {
   .body {
     font-size: 1.1vw;
@@ -18713,8 +18754,8 @@ a {
     height: auto;
     margin-right: auto;
     margin-left: auto;
-    -ms-grid-columns: 25% 40% 25%;
-    grid-template-columns: 25% 40% 25%;
+    -ms-grid-columns: 70% 10% 10%;
+    grid-template-columns: 70% 10% 10%;
     box-shadow: none;
   }
 
@@ -20337,6 +20378,11 @@ a {
     display: flex;
     width: 100%;
     height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -24699,7 +24745,7 @@ a {
   .bugs_wrapper {
     left: 0px;
     display: block;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-left: 0em;
     padding-top: 0em;
     -webkit-align-self: flex-start;
@@ -24894,6 +24940,29 @@ a {
     color: hsla(0, 0%, 100%, 0.9);
     text-align: left;
   }
+
+  .image-41 {
+    font-size: 1.5em;
+  }
+
+  .link-block-8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  .bag_button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -24913,6 +24982,8 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-grid-columns: 80% 5% 5%;
+    grid-template-columns: 80% 5% 5%;
     -ms-grid-rows: 3.6em;
     grid-template-rows: 3.6em;
   }
@@ -28716,7 +28787,7 @@ a {
   }
 
   .review_button {
-    width: 40em;
+    width: 32em;
     margin-top: 0em;
     padding: 2em;
     border-radius: 1em;
@@ -29199,7 +29270,7 @@ a {
 
   .bugs_wrapper {
     display: block;
-    margin-top: 4.1em;
+    margin-top: 0em;
     padding-top: 0em;
   }
 
@@ -29421,8 +29492,8 @@ a {
     grid-auto-columns: 1fr;
     grid-column-gap: 0em;
     grid-row-gap: 16px;
-    -ms-grid-columns: 35% 40% 25%;
-    grid-template-columns: 35% 40% 25%;
+    -ms-grid-columns: 80% 10% 10%;
+    grid-template-columns: 80% 10% 10%;
     -ms-grid-rows: minmax(100%, 1fr);
     grid-template-rows: minmax(100%, 1fr);
     box-shadow: 0 6px 20px 1px rgba(37, 44, 97, 0.09);
@@ -35091,6 +35162,10 @@ a {
   .heading-7.zz {
     color: hsla(0, 0%, 100%, 0.9);
     font-size: 2.6em;
+  }
+
+  .image-41 {
+    width: 3em;
   }
 }
 
