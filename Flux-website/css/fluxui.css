@@ -3866,6 +3866,10 @@ a {
   width: auto;
   height: 3em;
   min-width: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .img_div.exchange.uni {
@@ -7916,6 +7920,10 @@ a {
   border-radius: 0em;
 }
 
+.logo_img.rad0._1 {
+  height: 1.6em;
+}
+
 .h5_green {
   margin-bottom: 0em;
   font-family: 'Open Sans', sans-serif;
@@ -8454,6 +8462,7 @@ a {
 }
 
 .section_general.flux {
+  z-index: 999;
   padding-bottom: 0em;
 }
 
@@ -9578,6 +9587,7 @@ a {
   display: grid;
   width: 50em;
   height: 100%;
+  max-height: 100%;
   margin: 0em auto 3.2em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -9831,6 +9841,22 @@ a {
 
 .card_exchanges._2 {
   z-index: 99;
+}
+
+.card_exchanges._19 {
+  z-index: 82;
+}
+
+.card_exchanges._20 {
+  z-index: 81;
+}
+
+.card_exchanges._7 {
+  z-index: 93;
+}
+
+.card_exchanges._11 {
+  z-index: 90;
 }
 
 .div-block-61 {
@@ -11885,6 +11911,13 @@ a {
 }
 
 .dropdown-toggle-3._2 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.dropdown-toggle-3._1 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -33039,6 +33072,10 @@ a {
   }
 
   .card_exchanges._1 {
+    border-radius: 1.5em;
+  }
+
+  .card_exchanges._11 {
     border-radius: 1.5em;
   }
 
