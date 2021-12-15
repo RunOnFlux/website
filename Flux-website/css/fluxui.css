@@ -1091,6 +1091,24 @@ a {
 }
 
 .partners_section._2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.7em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#264bff), to(#264bff));
   background-image: linear-gradient(180deg, #264bff, #264bff);
 }
@@ -1858,6 +1876,16 @@ a {
   color: #313457;
   line-height: 1.1;
   text-align: left;
+}
+
+.title_section.neww {
+  display: block;
+  width: 90%;
+  margin-top: 0.5em;
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .paragraph-3 {
@@ -3414,6 +3442,11 @@ a {
 
 .button_1.careers.os2 {
   width: 18em;
+}
+
+.button_1.view-more {
+  background-color: #fff;
+  color: #0160e7;
 }
 
 .lightbox-link {
@@ -6493,6 +6526,16 @@ a {
   text-align: left;
 }
 
+.p_launchapp.nene {
+  width: 90%;
+  margin-top: -0.9em;
+  margin-bottom: 1.3em;
+  color: #f5f5fa;
+  font-size: 0.7em;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .container {
   position: relative;
   display: -webkit-box;
@@ -7921,6 +7964,14 @@ a {
 }
 
 .logo_img.rad0._1 {
+  height: 1.4em;
+}
+
+.logo_img.rad0._111 {
+  height: 2em;
+}
+
+.logo_img.rad0._121 {
   height: 1.6em;
 }
 
@@ -9857,6 +9908,14 @@ a {
 
 .card_exchanges._11 {
   z-index: 90;
+}
+
+.card_exchanges._21 {
+  z-index: 80;
+}
+
+.card_exchanges._22 {
+  z-index: 79;
 }
 
 .div-block-61 {
@@ -13559,12 +13618,18 @@ a {
 .p_h6 {
   height: auto;
   margin-bottom: 2.5em;
+  background-color: transparent;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-size: 0.55em;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.p_h6.new {
+  margin-bottom: 1.7em;
 }
 
 .p_info_text {
@@ -18658,6 +18723,312 @@ a {
   font-weight: 600;
 }
 
+.div-block-111 {
+  position: static;
+  display: none;
+  width: 90%;
+  height: 2em;
+  margin-top: 0em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18em;
+  height: 3.3em;
+  margin-top: 0em;
+  margin-right: 1em;
+  margin-left: 0em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.4em;
+  background-color: #fff;
+  background-image: none;
+  box-shadow: 6px 6px 14px 1px rgba(37, 44, 97, 0.14);
+  font-family: Montserrat, sans-serif;
+  color: #2fc29e;
+  font-size: 0.6em;
+  line-height: 1px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.view.blue {
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2b61d1), to(#5d91ff));
+  background-image: linear-gradient(270deg, #2b61d1, #5d91ff);
+}
+
+.view.green {
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2fc29e), to(#4bdbb7));
+  background-image: linear-gradient(270deg, #2fc29e, #4bdbb7);
+}
+
+.view.blue2 {
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, right top, left top, from(#313457), to(#474b7e));
+  background-image: linear-gradient(270deg, #313457, #474b7e);
+}
+
+.view.launch-app {
+  background-color: #fff;
+  color: #0160e7;
+}
+
+.view.fluxos {
+  width: 14em;
+  margin-right: 1em;
+  background-color: #fff;
+}
+
+.view.fluxos.os.web {
+  background-image: linear-gradient(135deg, #4bdbb7, #4bdbb7);
+  color: #fff;
+}
+
+.view.fluxos.os2 {
+  width: 18em;
+}
+
+.view.flux_apply {
+  width: 18em;
+  margin-top: 2em;
+  background-color: #fff;
+  background-image: linear-gradient(315deg, #871eff, #4c80ee);
+  color: #fff;
+  font-size: 0.63em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.view.flux_apply.tabsopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0em;
+}
+
+.view.zel {
+  background-color: #fff;
+  color: #871eff;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.view.flux_apply-copy {
+  width: 18em;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  background-color: #fff;
+  color: #2fc29e;
+  font-size: 0.6em;
+  line-height: 1em;
+}
+
+.view.fluxnodes {
+  width: 18em;
+  margin-top: 0em;
+  margin-right: 1em;
+  background-color: #fff;
+  background-image: linear-gradient(315deg, #871eff, #4c80ee);
+  color: #fff;
+  font-size: 0.63em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.view.fluxnodes.tabsopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0em;
+}
+
+.view.nodes {
+  margin-right: 2em;
+}
+
+.view.roi {
+  margin-top: 1em;
+}
+
+.view.node_setup {
+  margin-top: 0em;
+  margin-right: 0em;
+}
+
+.view.script {
+  margin-top: 1em;
+  margin-right: 0em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.view.flux_apps {
+  width: 18em;
+  margin-top: 2em;
+  margin-right: 0em;
+  background-color: #fff;
+  background-image: linear-gradient(315deg, #871eff, #4c80ee);
+  color: #fff;
+  font-size: 0.63em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.view.flux_apps.tabsopen {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0em;
+}
+
+.view._222 {
+  width: 12em;
+  color: #161728;
+}
+
+.view.bt1 {
+  box-shadow: 6px 6px 1.2em -0.2em rgba(37, 44, 97, 0.14);
+}
+
+.view.miner {
+  width: 18em;
+  margin-right: 1em;
+  background-color: #fff;
+  color: #4c80ee;
+}
+
+.view.bt1-copy {
+  background-image: none;
+  box-shadow: 6px 6px 1.2em -0.2em rgba(37, 44, 97, 0.14);
+  color: #2fc29e;
+}
+
+.view.xdao {
+  width: 18em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+.view.xdao.os2 {
+  width: 18em;
+}
+
+.view.careers {
+  width: 18em;
+  margin-right: 1em;
+  background-color: #fff;
+  color: #4c80ee;
+}
+
+.view.careers.os2 {
+  width: 18em;
+}
+
+.view.view-more {
+  position: absolute;
+  width: 12em;
+  height: 5em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: 0em;
+  background-color: #fff;
+  color: #0160e7;
+}
+
+.button-2 {
+  background-color: transparent;
+}
+
+.button01 {
+  width: 18em;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: hsla(0, 0%, 100%, 0.28);
+  border-radius: 0.4em;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 0.55em;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.div-block-112 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-span-29 {
+  font-weight: 700;
+}
+
 @media screen and (min-width: 1920px) {
   .body {
     font-size: 1.1vw;
@@ -19700,6 +20071,11 @@ a {
   .title_section.fx_asset {
     margin-bottom: 0em;
     text-align: center;
+  }
+
+  .title_section.neww {
+    width: 90%;
+    font-size: 3em;
   }
 
   .paragraph-3 {
@@ -21645,6 +22021,11 @@ a {
   }
 
   .p_launchapp.launch_app {
+    width: 95%;
+    font-size: 1.6em;
+  }
+
+  .p_launchapp.nene {
     width: 95%;
     font-size: 1.6em;
   }
@@ -25119,6 +25500,116 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .view {
+    margin-right: 2em;
+    margin-left: 0em;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    font-size: 1.6em;
+  }
+
+  .view.fluxos {
+    font-size: 1.5em;
+  }
+
+  .view.fluxos.os {
+    width: 90%;
+  }
+
+  .view.fluxos.os2 {
+    width: 90%;
+  }
+
+  .view.flux_apply {
+    font-size: 1.5em;
+  }
+
+  .view.flux_apply.tabsopen {
+    display: none;
+  }
+
+  .view.zel {
+    width: 20em;
+  }
+
+  .view.flux_apply-copy {
+    font-size: 1.5em;
+  }
+
+  .view.fluxnodes {
+    font-size: 1.2em;
+  }
+
+  .view.fluxnodes.tabsopen {
+    display: none;
+  }
+
+  .view.nodes {
+    padding-left: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .view.flux_apps {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 1.5em;
+  }
+
+  .view.flux_apps.tabsopen {
+    display: none;
+  }
+
+  .view.miner {
+    width: 16em;
+    font-size: 1.6em;
+  }
+
+  .view.miner.os {
+    width: 90%;
+  }
+
+  .view.xdao {
+    margin-left: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  .view.xdao.os {
+    width: 90%;
+  }
+
+  .view.xdao.os2 {
+    width: 90%;
+  }
+
+  .view.careers {
+    font-size: 1.5em;
+  }
+
+  .view.careers.os {
+    width: 90%;
+  }
+
+  .view.careers.os2 {
+    width: 90%;
+  }
+
+  .view._5 {
+    width: 21em;
+    margin-right: 0em;
+  }
+
+  .button01 {
+    margin-top: 1em;
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -25572,6 +26063,12 @@ a {
   .title_section.fx_asset {
     margin-top: 0.5em;
     text-align: left;
+  }
+
+  .title_section.neww {
+    width: 70%;
+    font-size: 4.4em;
+    line-height: 1.3;
   }
 
   .paragraph-3 {
@@ -27039,6 +27536,11 @@ a {
   }
 
   .p_launchapp.launch_app {
+    width: 90%;
+    font-size: 2.4em;
+  }
+
+  .p_launchapp.nene {
     width: 90%;
     font-size: 2.4em;
   }
@@ -29604,6 +30106,144 @@ a {
     align-self: flex-start;
     text-align: left;
   }
+
+  .view {
+    font-size: 2em;
+  }
+
+  .view.fluxos {
+    width: 18em;
+    font-size: 2em;
+  }
+
+  .view.fluxos.os {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .view.fluxos.os2 {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .view.flux_apply {
+    margin-top: 1.5em;
+    font-size: 2em;
+  }
+
+  .view.flux_apply.tabsopen {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: 0em;
+    padding-right: 2em;
+    padding-left: 2em;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .view.flux_apply.tabsopen.hide {
+    display: none;
+  }
+
+  .view.zel {
+    width: 18em;
+    font-weight: 600;
+  }
+
+  .view.flux_apply-copy {
+    margin-top: 1.5em;
+    font-size: 2em;
+  }
+
+  .view.fluxnodes {
+    margin-top: 1.5em;
+    font-size: 2em;
+  }
+
+  .view.fluxnodes.tabsopen {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-right: 2em;
+    padding-left: 2em;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .view.flux_apps {
+    margin-top: 1.5em;
+    font-size: 2em;
+  }
+
+  .view.flux_apps.tabsopen {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-right: 2em;
+    padding-left: 2em;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .view.miner {
+    width: 18em;
+    font-size: 2em;
+  }
+
+  .view.miner.os {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .view.xdao {
+    width: 18em;
+    font-size: 2em;
+  }
+
+  .view.xdao.os {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .view.xdao.os2 {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .view.careers {
+    width: 18em;
+    font-size: 2em;
+  }
+
+  .view.careers.os {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .view.careers.os2 {
+    width: 100%;
+    margin-right: 0em;
+  }
+
+  .button01 {
+    font-size: 1.6em;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -30419,6 +31059,12 @@ a {
   .title_section.fx_asset {
     margin-top: 0.5em;
     margin-bottom: 0em;
+  }
+
+  .title_section.neww {
+    width: 90%;
+    color: #fff;
+    font-size: 5.6em;
   }
 
   .paragraph-3 {
@@ -32108,6 +32754,13 @@ a {
   }
 
   .p_launchapp.launch_app {
+    width: 95%;
+    margin-top: 0em;
+    font-size: 3.6em;
+    line-height: 1.4;
+  }
+
+  .p_launchapp.nene {
     width: 95%;
     margin-top: 0em;
     font-size: 3.6em;
@@ -35343,6 +35996,119 @@ a {
 
   .image-41 {
     width: 3em;
+  }
+
+  .view {
+    font-size: 3em;
+  }
+
+  .view.fluxos {
+    width: 100%;
+    font-size: 2.8em;
+  }
+
+  .view.fluxos.os2 {
+    margin-top: 1em;
+  }
+
+  .view.flux_apply {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3em;
+  }
+
+  .view.flux_apply.tabsopen {
+    padding-left: 1.5em;
+    font-size: 3.6em;
+  }
+
+  .view.zel {
+    width: 18em;
+    margin-right: 0em;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .view.flux_apply-copy {
+    margin-right: auto;
+    margin-left: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 3em;
+  }
+
+  .view.fluxnodes {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3em;
+  }
+
+  .view.roi {
+    width: 100%;
+  }
+
+  .view.node_setup {
+    width: 100%;
+  }
+
+  .view.script {
+    width: 100%;
+  }
+
+  .view.flux_apps {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3em;
+  }
+
+  .view.flux_apps.tabsopen {
+    padding-left: 1.5em;
+    font-size: 3.6em;
+  }
+
+  .view.miner {
+    width: 100%;
+    margin-right: 0em;
+    font-size: 3.6em;
+  }
+
+  .view.bt1-copy {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+
+  .view.xdao {
+    width: 100%;
+    font-size: 2.8em;
+  }
+
+  .view.xdao.os2 {
+    margin-top: 1em;
+  }
+
+  .view.careers {
+    width: 100%;
+    font-size: 2.8em;
+  }
+
+  .view.careers.os2 {
+    margin-top: 1em;
+  }
+
+  .view._5 {
+    width: 100%;
+  }
+
+  .button01 {
+    margin-bottom: 3em;
+    font-size: 2.6em;
   }
 }
 
