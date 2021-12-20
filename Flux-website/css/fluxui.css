@@ -7960,6 +7960,7 @@ a {
 }
 
 .logo_img.rad0 {
+  height: 3em;
   border-radius: 0em;
 }
 
@@ -7972,6 +7973,61 @@ a {
 }
 
 .logo_img.rad0._121 {
+  height: 1.6em;
+}
+
+.logo_img.rad0._1212 {
+  height: 1.8em;
+}
+
+.logo_img.rad00 {
+  height: 2.3em;
+  border-radius: 0em;
+}
+
+.logo_img.rad00._1 {
+  height: 1.4em;
+}
+
+.logo_img.rad00._111 {
+  height: 2em;
+}
+
+.logo_img.rad00._121 {
+  height: 1.6em;
+}
+
+.logo_img.rad0000 {
+  height: 1.9em;
+  border-radius: 0em;
+}
+
+.logo_img.rad0000._1 {
+  height: 1.4em;
+}
+
+.logo_img.rad0000._111 {
+  height: 2em;
+}
+
+.logo_img.rad0000._121 {
+  height: 1.6em;
+}
+
+.logo_img.rad_0 {
+  height: 2.5em;
+  border-radius: 0em;
+}
+
+.logo_img.rad_0._1 {
+  height: 1.4em;
+}
+
+.logo_img.rad_0._111 {
+  height: 2em;
+}
+
+.logo_img.rad_0._121 {
   height: 1.6em;
 }
 
@@ -9916,6 +9972,22 @@ a {
 
 .card_exchanges._22 {
   z-index: 79;
+}
+
+.card_exchanges._23 {
+  z-index: 78;
+}
+
+.card_exchanges._24 {
+  z-index: 77;
+}
+
+.card_exchanges._25 {
+  z-index: 76;
+}
+
+.card_exchanges._26 {
+  z-index: 75;
 }
 
 .div-block-61 {
@@ -13298,6 +13370,7 @@ a {
 }
 
 .p_partner.a {
+  font-style: normal;
   text-align: left;
 }
 
@@ -37378,6 +37451,17 @@ a {
 }
 
 #w-node-_651fa64b-233c-cbbf-c05d-854365174f24-a4cac3ef {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+}
+
+#w-node-_72278392-aa5e-5a63-b86d-583ceea5a262-a4cac3ef {
   -ms-grid-row: span 1;
   grid-row-start: span 1;
   -ms-grid-row-span: 1;
