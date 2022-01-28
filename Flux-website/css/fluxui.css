@@ -635,6 +635,12 @@ a {
   color: #313457;
 }
 
+.heading.bn {
+  width: 100%;
+  color: #313457;
+  font-size: 2.6em;
+}
+
 .heading-2 {
   margin-bottom: 1em;
   font-family: 'Open Sans', sans-serif;
@@ -2447,6 +2453,12 @@ a {
   text-transform: none;
 }
 
+.paragraph-3.min1 {
+  width: 50%;
+  padding-top: 0em;
+  font-size: 0.7em;
+}
+
 .info_anim {
   display: none;
 }
@@ -4062,6 +4074,13 @@ a {
 .heading-3.mining.more {
   color: #fff;
   font-size: 1.1em;
+}
+
+.heading-3.mining.pa {
+  background-image: radial-gradient(circle farthest-corner at 100% 50%, #f855ba, #6248ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heading-3.jobs {
@@ -5798,6 +5817,10 @@ a {
 }
 
 .fotter_section.a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -15457,7 +15480,7 @@ a {
   position: relative;
   left: auto;
   top: auto;
-  right: 12px;
+  right: 0px;
   bottom: auto;
   width: 12em;
   padding: 0.7em;
@@ -15768,7 +15791,8 @@ a {
 .popup_p._1 {
   color: hsla(0, 0%, 100%, 0.77);
   font-size: 0.7em;
-  font-weight: 300;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .section-15 {
@@ -21031,6 +21055,14 @@ a {
   color: #f855ba;
 }
 
+.alt {
+  background-image: radial-gradient(circle farthest-side at 100% 50%, #f855ba, #5d91ff);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (min-width: 1920px) {
   .body {
     font-size: 1.1vw;
@@ -21636,6 +21668,10 @@ a {
     font-size: 5em;
     font-weight: 700;
     text-align: left;
+  }
+
+  .heading.bn {
+    font-size: 3.9em;
   }
 
   .heading-2 {
@@ -22585,6 +22621,16 @@ a {
   .paragraph-3.newt1 {
     width: 100%;
     font-size: 2em;
+  }
+
+  .paragraph-3.min1 {
+    width: 100%;
+    padding-top: 0em;
+    font-size: 1.6em;
+  }
+
+  .paragraph-3.min1.p {
+    margin-top: 1em;
   }
 
   .fluxos_section {
@@ -28461,6 +28507,10 @@ a {
     text-align: left;
   }
 
+  .heading.bn {
+    font-size: 4.4em;
+  }
+
   .heading-2 {
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -29084,6 +29134,10 @@ a {
 
   .paragraph-3.newt1 {
     font-size: 3em;
+  }
+
+  .paragraph-3.min1 {
+    font-size: 2.4em;
   }
 
   .div-block-10 {
@@ -33599,6 +33653,10 @@ a {
     text-align: left;
   }
 
+  .heading.bn {
+    font-size: 6em;
+  }
+
   .heading-2 {
     font-size: 2.2em;
     text-align: left;
@@ -34451,6 +34509,10 @@ a {
   }
 
   .paragraph-3.newt1 {
+    font-size: 3.6em;
+  }
+
+  .paragraph-3.min1 {
     font-size: 3.6em;
   }
 
@@ -41092,7 +41154,7 @@ a {
   grid-column-end: span 1;
 }
 
-#w-node-_45f25eb9-7a2e-c3a8-0a53-dfe9d757bc9c-a4cac3ef {
+#w-node-bec873f1-15e5-6f0a-392d-52d06a3c7654-a4cac3ef {
   -ms-grid-row: span 1;
   grid-row-start: span 1;
   -ms-grid-row-span: 1;
@@ -41126,6 +41188,17 @@ a {
 }
 
 #w-node-e77be41c-be9b-df86-9019-e364ff751c3a-a4cac3ef {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+}
+
+#w-node-_45f25eb9-7a2e-c3a8-0a53-dfe9d757bc9c-a4cac3ef {
   -ms-grid-row: span 1;
   grid-row-start: span 1;
   -ms-grid-row-span: 1;
