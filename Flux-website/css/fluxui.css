@@ -11061,6 +11061,7 @@ a {
 }
 
 .team_wrapper {
+  position: relative;
   overflow: hidden;
   height: 18em;
   padding-bottom: 0.5em;
@@ -11075,6 +11076,7 @@ a {
 }
 
 .div-block-67 {
+  position: relative;
   width: 90%;
   margin: 0.5em auto;
   padding-top: 0em;
@@ -21859,6 +21861,7 @@ a {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  justify-items: start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -22299,6 +22302,48 @@ a {
   margin-right: 0.2em;
   margin-left: 0.2em;
   color: #bdf328;
+}
+
+.div-block-122 {
+  position: absolute;
+  left: auto;
+  top: 75%;
+  right: 5%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1em;
+  height: 1em;
+}
+
+.div-block-122:hover {
+  background-image: url('../images/iconmonstr-linkedin.svg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.image-45 {
+  display: block;
+  -webkit-transition: -webkit-filter 200ms ease;
+  transition: -webkit-filter 200ms ease;
+  transition: filter 200ms ease;
+  transition: filter 200ms ease, -webkit-filter 200ms ease;
+  cursor: pointer;
+}
+
+.image-45:hover {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-image: url('../images/iconmonstr-linkedin.svg');
+  background-position: 50% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(200%) contrast(200%) contrast(200%);
+  filter: brightness(200%) contrast(200%) contrast(200%);
 }
 
 @media screen and (min-width: 1920px) {
@@ -24882,7 +24927,7 @@ a {
   }
 
   .card_img.box1 {
-    width: 10em;
+    width: 4em;
     height: auto;
   }
 
@@ -30165,6 +30210,13 @@ a {
     color: #bdf328;
     font-size: 1.2em;
   }
+
+  .div-block-122 {
+    top: 78%;
+    right: 4%;
+    width: 1.6em;
+    height: 1.6em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -32991,7 +33043,7 @@ a {
   }
 
   .team_wrapper {
-    height: 46em;
+    height: 48em;
     border-radius: 1em;
   }
 
@@ -35354,6 +35406,13 @@ a {
     width: 100%;
     margin-right: 0em;
   }
+
+  .div-block-122 {
+    top: 74%;
+    right: 8%;
+    width: 3em;
+    height: 3em;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -37502,7 +37561,7 @@ a {
   }
 
   .card_img.box1 {
-    width: 8em;
+    width: 3em;
   }
 
   .wrapper-copy.nodemap-copy {
@@ -42280,6 +42339,13 @@ a {
 
   .icon-3 {
     font-size: 1.4em;
+  }
+
+  .div-block-122 {
+    top: 76%;
+    right: 6%;
+    width: 5em;
+    height: 5em;
   }
 }
 
