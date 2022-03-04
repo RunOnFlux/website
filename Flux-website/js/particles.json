@@ -10,7 +10,7 @@
             "type":"star",
             "stroke":{
                 "width":1,
-                "color":"ccc"
+                "color":"#ccc"
             },
             "image":{
                 "src": "#"
