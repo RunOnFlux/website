@@ -124,8 +124,8 @@ html {
 }
 /* header{
   background: #c31432;  
-  background: -webkit-linear-gradient(to bottom, #000000, #c31432); 
-  background: linear-gradient(to bottom, #000000, #c31432); 
+  background: -webkit-linear-gradient(to bottom, #240b36, #c31432); 
+  background: linear-gradient(to bottom, #240b36, #c31432); 
    background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,8 +153,8 @@ a {
 #particles-js{
   /* height: 400px; */
   background: #c31432;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #000000, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #000000 10%, #c31432 70%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22893,11 +22893,7 @@ a {
 }
 
 @media screen and (min-width: 1920px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 40%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 40%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-  }
+ 
   .body {
     font-size: 1.1vw;
   }
@@ -23232,11 +23228,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 50%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 50%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
-  }
+  
   .areas h5{
     font-size: 17px;
   }
@@ -30942,11 +30934,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 40%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 40%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
-  }
+  
   .navbar.new {
     top: 0px;
   }
@@ -36220,11 +36208,7 @@ a {
 }
 
 @media screen and (max-width: 479px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 50%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 50%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-  }
+ 
   
   .list-item-4{
     font-size: 20px !important;
@@ -45806,11 +45790,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 40%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 40%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-  }
   #w-node-_81408e82-007c-32e6-3e9c-be0947e3b4c8-c4cac3d9 {
     -ms-grid-column-align: auto;
     justify-self: auto;
@@ -46711,11 +46691,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 70%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 70%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-  }
+ 
   .patient-logo{
     margin-top: 0px;
     height: 400px;
@@ -47583,11 +47559,7 @@ a {
 }
 
 @media screen and (max-width: 479px) {
-  #particles-js{
-    background: -webkit-linear-gradient(to bottom, #000000 10%, #c31432 40%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000 10%, #c31432 40%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
-  }
+ 
   #w-node-bbfaa08c-351e-2f69-b8e2-d23ce4ac56dd-c4cac3d9 {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
