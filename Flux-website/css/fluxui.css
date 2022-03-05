@@ -32,7 +32,7 @@
 }
 
 .logo{
-  height: 50px !important;
+  height: 70px !important;
 }
 
 .chart{
@@ -153,8 +153,8 @@ a {
 #particles-js{
   /* height: 400px; */
   background: #c31432;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22112,7 +22112,7 @@ a {
   font-size: 5em;
   line-height: 1.3em;
   text-align: left;
-  color: #a6a6a6;
+  color: #000;
 }
 
 .header_title.fluxos_eco {
@@ -30590,7 +30590,7 @@ a {
     font-size: 5em;
     line-height: 1.1em;
     text-align: left;
-    color: #a6a6a6;
+    color: #000;
   }
 
   .header_title.launch_app {
@@ -36229,7 +36229,7 @@ a {
   }
 
   .logo{
-    max-height: 30px !important;
+    height: 60px !important;
    
   }
 
