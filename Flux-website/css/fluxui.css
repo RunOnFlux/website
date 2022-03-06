@@ -8848,6 +8848,14 @@ a {
   height: 2.2em;
 }
 
+.logo_img.rad0._656 {
+  height: 1.2em;
+}
+
+.logo_img.rad0._657 {
+  height: 2.5em;
+}
+
 .logo_img.rad00 {
   height: 2.2em;
   border-radius: 0em;
@@ -10987,6 +10995,14 @@ a {
 
 .card_exchanges._36 {
   z-index: 64;
+}
+
+.card_exchanges._37 {
+  z-index: 64;
+}
+
+.card_exchanges._38 {
+  z-index: 63;
 }
 
 .div-block-61 {
@@ -23351,6 +23367,10 @@ a {
   }
 
   .heading-2.mob._3 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     text-align: left;
   }
 
@@ -26724,6 +26744,14 @@ a {
     height: 4.5em;
   }
 
+  .logo_img.rad0._656 {
+    height: 2.5em;
+  }
+
+  .logo_img.rad0._657 {
+    height: 5em;
+  }
+
   .logo_img.rad00 {
     height: 4em;
   }
@@ -27349,6 +27377,7 @@ a {
 
   .card_exchanges {
     position: relative;
+    padding-left: 2.5em;
     border-radius: 1em;
     background-color: hsla(0, 0%, 100%, 0.9);
   }
@@ -33122,6 +33151,14 @@ a {
     height: 6em;
   }
 
+  .logo_img.rad0._653 {
+    height: 5em;
+  }
+
+  .logo_img.rad0._657 {
+    height: 6em;
+  }
+
   .h5_green {
     font-size: 1.6em;
     text-align: left;
@@ -33526,7 +33563,7 @@ a {
   }
 
   .card_exchanges {
-    padding: 2.4em 2em;
+    padding: 2.4em 2em 2.4em 3.3em;
   }
 
   .card_exchanges.paralell {
@@ -36338,6 +36375,13 @@ a {
 
   .heading-2.mob.b {
     font-size: 2.6em;
+  }
+
+  .heading-2.mob._3 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .heading-2.mob.b-copy {
@@ -39272,6 +39316,13 @@ a {
     align-items: center;
   }
 
+  .pre_head._1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
   .pre_head._101 {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -39425,11 +39476,19 @@ a {
   }
 
   .logo_img.rad0._653 {
-    height: 7em;
+    height: 9em;
   }
 
   .logo_img.rad0._3533 {
     height: 7em;
+  }
+
+  .logo_img.rad0._656 {
+    height: 5em;
+  }
+
+  .logo_img.rad0._657 {
+    height: 10em;
   }
 
   .logo_img.rad00 {
