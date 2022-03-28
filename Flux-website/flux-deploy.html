@@ -40,18 +40,18 @@
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">Application Name</div>
-                      <input type="text" class="field-input w-input required" maxlength="256" name="app_name" placeholder="" id="app_name" value="Nodify2">
+                      <input type="text" class="field-input w-input required" maxlength="256" name="app_name" placeholder="" id="app_name" value="">
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">App Description</div>
-                      <input type="text" class="field-input w-input required" maxlength="256" name="app_desc" placeholder="" id="app_desc" value="Node stats">
+                      <input type="text" class="field-input w-input required" maxlength="256" name="app_desc" placeholder="" id="app_desc" value="">
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
                         <div class="field-title">Your Zel ID</div>
                         <div class="title-subtext">Don't have one? <a href="https://zelcore.io/" target="_blank">Get one</a></div>
                       </div>
-                      <input type="text" class="field-input w-input required" maxlength="256" name="zelid" placeholder="" id="zelid" value="176iuPFBqD4yg3Fd7oPVhB3d4NXWxvQyxk">
+                      <input type="text" class="field-input w-input required" maxlength="256" name="zelid" placeholder="" id="zelid" value="">
                       
                       <div class="foot-container">
                         <div class="foot-logo"><img src="images/Flux_white-blue.svg" alt="Flux-Logo" class="logo_flux">
@@ -92,7 +92,7 @@
                         <div class="field-title">Docker Hub Repository</div>
                         <div class="title-subtext"><a href="https://hub.docker.com/" target="_blank">Get Docker Hub</a></div>
                       </div>
-                      <input type="text" class="field-input-text w-input required" maxlength="256" name="docker_repo" placeholder="namespace/repository:tag for component" id="docker_repo" value="smartico/nodify:latest">
+                      <input type="text" class="field-input-text w-input required" maxlength="256" name="docker_repo" placeholder="namespace/repository:tag for component" id="docker_repo" value="">
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">Add Environment Variables</div>
@@ -104,14 +104,14 @@
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">List of Environment Variables</div>
-                      <input type="text" class="field-input w-input" maxlength="256" name="env_vars" placeholder="Example: DB_NAME=mongo_db,DB_USER=user_1" id="env_vars" value="a=b" disabled>
+                      <input type="text" class="field-input w-input" maxlength="256" name="env_vars" placeholder="Example: DB_NAME=mongo_db,DB_USER=user_1" id="env_vars" value="" disabled>
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
                         <div class="field-title">Run Command</div>
                         <div class="title-subtext">Example: /bin/bash,-c,(./script.sh)</div>
                       </div>
-                      <input type="text" class="field-input-text w-input" maxlength="256" name="run_cmd" placeholder="You can provide application related commands here" id="run_cmd" value="/bin/bash,-c,(./script.sh)">
+                      <input type="text" class="field-input-text w-input" maxlength="256" name="run_cmd" placeholder="You can provide application related commands here" id="run_cmd" value="">
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
@@ -156,13 +156,13 @@
                     <div class="form-wrap">
                       <div class="field-title">Public Port(s)</div>
                       <div class="div-block-110">
-                        <input type="text" class="field-input-text w-input" maxlength="256" name="pub_port" placeholder="80" id="pub_port" value="80">
+                        <input type="text" class="field-input-text w-input" maxlength="256" name="pub_port" placeholder="80" id="pub_port" value="">
                         <div class="add-button" id="add_pub_port">Add</div>
                       </div>
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">List of Public Ports</div>
-                      <input type="text" class="field-input w-input required" maxlength="256" name="all_pub_ports" placeholder="80" id="all_pub_ports" value="80" disabled>
+                      <input type="text" class="field-input w-input required" maxlength="256" name="all_pub_ports" placeholder="80" id="all_pub_ports" value="" disabled>
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
@@ -182,12 +182,12 @@
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">List of Domains</div>
-                      <input type="text" class="field-input w-input" maxlength="256" name="all_domains" placeholder="domain1.com,domain2.com" value="domain.com" id="all_domains" disabled>
+                      <input type="text" class="field-input w-input" maxlength="256" name="all_domains" placeholder="domain1.com" value="" id="all_domains" disabled>
                     </div>
                     <div class="form-wrap">
                       <div class="field-title">Private Container Port(s)</div>
                       <div class="div-block-110">
-                        <input type="text" class="field-input-text w-input" maxlength="256" name="priv_port" placeholder="3xxxx" id="priv_port" value="33333">
+                        <input type="text" class="field-input-text w-input" maxlength="256" name="priv_port" placeholder="3xxxx" id="priv_port" value="">
                         <div class="add-button" id="add_priv_port">Add</div>
                       </div>
                     </div>
@@ -196,7 +196,7 @@
                         <div class="field-title">List of Private Ports</div>
                         <div class="title-subtext">5 digits between 31000 and 39999</div>
                       </div>
-                      <input type="text" class="field-input-text w-input required" maxlength="256" name="all_priv_ports" placeholder="3xxxx" id="all_priv_ports" value="33333" disabled>
+                      <input type="text" class="field-input-text w-input required" maxlength="256" name="all_priv_ports" placeholder="3xxxx" id="all_priv_ports" value="" disabled>
 
                       <div class="foot-container">
                         <div class="foot-logo"><img src="images/Flux_white-blue.svg" alt="Flux-Logo" class="logo_flux">
@@ -237,7 +237,7 @@
                             How many instances will you be running? 
                             <div class="node_specs">(min 3 / max 100)</div>
                           </div>
-                          <input type="number" class="field-input-text w-input" name="instances" min="3" max="100" placeholder="3" id="instances" value="3">
+                          <input type="number" class="field-input-text w-input" name="instances" min="3" max="100" placeholder="3" id="instances" value="">
                         </div>
                       </div>
                     </div>
@@ -576,7 +576,7 @@
         }
       });
       disabledFields.prop('disabled', true);
-      console.log('appSpec', appSpec);
+      //console.log('appSpec', appSpec);
 
       if (appSpec['tiered'] == 'true') {
         $('#table_processors').html(appSpec['cpubasic'] + ' Cumulus <br> ' + appSpec['cpusuper'] + ' Nimbus <br> ' + appSpec['cpubamf'] + ' Stratus');
@@ -776,7 +776,7 @@
         "version":1
       }`;
       let zelidauth = `zelid=${zelid}&signature=${encodeURIComponent(login_sig)}`;
-      console.log('registerbody', registerbody)
+      //console.log('registerbody', registerbody)
 
       $.ajax({
         method: 'POST',
@@ -788,13 +788,13 @@
         data: registerbody,
         success: function(e) {
           if (e.status == 'error') {
-            console.log('Error1', e);
+            //console.log('Error1', e);
             $('.table-container').slideToggle('slow');
             $('#error').text(e.data.message).fadeIn('slow');
             $('#app_register').html('Register Flux App');
 
           } else {
-            console.log('Success', e);
+            //console.log('Success', e);
             $('#submission_progress').html($('#submission_progress').html() + 'App Registered ✅ ').fadeIn('slow');
             $('#app_pay').attr('href', $('#app_pay').attr('href') + '&message=' + e.data);
             $('#success_id').text(e.data);
@@ -807,7 +807,7 @@
           }
         },
         error: function(e) {
-          console.log('Error2', e);
+          //console.log('Error2', e);
         }
       });
     });
@@ -898,7 +898,7 @@
     });
     
     $('.enterprise_grade').click(function() {
-      console.log('enterprise_grade', $(this).val());
+      //console.log('enterprise_grade', $(this).val());
 
       if ($(this).val() == "true") {
         $('.standard').addClass('hide');
