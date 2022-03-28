@@ -156,13 +156,16 @@
                     <div class="form-wrap">
                       <div class="field-title">Public Port(s)</div>
                       <div class="div-block-110">
-                        <input type="text" class="field-input-text w-input" maxlength="256" name="pub_port" placeholder="80" id="pub_port" value="">
+                        <input type="text" class="field-input-text w-input" maxlength="256" name="pub_port" placeholder="3xxxx" id="pub_port" value="">
                         <div class="add-button" id="add_pub_port">Add</div>
                       </div>
                     </div>
                     <div class="form-wrap">
-                      <div class="field-title">List of Public Ports</div>
-                      <input type="text" class="field-input w-input required" maxlength="256" name="all_pub_ports" placeholder="80" id="all_pub_ports" value="" disabled>
+                      <div class="title-container">
+                        <div class="field-title">List of Public Ports</div>
+                        <div class="title-subtext">5 digits between 31000 and 39999</div>
+                      </div>
+                      <input type="text" class="field-input w-input required" maxlength="256" name="all_pub_ports" placeholder="" id="all_pub_ports" value="" disabled>
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
@@ -187,16 +190,16 @@
                     <div class="form-wrap">
                       <div class="field-title">Private Container Port(s)</div>
                       <div class="div-block-110">
-                        <input type="text" class="field-input-text w-input" maxlength="256" name="priv_port" placeholder="3xxxx" id="priv_port" value="">
+                        <input type="text" class="field-input-text w-input" maxlength="256" name="priv_port" placeholder="80" id="priv_port" value="">
                         <div class="add-button" id="add_priv_port">Add</div>
                       </div>
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
                         <div class="field-title">List of Private Ports</div>
-                        <div class="title-subtext">5 digits between 31000 and 39999</div>
+                        <div class="title-subtext">Internal Container Port(s) such as 80 or 8080</div>
                       </div>
-                      <input type="text" class="field-input-text w-input required" maxlength="256" name="all_priv_ports" placeholder="3xxxx" id="all_priv_ports" value="" disabled>
+                      <input type="text" class="field-input-text w-input required" maxlength="256" name="all_priv_ports" placeholder="" id="all_priv_ports" value="" disabled>
 
                       <div class="foot-container">
                         <div class="foot-logo"><img src="images/Flux_white-blue.svg" alt="Flux-Logo" class="logo_flux">
@@ -595,11 +598,11 @@
                       "name":"componentName1",
                       "description":"componentDesc1",
                       "repotag":"${appSpec['docker_repo']}",
-                      "ports":"[${appSpec['all_priv_ports']}]",
+                      "ports":"[${appSpec['all_pub_ports']}]",
                       "domains":["${appSpec['all_domains']}"],
-                      "environmentParameters":["${appSpec['env_vars']}"],
-                      "commands":["${appSpec['run_cmd']}"],
-                      "containerPorts":[${appSpec['all_pub_ports']}],
+                      "environmentParameters":[${appSpec['env_vars']}],
+                      "commands":[${appSpec['run_cmd']}],
+                      "containerPorts":[${appSpec['all_priv_ports']}],
                       "containerData":"${appSpec['app_dir']}",
                       "cpu":"${appSpec['processors']}",
                       "ram":"${appSpec['memory']}",
@@ -840,6 +843,15 @@
       if ($('#pub_port').val() === '') {
         $('#pub_port').addClass('novalue');
       } else {
+        if ($.isNumeric($('#pub_port').val()) && $('#pub_port').val().length != 5) {
+          $('#pub_port').addClass('novalue');
+          return false;
+        }
+        if ($('#pub_port').val().charAt(0) != 3) {
+          $('#pub_port').addClass('novalue');
+          return false;
+        }
+
         if ($('#all_pub_ports').val() === '') {
           pub_port = $('#pub_port').val();
         } else {
@@ -876,17 +888,6 @@
       if (priv_port.val() === '') {
         priv_port.addClass('novalue');
       } else {
-        if ($.isNumeric(priv_port.val()) && priv_port.val().length != 5) {
-          priv_port.addClass('novalue');
-          return false;
-        }
-        if (priv_port.val().charAt(0) != 3) {
-          priv_port.addClass('novalue');
-          return false;
-        }
-
-
-
         if ($('#all_priv_ports').val() === '') {
           priv_port = $('#priv_port').val();
         } else {
