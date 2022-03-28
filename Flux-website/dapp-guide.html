@@ -1853,13 +1853,12 @@ computer:noderank username$
               <span>Add a Custom Domain</span>
             </h2>
 
+            <p>You can point a custom domain of your choice such as yourdapp.com to your Flux Dapp via a Flux Domain Name (FDN) -
+            yourdapp.app.runonflux.io. It is recommended to use CloudFlare; and you only need to add a CNAME record.</p>
+              
             <p>If you did not add a custom domain during your initial dApp setup, adding it afterwards will
-            incur a small Flux charge, as your app change submission has to be sent to the Flux network to be
+            incur a very small Flux charge, as your app change submission has to be sent to the Flux network to be
             mined and confirmed.</p>
-
-            <p>Please be aware SSL is required between your custom domain and the Flux Domain Name (FDN) -
-            yourapp.app.runonflux.io, therefore you need to enable SSL via Proxying at your host. If your
-            host does not support this feature, we recommend using CloudFlare.</p>
 
             <p class="center border"><img src="images/deploy/image11.png"></p>
 
@@ -1889,8 +1888,8 @@ computer:noderank username$
 
             <p>That's it from the Flux side, now we need to configure your custom domain at your host and Cloudflare.</p>
 
-            <p>Note: In our use case, CloudFlare's role is to act as a middleman between your domain name company
-            (E.G: godaddy.com) and the Flux network, securely forwarding traffic to your Flux dApp.</p>
+            <p>Note: In the example use case, CloudFlare's role is to act as a middleman between the domain name company
+            (E.G: godaddy.com) and the Flux network, forwarding traffic to the Flux dApp.</p>
 
             <p>&nbsp;</p>
 
@@ -1919,7 +1918,7 @@ computer:noderank username$
                   <li>Type: CNAME</li>
                   <li>Name: Your App Name (yourapp.yourdomain.com) or if you want to use the root domain name enter just enter @</li>
                   <li>Target: Your Flux Domain Name</li>
-                  <li>Proxy: Make sure this is checked to enable SSL</li>
+                  <li>Proxy: Make sure this is checked</li>
                 </ul>
 
               <p class="border"><img src="images/deploy/image18.png"></p>
@@ -1933,7 +1932,7 @@ computer:noderank username$
 
                 <ul>
                   <li>yourdomain.com >> CloudFlare >> Godaddy (Wordpress Site)</li>
-                  <li>Name: Your App Name (yourapp.yourdomain.com) or if you want to use the root domain name enter just enter @</li>
+                  <li>yourapp.yourdomain.com >> CloudFlare >> Flux Dapp (yourdapp.app.runonflux.io)</li>
                 </ul>
 
             </ol>
