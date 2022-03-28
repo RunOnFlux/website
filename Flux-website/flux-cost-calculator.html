@@ -102,9 +102,9 @@
                         <div class="foot-spacer"></div>
                         <div class="foot-help">
                           <div id="w-node-_31fe55b2-5ede-fa3d-7c28-d39bb1258f02-85bf9b0f" class="form-section-title-mini">Help</div>
-                          <a href="#" data-modal="help-4-1" class="link-12 js-open">What is an instance?</a>
-                          <a href="#" data-modal="help-4-2" class="link-12 js-open">Can I change the specs later?</a>
-                          <a href="#" data-modal="help-4-3" class="link-12 js-open">How much is 1 Flux?</a>
+                          <a href="#" data-modal="help-1-1" class="link-12 js-open">What is an instance?</a>
+                          <a href="#" data-modal="help-1-2" class="link-12 js-open">Can I change the specs later?</a>
+                          <a href="#" data-modal="help-1-3" class="link-12 js-open">How much is 1 Flux?</a>
                         </div>
                       </div>
                     </div>
@@ -126,10 +126,21 @@
     </div>
   </div>
   <!-- List all modals for help links --> 
-  <div id="help-0-0" class="hide">
-    <h4>How do I make an application?</h4>
-    <div>You can use any language of your choice as long as you build and deploy them in a Docker Image.
-      Use this <a href="dapp-guide.html">Flux dApp guide</a> to build a basic application</div>
+  <div id="help-1-1" class="hide">
+    <h4>What is an instance?</h4>
+    <div>An instance is a Flux Node, which is like a Docker Container, holding a copy of your application. We deploy to 3 instances minimum,
+       on the Flux network to ensure service continuity of your application using load balancing. If one node goes down, another will automatically
+      spin up and replicate your app, seemlessly in the background, without end users noticing any loss of service or change.</div>
+  </div>
+  <div id="help-1-2" class="hide">
+    <h4>Can I change the specs later?</h4>
+    <div>Yes, you can always increase or decrease any of the parameters as you see fit! This is all managed
+      via FluxOS <a href="https://home.runonflux.io" target="_blank">home.runonflux.io</a></div>
+  </div>
+  <div id="help-1-3" class="hide">
+    <h4>How much is 1 Flux?</h4>
+    <div>
+      <p>Currently the value of 1 flux is: <span class="app_cost"></span></p>
   </div>
 
   
