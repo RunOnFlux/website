@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    www:
+        build: .
+        ports: 
+            - "80:80"
+        volumes:
+            - ./Flux-website:/var/www/html/
