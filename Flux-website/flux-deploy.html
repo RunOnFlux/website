@@ -372,7 +372,7 @@
                       <div class="field-title">Confirm App Specification</div>
                       <table class="table" id="table_appspec">
                         <tbody>
-                          <tr><td>App Name</td>       <td id="table_app_name"></td></tr>
+                          <tr><td style="min-width:130px;">App Name</td>       <td id="table_app_name"></td></tr>
                           <tr><td>Description</td>    <td id="table_app_desc"></td></tr>
                           <tr><td>Repository</td>     <td id="table_docker_repo"></td></tr>
                           <tr><td>Env Vars</td>       <td id="table_env_vars"></td></tr>
@@ -527,15 +527,9 @@
     let version = 4;
     let timestamp = Date.now();
     let appSpec = [];
-    let nodeIP = '';
     let body = '';
     let zelid = '';
-
-    $.get('https://api.runonflux.io/daemon/fluxcurrentwinner', function(nodes) {
-      nodeIP = nodes.data["STRATUS Winner"].ip;
-      if (!nodeIP.includes(':')) nodeIP += ':16127';
-      //console.log('fluxcurrentwinner', nodeIP);
-    });
+    let randNum = Math.floor( Math.random() * 3 + 1 );
 
     $.get('https://explorer.runonflux.io/api/currency', function(e) {
       let usd_to_flux = e.data.rate;
@@ -663,7 +657,7 @@
                   $('.app_cost').text(flux + ' FLUX ($' + total_usd + ' USD)');
                   $('#app_cost').show();
                   $('#app_pay').attr('href', 'zel:?action=pay&amount=' + flux + '&address=t1LUs6quf7TB2zVZmexqPQdnqmrFMGZGjV6');
-                  let zel_url = `zel:?action=sign&message=${app_spec}&icon=https://raw.githubusercontent.com/runonflux/flux/master/zelID.svg&callback=https://flux.smartico.com/id/providesign`;
+                  let zel_url = `zel:?action=sign&message=${app_spec}&icon=https://raw.githubusercontent.com/runonflux/flux/master/zelID.svg&callback=https://flux${randNum}.smartico.com/id/providesign`;
                   $('#app_sign').attr('href', zel_url);
                   $('#app_validate').hide();
                   $('#app_login').show();
@@ -681,11 +675,11 @@
 
       $('#app_login').html('<img src="images/loader.gif"> Opening Zelcore..');
 
-      $.get(`https://flux.smartico.com/id/loginphrase`, function(loginPhrase) {
+      $.get(`https://flux${randNum}.smartico.com/id/loginphrase`, function(loginPhrase) {
         //console.log('loginPhrase', loginPhrase);
-        const callbackValue = `https://flux.smartico.com/id/verifylogin`;
+        const callbackValue = `https://flux${randNum}.smartico.com/id/verifylogin`;
         window.location.replace(`zel:?action=sign&message=${loginPhrase.data}&icon=https%3A%2F%2Fraw.githubusercontent.com%2Frunonflux%2Fflux%2Fmaster%2FzelID.svg&callback=${callbackValue}`);
-        let socket = new WebSocket(`wss://flux.smartico.com/ws/id/${loginPhrase.data}`);
+        let socket = new WebSocket(`wss://flux${randNum}.smartico.com/ws/id/${loginPhrase.data}`);
 
         socket.onopen = function(event) {
           //console.log('[open ws/id] Connection established', event);
@@ -728,7 +722,7 @@
       $('#app_sign').html('<img src="images/loader.gif"> Opening Zelcore..');
 
       let signaturemessage = `${zelid}${timestamp}`;
-      let socket = new WebSocket(`wss://flux.smartico.com/ws/sign/${signaturemessage}`);
+      let socket = new WebSocket(`wss://flux${randNum}.smartico.com/ws/sign/${signaturemessage}`);
 
       socket.onopen = function(event) {
         //console.log('[open ws/sign] Connection established', event);
@@ -784,7 +778,7 @@
 
       $.ajax({
         method: 'POST',
-        url: 'https://flux.smartico.com/apps/appregister',
+        url: `https://flux${randNum}.smartico.com/apps/appregister`,
         dataType: 'json',
         headers: {
           'zelidauth': zelidauth
