@@ -22722,8 +22722,8 @@ a {
   transition: transform 200ms ease, -webkit-transform 200ms ease;
   font-family: Montserrat, sans-serif;
   color: #fff;
-  font-size: 0.8em;
-  font-weight: 500;
+  font-size: 1.1em;
+  font-weight: 800;
 }
 
 .nva-text:hover {
@@ -22742,7 +22742,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 20em;
+  /* width: 20em; */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -22758,7 +22758,7 @@ a {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
-  color: #fff;
+  color: #000;
 }
 
 .button_9 {
@@ -25500,6 +25500,9 @@ a {
 }
 
 @media screen and (max-width: 991px) {
+  .nva-text{
+    font-size: 1.8em !important;
+  }
   .body {
     font-size: 1.3vw;
   }
@@ -33538,6 +33541,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  
   .navbar.new {
     top: 0px;
   }
