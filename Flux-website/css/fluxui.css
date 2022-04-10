@@ -22723,7 +22723,7 @@ a {
   font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 1.1em;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .nva-text:hover {
@@ -25500,9 +25500,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .nva-text{
-    font-size: 1.8em !important;
-  }
+ 
   .body {
     font-size: 1.3vw;
   }
