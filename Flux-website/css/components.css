@@ -1612,7 +1612,7 @@ textarea.w-select {
   vertical-align: top;
   text-decoration: none;
   color: #222222;
-  padding: 20px;
+  padding: 15px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -1630,7 +1630,7 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #C8C8C8;
+  background: #000000;
   text-align: center;
   overflow: visible;
   min-width: 200px;
@@ -1687,7 +1687,7 @@ textarea.w-select {
   outline: 0;
 }
 .w-nav-button.w--open {
-  background-color: #C8C8C8;
+  /* background-color: #C8C8C8; */
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
@@ -1780,6 +1780,9 @@ textarea.w-select {
   display: block;
 }
 @media screen and (max-width: 479px) {
+  .nva-text{
+    font-size: 3.1em !important;
+  }
   .w-tab-link {
     display: block;
   }
