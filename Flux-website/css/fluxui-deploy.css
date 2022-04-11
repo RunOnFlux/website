@@ -1295,3 +1295,33 @@ table th {
   font-family: "Arial";
   font-style: normal;
 }
+
+.previous-button {
+  padding: 12px 32px;
+  align-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  color: #5b617c;
+  font-size: 15px;
+  text-indent: -2px;
+  background-color: #8b8b8b;
+  border-radius: 5px;
+  color:#fff;
+}
+.previous-button:hover {
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 47px;
+  max-width: 159px;
+  margin: auto auto 30px 30px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
