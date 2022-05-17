@@ -16455,7 +16455,10 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(37));
   }
 
   $(document).ready(function () {
-    if (window.matchMedia) {
+    // TODO: remove this function once the upgrade is out of beta
+    var isBetaEnabled = document.querySelectorAll('[data-beta-bgvideo-upgrade="true"]').length > 0;
+
+    if (window.matchMedia && isBetaEnabled) {
       var watcher = window.matchMedia('(prefers-reduced-motion: reduce)');
 
       if (watcher.matches) {

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1239.8" height="319" viewBox="0 0 1239.8 319">
+  <g id="havenwhite11" transform="translate(2804 -5640)">
+    <g id="wordmark" transform="translate(-2435 5668)">
+      <text id="H" transform="translate(0 231)" fill="#fff" font-size="240" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">H</tspan></text>
+      <text id="A" transform="translate(183.6 231)" fill="#fff" font-size="240" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">A</tspan></text>
+      <text id="V" transform="translate(343.2 231)" fill="#fff" font-size="239" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">V</tspan></text>
+      <text id="E" transform="translate(529.4 231)" fill="#fff" font-size="240" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+      <text id="N" transform="translate(680.8 231)" fill="#fff" font-size="240" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+    </g>
+    <path id="Combined-Shape" d="M304,204.634v.055L160,287.721V376h48V308.052l.038.022L352,224.921V136H304ZM280.074,190.82l-.074-.043V112h96V238.747l-144.292,83.2.292.171V400H136V274.038ZM136,246.206V112h96v78.777l-24,13.857V136H160v96.35Zm144,75.912,24-14.066V376h48V280l24-13.909V400H280Z" transform="translate(-2940 5555)" fill="#fff"/>
+  </g>
+</svg>
