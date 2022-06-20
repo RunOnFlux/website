@@ -109,9 +109,16 @@
                     <div class="form-wrap">
                       <div class="title-container">
                         <div class="field-title">Run Command</div>
-                        <div class="title-subtext">Example: /bin/bash,-c,(./script.sh)</div>
+                        <div class="title-subtext">Example: npm start</div>
                       </div>
-                      <input type="text" class="field-input-text w-input" maxlength="256" name="run_cmd" placeholder="You can provide application related commands here" id="run_cmd" value="">
+                      <div class="div-block-135">
+                        <input type="text" class="field-input-text w-input" maxlength="256" name="your_cmd" placeholder="Provide a single application related command here" id="your_cmd" value="">
+                        <div class="add-button" id="add_cmd">Add</div>
+                      </div>
+                    </div>
+                    <div class="form-wrap">
+                      <div class="field-title">List of Commands</div>
+                      <input type="text" class="field-input w-input" maxlength="256" name="all_cmds" placeholder="Example: npm install, npm start build" id="all_cmds" value="" disabled>
                     </div>
                     <div class="form-wrap">
                       <div class="title-container">
@@ -376,7 +383,7 @@
                           <tr><td>Description</td>    <td id="table_app_desc"></td></tr>
                           <tr><td>Repository</td>     <td id="table_docker_repo"></td></tr>
                           <tr><td>Env Vars</td>       <td id="table_env_vars"></td></tr>
-                          <tr><td>Run Cmd</td>        <td id="table_run_cmd"></td></tr>
+                          <tr><td>Run Cmd</td>        <td id="table_all_cmds"></td></tr>
                           <tr><td>Directory</td>      <td id="table_app_dir"></td></tr>
                           <tr><td>Public Port(s)</td> <td id="table_all_pub_ports"></td></tr>
                           <tr><td>Private Port(s)</td><td id="table_all_priv_ports"></td></tr>
@@ -593,10 +600,10 @@
                       "name":"componentName1",
                       "description":"componentDesc1",
                       "repotag":"${appSpec['docker_repo']}",
-                      "ports":"[${appSpec['all_pub_ports']}]",
+                      "ports":["${appSpec['all_pub_ports']}"],
                       "domains":["${appSpec['all_domains']}"],
-                      "environmentParameters":[${appSpec['env_vars']}],
-                      "commands":[${appSpec['run_cmd']}],
+                      "environmentParameters":["${appSpec['env_vars']}"],
+                      "commands":[${appSpec['all_cmds']}],
                       "containerPorts":[${appSpec['all_priv_ports']}],
                       "containerData":"${appSpec['app_dir']}",
                       "cpu":"${appSpec['processors']}",
@@ -907,6 +914,24 @@
         $('.enterprise').addClass('hide');
       }
 
+    });
+
+    $('#add_cmd').click(function() {
+
+      $('#your_cmd').removeClass('novalue');
+
+      if ($('#your_cmd').val() === '') {
+        $('#your_cmd').addClass('novalue');
+      } else {
+        if ($('#all_cmds').val() === '') {
+          add_cmd = '"' + $('#your_cmd').val() + '"';
+        } else {
+          add_cmd = '"' + $('#all_cmds').val() + '","' + $('#your_cmd').val() + '"';
+        }
+        add_cmd = add_cmd.split('""').join('"');
+        $('#all_cmds').val(add_cmd).prop('disabled', false);
+        $('#your_cmd').val('');
+      }
     });
 
   });

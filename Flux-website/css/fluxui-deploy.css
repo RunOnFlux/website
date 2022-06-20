@@ -338,6 +338,17 @@ p {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
+.div-block-135 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 4fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
 .ctrl_btn {
   align-self: center;
   -webkit-box-flex: 1;
@@ -1295,9 +1306,13 @@ table th {
   font-family: "Arial";
   font-style: normal;
 }
-
+.previous {
+  height: 47px;
+  width: 159px;
+  max-width: 159px;
+}
 .previous-button {
-  padding: 12px 32px;
+  padding: 14px 32px;
   align-self: center;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1308,14 +1323,12 @@ table th {
   background-color: #8b8b8b;
   border-radius: 5px;
   color:#fff;
+  height: 47px;
+  width: 159px;
 }
 .previous-button:hover {
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  height: 47px;
-  max-width: 159px;
-  margin: auto auto 30px 30px;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-justify-content: center;
@@ -1324,4 +1337,7 @@ table th {
   align-items: center;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
+  height: 47px;
+  width: 159px;
+  max-width: 159px;
 }
