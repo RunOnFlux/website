@@ -553,7 +553,7 @@
       $('#app_pay').html('Open Zelcore to Pay').hide();
       $('#app_cost').hide();
       $('#submission_progress').html('');
-      $('#error').text('');
+      $('#error').hide();
       $('#msg_alert').html('');
     });
 
@@ -600,9 +600,9 @@
                       "name":"componentName1",
                       "description":"componentDesc1",
                       "repotag":"${appSpec['docker_repo']}",
-                      "ports":["${appSpec['all_pub_ports']}"],
-                      "domains":["${appSpec['all_domains']}"],
-                      "environmentParameters":["${appSpec['env_vars']}"],
+                      "ports":[${appSpec['all_pub_ports']}],
+                      "domains":[${appSpec['all_domains']}],
+                      "environmentParameters":[${appSpec['env_vars']}],
                       "commands":[${appSpec['all_cmds']}],
                       "containerPorts":[${appSpec['all_priv_ports']}],
                       "containerData":"${appSpec['app_dir']}",
@@ -624,7 +624,8 @@
               "instances":${appSpec['instances']}
           }`;
       $('#app_spec').text(body);
-      //console.log('app_spec', body);
+      console.log('app_spec', body);
+      window.scrollTo(0, 0);
     });
 
     $('#app_validate').click(function() {
@@ -830,10 +831,11 @@
         $('#env_val').addClass('novalue');
       } else {
         if ($('#env_vars').val() === '') {
-          keyval_pair = $('#env_key').val() + '=' + $('#env_val').val();
+          keyval_pair = '"' + $('#env_key').val() + '=' + $('#env_val').val() + '"';
         } else {
-          keyval_pair = $('#env_vars').val() +','+ $('#env_key').val() + '=' + $('#env_val').val();
+          keyval_pair = '"' + $('#env_vars').val() + '","' + $('#env_key').val() + '=' + $('#env_val').val() + '"';
         }
+        keyval_pair = keyval_pair.split('""').join('"');
         $('#env_vars').val(keyval_pair).prop('disabled', false);
         $('#env_key').val('');
         $('#env_val').val('');
@@ -874,10 +876,12 @@
         $('#your_domain').addClass('novalue');
       } else {
         if ($('#all_domains').val() === '') {
-          add_domain = $('#your_domain').val();
+          add_domain = '"' + $('#your_domain').val() + '"';
         } else {
-          add_domain = $('#all_domains').val() + ',' + $('#your_domain').val();
+          add_domain = '"' + $('#all_domains').val() + '","' + $('#your_domain').val() + '"';
         }
+        add_domain = add_domain.split('""').join('"');
+
         $('#all_domains').val(add_domain).prop('disabled', false);
         $('#your_domain').val('');
       }
@@ -932,6 +936,10 @@
         $('#all_cmds').val(add_cmd).prop('disabled', false);
         $('#your_cmd').val('');
       }
+    });
+
+    $("#docker_repo").on("keydown", function (e) {
+        return e.which !== 32;
     });
 
   });
