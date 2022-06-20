@@ -16439,7 +16439,7 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(37));
   }
 
   function showPlayButton($btn) {
-    $btn.attr('aria-label', 'play').find('> span').each(function (i) {
+    $btn.find('> span').each(function (i) {
       $(this).prop('hidden', function () {
         return i === 0;
       });
@@ -16447,7 +16447,7 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(37));
   }
 
   function showPauseButton($btn) {
-    $btn.attr('aria-label', 'pause').find('> span').each(function (i) {
+    $btn.find('> span').each(function (i) {
       $(this).prop('hidden', function () {
         return i === 1;
       });
@@ -16455,22 +16455,23 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(37));
   }
 
   $(document).ready(function () {
-    // TODO: remove this function once the upgrade is out of beta
-    var isBetaEnabled = document.querySelectorAll('[data-beta-bgvideo-upgrade="true"]').length > 0;
+    var watcher = window.matchMedia('(prefers-reduced-motion: reduce)'); // respond to changing preferences
 
-    if (window.matchMedia && isBetaEnabled) {
-      var watcher = window.matchMedia('(prefers-reduced-motion: reduce)');
+    watcher.addEventListener('change', function (e) {
+      setAllBackgroundVideoStates(!e.matches);
+    });
 
-      if (watcher.matches) {
-        // user currently prefers reduced motion, pause all immediately
-        setAllBackgroundVideoStates(false);
-      }
+    if (watcher.matches) {
+      // user currently prefers reduced motion, pause all immediately
+      setAllBackgroundVideoStates(false);
+    } // show play button for videos without autoplay
 
-      watcher.addEventListener('change', function (e) {
-        setAllBackgroundVideoStates(!e.matches);
+
+    $('video:not([autoplay])').each(function () {
+      $(this).parent().find('.w-background-video--control').each(function () {
+        showPlayButton($(this));
       });
-    }
-
+    });
     $(document).on('click', '.w-background-video--control', function (e) {
       if (Webflow.env('design')) return;
       var btn = $(e.currentTarget);
@@ -24911,14 +24912,17 @@ Webflow.define('forms', module.exports = function ($, _) {
     // The file upload Input is not stylable by the designer, so we are
     // going to pretend the Label is the input. ¯\_(ツ)_/¯
 
-    $label.on('click keydown', function (e) {
-      if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
-        return;
-      }
+    if (!inApp) {
+      $label.on('click keydown', function (e) {
+        if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
+          return;
+        }
 
-      e.preventDefault();
-      $input.click();
-    }); // Both of these are added through CSS
+        e.preventDefault();
+        $input.click();
+      });
+    } // Both of these are added through CSS
+
 
     $label.find('.w-icon-file-upload-icon').attr('aria-hidden', 'true');
     $removeEl.find('.w-icon-file-upload-remove').attr('aria-hidden', 'true');
