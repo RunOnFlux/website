@@ -3229,8 +3229,8 @@ a {
 
 .dapps_os.dropalo {
   top: 10.5em;
-  background-image: url('../images/dropalo-flux-dapp.svg'), -webkit-gradient(linear, left bottom, left top, from(#f5f5fa), to(#fff));
-  background-image: url('../images/dropalo-flux-dapp.svg'), linear-gradient(0deg, #f5f5fa, #fff);
+  background-image: url('../images/docushiled-flux-dapp5.svg'), -webkit-gradient(linear, left bottom, left top, from(#f5f5fa), to(#fff));
+  background-image: url('../images/docushiled-flux-dapp5.svg'), linear-gradient(0deg, #f5f5fa, #fff);
   background-position: 50% 45%, 0px 0px;
   background-size: 4em 5em, auto;
 }
@@ -27466,6 +27466,7 @@ a {
 
   .dapps_os.dropalo {
     top: 9.5em;
+    background-size: 5em, auto;
   }
 
   .dapps_os.nitter {
@@ -29556,8 +29557,8 @@ a {
     grid-auto-columns: 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto auto auto;
     grid-template-rows: auto auto auto;
   }
@@ -48898,17 +48899,6 @@ a {
 }
 
 #w-node-_45f25eb9-7a2e-c3a8-0a53-dfe9d757bc9c-a4cac3ef {
-  -ms-grid-row: span 1;
-  grid-row-start: span 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: span 1;
-  -ms-grid-column: span 1;
-  grid-column-start: span 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: span 1;
-}
-
-#w-node-_4a5b26d1-6a9f-cff2-894b-dfd54068a2ab-a4cac3ef {
   -ms-grid-row: span 1;
   grid-row-start: span 1;
   -ms-grid-row-span: 1;

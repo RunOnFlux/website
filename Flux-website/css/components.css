@@ -297,8 +297,8 @@ fieldset {
   border: 0;
 }
 button,
-html input[type='button'],
-input[type='reset'] {
+[type='button'],
+[type='reset'] {
   border: 0;
   cursor: pointer;
   -webkit-appearance: button;
