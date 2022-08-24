@@ -516,18 +516,14 @@
   <script src="js/modal.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script type="text/javascript">
-    $(function() {
-			var $m = $('body').modal(),
-      api = $m.data('modal');
-
-			$(document).on('click', '.js-open', function() {
-				api.open( document.getElementById($(this).data('modal')).innerHTML );
-			});
-		});
-  </script>
-  <script type="text/javascript">
   $(document).ready(function() {
 
+    var $m = $('body').modal(),
+        api = $m.data('modal');
+
+    $(document).on('click', '.js-open', function() {
+      api.open(document.getElementById($(this).data('modal')).innerHTML);
+    });
     let keyval_pair;
     let pub_port;
     let priv_port;
@@ -558,7 +554,6 @@
     });
 
     $('.next-button').click(function(e) {
-
       $('.slide-2').each(function() {
         if($(this).css('visibility') != 'hidden') {
           $(this).find('.required').each(function() {
@@ -571,7 +566,6 @@
           });
         }
       });
-
       var disabledFields = $('form#app-submission-form').find('[disabled]');
       disabledFields.prop('disabled', false);
       $.each($('form#app-submission-form').serializeArray(), function() {
@@ -582,14 +576,15 @@
         }
       });
       disabledFields.prop('disabled', true);
-      //console.log('appSpec', appSpec);
-
+      console.log("appSpec[all_domains]", appSpec['all_domains']);
+      if (appSpec['all_domains'] == '') {
+        appSpec['all_domains'] = '""';
+      }
       if (appSpec['tiered'] == 'true') {
         $('#table_processors').html(appSpec['cpubasic'] + ' Cumulus <br> ' + appSpec['cpusuper'] + ' Nimbus <br> ' + appSpec['cpubamf'] + ' Stratus');
         $('#table_memory').html(appSpec['rambasic'] + ' Cumulus <br> ' + appSpec['ramsuper'] + ' Nimbus <br> ' + appSpec['rambamf'] + ' Stratus');
         $('#table_storage').html(appSpec['hddbasic'] + ' Cumulus <br> ' + appSpec['hddsuper'] + ' Nimbus <br> ' + appSpec['hddbamf'] + ' Stratus');
       }
-
       let body = `{
               "version":${version},
               "name":"${appSpec['app_name']}",
@@ -631,18 +626,13 @@
     $('#app_validate').click(function() {
       let body = $('#app_spec').text();
       $('#app_validate').html('<img src="images/loader.gif"> Please Wait..');
-      //console.log('app_validate', body);
-
       $.ajax({
         method: 'POST',
         url: 'https://api.runonflux.io/apps/verifyappregistrationspecifications',
         dataType: 'json',
         data: body,
         success: function(e) {
-            //console.log('verifyappregistrationspecifications ran', e);
             if (e.status == 'error') {
-              //console.log('verifyappregistrationspecifications error', e);
-
               if (e.data.message == 'Repository is not whitelisted. Please contact Flux Team.') {
                 let msg_alert = 'This dApp tool is currently in beta, all docker images must be whitelisted through a pull request via the <a href="https://github.com/RunOnFlux/flux/blob/master/helpers/repositories.json" target="_blank">Flux Github Repository</a>';
                 $('#msg_alert').html(msg_alert).fadeIn('slow');
@@ -651,22 +641,18 @@
                 $('#error').text(e.data.message).fadeIn('slow');
                 $('#app_validate').html('Validate Spec & Get Cost');
               }
-
             } else {
               $('#submission_progress').html('App Spec ✅ ').fadeIn('slow');
               app_spec = 'fluxappregister1' + JSON.stringify(e.data) + timestamp;
-
               $.post('https://api.runonflux.io/apps/calculateprice', body).done(function(e) {
-                //console.log('calculateprice', e);
                 let flux = e.data;
-
                 $.get('https://explorer.runonflux.io/api/currency', function(e) {
                   let usd_to_flux = e.data.rate;
                   let total_usd = (flux * usd_to_flux).toFixed(2);
+                  let zel_url = `zel:?action=sign&message=${app_spec}&icon=https://raw.githubusercontent.com/runonflux/flux/master/zelID.svg&callback=https://api.runonflux.io/id/providesign`;
                   $('.app_cost').text(flux + ' FLUX ($' + total_usd + ' USD)');
                   $('#app_cost').show();
                   $('#app_pay').attr('href', 'zel:?action=pay&amount=' + flux + '&address=t1LUs6quf7TB2zVZmexqPQdnqmrFMGZGjV6');
-                  let zel_url = `zel:?action=sign&message=${app_spec}&icon=https://raw.githubusercontent.com/runonflux/flux/master/zelID.svg&callback=https://api.runonflux.io/id/providesign`;
                   $('#app_sign').attr('href', zel_url);
                   $('#app_validate').hide();
                   $('#app_login').show();
@@ -675,30 +661,25 @@
             }
           },
           error: function(e) {
-            //console.log('verifyappregistrationspecifications error', e);
+            console.log('verifyappregistrationspecifications error', e);
           }
       });
     });
 
     $('#app_login').click(function() {
-
       $('#app_login').html('<img src="images/loader.gif"> Opening Zelcore..');
-
       $.get(`https://api.runonflux.io/id/loginphrase`, function(loginPhrase) {
-        //console.log('loginPhrase', loginPhrase);
         const callbackValue = `https://api.runonflux.io/id/verifylogin`;
         window.location.replace(`zel:?action=sign&message=${loginPhrase.data}&icon=https%3A%2F%2Fraw.githubusercontent.com%2Frunonflux%2Fflux%2Fmaster%2FzelID.svg&callback=${callbackValue}`);
         let socket = new WebSocket(`wss://api.runonflux.io/ws/id/${loginPhrase.data}`);
-
         socket.onopen = function(event) {
-          //console.log('[open ws/id] Connection established', event);
+          console.log('[open ws/id] Connection established', event);
         };
         socket.onmessage = function(event) {
-          //console.log('[message ws/id] Data received from server', event);
+          console.log('[message ws/id] Data received from server', event);
           const params = Object.fromEntries(new URLSearchParams(event.data));
-
           if (params.status == 'success') {
-            //console.log('Signed in', event.data);
+            console.log('Signed in', event.data);
             $('#submission_progress').html($('#submission_progress').html() + 'Signed In ✅ ').fadeIn('slow');
             $('#app_login').hide();
             $('#app_sign').show();
@@ -711,14 +692,13 @@
         };
         socket.onclose = function(event) {
           if (event.wasClean) {
-            //console.log(`[close ws/id] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+            console.log(`[close ws/id] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
           } else {
-            //console.log('[close ws/id] Connection died');
+            console.log('[close ws/id] Connection died');
           }
         };
-        socket.onerror = function(error) {
-          //console.log('[error ws/id]', error);
-
+        socket.onerror = function(event) {
+          console.log('[error ws/id]', event);
           if (event.data.message) {
             $('#error').text(event.data.message).fadeIn('slow');
           }
@@ -728,19 +708,15 @@
     });
 
     $('#app_sign').click(function() {
-
       $('#app_sign').html('<img src="images/loader.gif"> Opening Zelcore..');
-
       let signaturemessage = `${zelid}${timestamp}`;
       let socket = new WebSocket(`wss://api.runonflux.io/ws/sign/${signaturemessage}`);
-
       socket.onopen = function(event) {
-        //console.log('[open ws/sign] Connection established', event);
+        console.log('[open ws/sign] Connection established', event);
       };
       socket.onmessage = function(event) {
-        //console.log('[message ws/sign] Data received from server', event);
+        console.log('[message ws/sign] Data received from server', event);
         const params = Object.fromEntries(new URLSearchParams(event.data));
-
         if (params.status == 'success') {
           $('#submission_progress').html($('#submission_progress').html() + 'App Signed ✅ ').fadeIn('slow');
           $('#msg_sig').val(params['data[signature]']);
@@ -753,14 +729,13 @@
       };
       socket.onclose = function(event) {
         if (event.wasClean) {
-          //console.log(`[close ws/sign] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+          console.log(`[close ws/sign] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
         } else {
-          //console.log('[close ws/sign] Connection died');
+          console.log('[close ws/sign] Connection died');
         }
       };
-      socket.onerror = function(error) {
-        //console.log('[error ws/sign]', error);
-
+      socket.onerror = function(event) {
+        console.log('[error ws/sign]', error);
         if (event.data.message) {
           $('#error').text(event.data.message).fadeIn('slow');
         }
@@ -769,7 +744,7 @@
     });
 
     $('#app_register').click(function() {
-      $('#app_register').html('<img src="images/loader.gif"> Registering..');
+      $('#app_register').html('<img src="/images/deploy/loader.gif"> Registering..');
       $('.table-container').slideToggle('slow');
       let body = $('#app_spec').text();
       let msg_sig = $('#msg_sig').val();
@@ -785,8 +760,6 @@
         "version":1
       }`;
       let zelidauth = `zelid=${zelid}&signature=${encodeURIComponent(login_sig)}&loginPhrase=${encodeURIComponent(login_phrase)}`;
-      //console.log('registerbody', registerbody)
-
       $.ajax({
         method: 'POST',
         url: `https://api.runonflux.io/apps/appregister`,
@@ -797,13 +770,10 @@
         data: registerbody,
         success: function(e) {
           if (e.status == 'error') {
-            //console.log('Error1', e);
             $('.table-container').slideToggle('slow');
             $('#error').text(e.data.message).fadeIn('slow');
             $('#app_register').html('Register Flux App');
-
           } else {
-            //console.log('Success', e);
             $('#submission_progress').html($('#submission_progress').html() + 'App Registered ✅ ').fadeIn('slow');
             $('#app_pay').attr('href', $('#app_pay').attr('href') + '&message=' + e.data);
             $('#success_id').text(e.data);
@@ -816,15 +786,13 @@
           }
         },
         error: function(e) {
-          //console.log('Error2', e);
+          console.log('appregister error', e);
         }
       });
     });
 
     $('#add_env_vars').click(function(data) {
-
       $('#env_key, #env_val').removeClass('novalue');
-
       if ($('#env_key').val() === '') {
         $('#env_key').addClass('novalue');
       } else if($('#env_val').val() === '') {
@@ -843,9 +811,7 @@
     });
 
     $('#add_pub_port').click(function(data) {
-
       $('#pub_port').removeClass('novalue');
-
       if ($('#pub_port').val() === '') {
         $('#pub_port').addClass('novalue');
       } else {
@@ -857,7 +823,6 @@
           $('#pub_port').addClass('novalue');
           return false;
         }
-
         if ($('#all_pub_ports').val() === '') {
           pub_port = $('#pub_port').val();
         } else {
@@ -869,9 +834,7 @@
     });
 
     $('#add_domain').click(function(data) {
-
       $('#your_domain').removeClass('novalue');
-
       if ($('#your_domain').val() === '') {
         $('#your_domain').addClass('novalue');
       } else {
@@ -881,18 +844,14 @@
           add_domain = '"' + $('#all_domains').val() + '","' + $('#your_domain').val() + '"';
         }
         add_domain = add_domain.split('""').join('"');
-
         $('#all_domains').val(add_domain).prop('disabled', false);
         $('#your_domain').val('');
       }
     });
 
     $('#add_priv_port').click(function(data) {
-
       let priv_port = $('#priv_port');
-
       priv_port.removeClass('novalue');
-
       if (priv_port.val() === '') {
         priv_port.addClass('novalue');
       } else {
@@ -903,13 +862,10 @@
         }
         $('#all_priv_ports').val(priv_port).prop('disabled', false);
         $('#priv_port').val('');
-
       }
     });
 
     $('.enterprise_grade').click(function() {
-      //console.log('enterprise_grade', $(this).val());
-
       if ($(this).val() == "true") {
         $('.standard').addClass('hide');
         $('.enterprise').removeClass('hide');
@@ -917,13 +873,10 @@
         $('.standard').removeClass('hide');
         $('.enterprise').addClass('hide');
       }
-
     });
 
     $('#add_cmd').click(function() {
-
       $('#your_cmd').removeClass('novalue');
-
       if ($('#your_cmd').val() === '') {
         $('#your_cmd').addClass('novalue');
       } else {
