@@ -626,6 +626,7 @@
     $('#app_validate').click(function() {
       let body = $('#app_spec').text();
       $('#app_validate').html('<img src="images/deploy/loader.gif"> Please Wait..');
+      
       $.ajax({
         method: 'POST',
         url: 'https://api.runonflux.io/apps/verifyappregistrationspecifications',
