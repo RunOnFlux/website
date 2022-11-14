@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105.466" height="15.576" viewBox="0 0 105.466 15.576">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="4.59" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bdf328"/>
+      <stop offset="1" stop-color="#81a51d"/>
+    </linearGradient>
+  </defs>
+  <g id="greenyellow" transform="translate(-607 -512)">
+    <path id="_60d2c0c397a26d47f2ce0e0f_Orange_Star" data-name="60d2c0c397a26d47f2ce0e0f_Orange Star" d="M9.182,0l2.062,5.948h6.671l-5.4,3.676,2.061,5.948L9.182,11.9l-5.4,3.676L5.846,9.624.449,5.948H7.121Z" transform="translate(606.551 512)" fill="url(#linear-gradient)"/>
+    <path id="_60d2c0c397a26d47f2ce0e0f_Orange_Star-2" data-name="60d2c0c397a26d47f2ce0e0f_Orange Star" d="M9.182,0l2.062,5.948h6.671l-5.4,3.676,2.061,5.948L9.182,11.9l-5.4,3.676L5.846,9.624.449,5.948H7.121Z" transform="translate(628.551 512)" fill="url(#linear-gradient)"/>
+    <path id="_60d2c0c397a26d47f2ce0e0f_Orange_Star-3" data-name="60d2c0c397a26d47f2ce0e0f_Orange Star" d="M9.182,0l2.062,5.948h6.671l-5.4,3.676,2.061,5.948L9.182,11.9l-5.4,3.676L5.846,9.624.449,5.948H7.121Z" transform="translate(650.551 512)" fill="url(#linear-gradient)"/>
+    <path id="_60d2c0c397a26d47f2ce0e0f_Orange_Star-4" data-name="60d2c0c397a26d47f2ce0e0f_Orange Star" d="M9.182,0l2.062,5.948h6.671l-5.4,3.676,2.061,5.948L9.182,11.9l-5.4,3.676L5.846,9.624.449,5.948H7.121Z" transform="translate(672.551 512)" fill="url(#linear-gradient)"/>
+    <path id="_60d2c0c397a26d47f2ce0e0f_Orange_Star-5" data-name="60d2c0c397a26d47f2ce0e0f_Orange Star" d="M9.182,0l2.062,5.948h6.671l-5.4,3.676,2.061,5.948L9.182,11.9l-5.4,3.676L5.846,9.624.449,5.948H7.121Z" transform="translate(694.551 512)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

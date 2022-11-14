@@ -3,6 +3,6 @@ services:
     www:
         build: .
         ports: 
-            - "80:80"
+            - "88:80"
         volumes:
             - ./Flux-website:/var/www/html/

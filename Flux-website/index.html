@@ -1,5 +1,5 @@
-<!DOCTYPE html><!--  Last Published: Mon Oct 17 2022 18:00:10 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="633bf02852f7bbf623e68fc5" data-wf-site="60c73eaed3399e074029d643">
+<!DOCTYPE html><!--  Last Published: Fri Nov 11 2022 10:47:36 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="635fb62a5dee790e9c70572b" data-wf-site="60c73eaed3399e074029d643">
 <head>
   <meta charset="utf-8">
   <title>Flux - Decentralized Cloud Infrastructure</title>
@@ -104,8 +104,8 @@
                   <p class="dropdown_link">FluxOS</p>
                   <p class="paragraph-5">Flux&#x27;s revolutionary second-layer operating system that is the heart of Flux.</p>
                 </a>
-                <a href="/fluxos.html#dapps-section" class="wrapp-pages w-inline-block">
-                  <p class="dropdown_link">Apps</p>
+                <a href="flux-dapps.html" class="wrapp-pages w-inline-block">
+                  <p class="dropdown_link">DApps</p>
                   <p class="paragraph-5">Explore some of the applications running on Flux.</p>
                 </a>
                 <a href="flux-nodes.html" class="wrapp-pages w-inline-block">
@@ -302,134 +302,6 @@
       </div>
     </div>
   </div>
-  <section class="hero_section_flux a hide wf-section">
-    <div class="fast_social">
-      <div class="flux-social-icons footer social_class fast">
-        <a href="https://twitter.com/RunOnFlux" target="_blank" class="social_fotter fast w-inline-block"><img src="images/twitter_flux_grey2x.png" loading="lazy" alt="" class="img_social fast"></a>
-        <a href="https://discord.io/runonflux" target="_blank" class="social_fotter fast w-inline-block"><img src="images/discord_fux_grey2x.png" loading="lazy" alt="" class="img_social fast"></a>
-        <a href="https://t.me/runonflux" target="_blank" class="social_fotter fast w-inline-block"><img src="images/telegram_flux_grey2x.png" loading="lazy" alt="" class="img_social fast"></a>
-        <a href="#fotter" class="social_fotter fast jump w-inline-block"><img src="images/Mask-Group-102.png" loading="lazy" alt="" class="img_social fast"></a>
-      </div>
-      <div class="wg-switcher">
-        <div class="wg-element-wrapper sw5">
-          <div data-hover="true" data-delay="300" class="wg-dropdown w-dropdown">
-            <div lang="en" class="_w-dropdown-toggle w-dropdown-toggle">
-              <div class="text-block-9">en</div>
-            </div>
-            <nav class="wg-dd-1-list w-dropdown-list">
-              <a href="#" lang="es" class="wg-dropdown-1-link w-dropdown-link">es</a>
-              <a href="#" lang="fr" class="wg-dropdown-1-link w-dropdown-link">fr</a>
-              <a href="#" lang="br" class="wg-dropdown-1-link round w-dropdown-link">BR</a>
-            </nav>
-          </div>
-        </div>
-        <div class="wg-code w-embed w-script">
-          <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-          <script>
-    Weglot.initialize({
-        api_key: 'wg_21f2fff560c973fb875dea2159efb0cb6'
-    });
-// on Weglot init
-Weglot.on('initialized', ()=>{
-	// get the current active language
-  const currentLang = Weglot.getCurrentLang();
-  // call updateDropdownLinks function
-  updateSW5DropdownLinks(currentLang); 
-});
-// for each of the .wg-element-wrapper language links
-document.querySelectorAll('.wg-element-wrapper.sw5 [lang]').forEach((link)=>{
-		// add a click event listener
-		link.addEventListener('click', function(e){
-    	// prevent default
-			e.preventDefault();
-      // switch to the current active language      
-      Weglot.switchTo(this.getAttribute('lang'));
-      // call updateDropdownLinks function
-      updateSW5DropdownLinks(this.getAttribute('lang'));
-		});
-});
-// updateDropdownLinks function
-function updateSW5DropdownLinks(currentLang){ 
-	// get the wrapper element
-	const $wrapper = document.querySelector('.wg-element-wrapper.sw5'); 
-  // if the .w-dropdown-toggle is not the current active language
- 	if($wrapper.querySelector('.w-dropdown-toggle').getAttribute('lang') !== currentLang){
-  	// get the current active language link
-  	const $activeLangLink = $wrapper.querySelector('[lang='+currentLang+']');
-    // swap the dropdown toggle's text with the current active language link text
-		const $toggle = $activeLangLink.closest('.wg-element-wrapper').querySelector('.w-dropdown-toggle');
-  	const toggleTxt = $toggle.textContent; 
-  	const activeLangLinkTxt = $activeLangLink.textContent;
-  	$toggle.querySelector('div').textContent = activeLangLinkTxt;
-  	$activeLangLink.textContent = toggleTxt;
-  	// swap the dropdown toggle's lang attr with the current active language link lang attr  
-  	const lang = $activeLangLink.getAttribute('lang');
-		const toggleLang = $toggle.getAttribute('lang');
-		$toggle.setAttribute('lang', lang);
-		$activeLangLink.setAttribute('lang', toggleLang);
-  }
-}
-</script>
-        </div>
-      </div>
-    </div>
-    <div class="background_image a2"></div>
-    <div class="hero_div">
-      <div class="hero_left">
-        <h6 class="heading-2 a1">Decentralized cloud infrastructure</h6>
-        <h1 class="heading">Decentralized <span class="text-span-24">Web 3.0</span> The Next Generation Computational Network</h1>
-        <p class="p_title white">Flux is the new generation of scalable decentralized cloud infrastructure. Simply develop, manage, and spawn your applications on multiple servers at once. Ready for Web 3.0, dApps, and more.<br></p>
-        <div class="button_wrapper b">
-          <a data-w-id="bbfaa08c-351e-2f69-b8e2-d23ce4ac56db" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button blue w-button">Deploy App</a>
-          <a id="w-node-bbfaa08c-351e-2f69-b8e2-d23ce4ac56dd-23e68fc5" data-w-id="bbfaa08c-351e-2f69-b8e2-d23ce4ac56dd" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button blue2 w-button">GPU Mine<br>‍</a>
-          <a id="w-node-bbfaa08c-351e-2f69-b8e2-d23ce4ac56e1-23e68fc5" data-w-id="bbfaa08c-351e-2f69-b8e2-d23ce4ac56e1" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button green w-button">Launch Node</a>
-        </div>
-        <div class="button_wrapper a">
-          <a id="w-node-c58dd627-7a6b-46e5-befc-bee7305b620f-23e68fc5" data-w-id="c58dd627-7a6b-46e5-befc-bee7305b620f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://home.runonflux.io/apps/registerapp" target="_blank" class="button_0 a w-button">Deploy App</a>
-          <a id="w-node-c58dd627-7a6b-46e5-befc-bee7305b6215-23e68fc5" data-w-id="c58dd627-7a6b-46e5-befc-bee7305b6215" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="flux-nodes.html" class="button_0 aaa green w-button">Launch Node</a>
-          <a id="w-node-c58dd627-7a6b-46e5-befc-bee7305b6211-23e68fc5" data-w-id="c58dd627-7a6b-46e5-befc-bee7305b6211" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="mining.html" class="button_0 aa blue2 w-button">GPU Mine<br>‍</a>
-        </div>
-      </div>
-      <div class="hero_right_grid _9">
-        <a href="https://home.runonflux.io/dashboard/resources" target="_blank" class="data _9 w-inline-block">
-          <div class="div-block-115">
-            <div class="text-block-13 ww">LIVE DATA</div>
-            <div class="div-block-131"></div>
-          </div>
-          <div class="div-block-121">
-            <div class="text_info nodes">...</div>
-            <div class="text_info _9">Nodes</div>
-          </div>
-          <div class="text_name _9">Decentralized infrastructure <br>nodes live.</div>
-        </a>
-        <div class="data _9 _88">
-          <div class="text_info ssd">...</div>
-          <div class="text_info _9">TB SSD</div>
-        </div>
-        <div class="data _9 _99">
-          <div class="div-block-120">
-            <div class="text_info vcores">...</div>
-            <div class="text_info _9">VCores</div>
-          </div>
-          <div class="div-block-116"><img src="images/Icon_2.svg" loading="lazy" alt="" class="image-43"></div>
-        </div>
-        <div class="data _9 _88">
-          <div class="text_info ram">...</div>
-          <div class="text_info _9">TB RAM</div>
-        </div>
-      </div>
-    </div>
-    <div class="download_div">
-      <div class="wrap_text">
-        <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
-      </div>
-      <div class="wrap_download">
-        <div class="zelcore_logo_icon"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
-        <a data-w-id="bbfaa08c-351e-2f69-b8e2-d23ce4ac56eb" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://zelcore.io/" target="_blank" class="button_zelcore_round w-button">Download Zelcore<br>‍</a>
-      </div>
-    </div>
-    <div class="background_image a"></div>
-  </section>
   <section class="hero_section_flux a ww wf-section">
     <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="fast_social">
       <div data-w-id="b5e2554e-a930-83cf-3457-298f0f8c854f" class="div-block-132">
@@ -512,12 +384,12 @@ function updateSW5DropdownLinks(currentLang){
         <p class="p_title white ww">Flux is the new generation of scalable decentralized cloud infrastructure. Simply develop, manage, and spawn your applications on multiple servers at once. Ready for Web 3.0, dApps, and more.<br></p>
         <div class="button_wrapper b">
           <a data-w-id="88a48796-2c06-f2ee-2018-db3c8d14327f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button blue w-button">Deploy App</a>
-          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143281-23e68fc5" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143281" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button blue2 w-button">GPU Mine<br>‍</a>
-          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143285-23e68fc5" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143285" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button green w-button">Launch Node</a>
+          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143281-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143281" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button blue2 w-button">GPU Mine<br>‍</a>
+          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143285-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143285" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button green w-button">Launch Node</a>
         </div>
         <div class="button_wrapper a _4button">
-          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143288-23e68fc5" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143288" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://runonflux.io/deploy-dapp.html" target="_blank" class="button_0 a ww up w-button">Deploy App</a>
-          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d14328a-23e68fc5" data-w-id="88a48796-2c06-f2ee-2018-db3c8d14328a" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="flux-nodes.html" class="button_0 aaa green ww up w-button">Launch Node</a>
+          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143288-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143288" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://runonflux.io/deploy-dapp.html" target="_blank" class="button_0 a ww up w-button">Deploy App</a>
+          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d14328a-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d14328a" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="flux-nodes.html" class="button_0 aaa green ww up w-button">Launch Node</a>
           <a data-w-id="b2921efc-9012-dfdf-e354-1e4641d6be1f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="mining.html" class="button_0 aaa blue-1 ww up w-button">GPU Mine</a>
           <a data-w-id="4729cc83-b1af-8cce-aa6e-154591ae833f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://home.runonflux.io/apps/shared-nodes" target="_blank" class="button_0 aaa blue-2 ww up w-button">Stake Flux</a>
         </div>
@@ -551,66 +423,15 @@ function updateSW5DropdownLinks(currentLang){
         </div>
       </div>
     </div>
-    <div class="download_div hide">
-      <div class="wrap_text">
-        <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
-      </div>
-      <div class="wrap_download">
-        <div class="zelcore_logo_icon"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
-        <a data-w-id="88a48796-2c06-f2ee-2018-db3c8d143298" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://zelcore.io/" target="_blank" class="button_zelcore_round w-button">Download Zelcore<br>‍</a>
-      </div>
-    </div>
-    <div class="download_div hide">
-      <div class="wrap_text">
-        <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
-      </div>
-      <div class="wrap_download">
-        <div class="zelcore_logo_icon"></div>
-        <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _22 w-inline-block">
-          <div class="div-block-155">
-            <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
-            <div class="text-block-23">Download Zelcore</div>
-          </div>
-        </a>
-      </div>
-    </div>
     <div class="download_div">
       <div class="wrap_text">
         <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
       </div>
       <div class="wrap_download">
-        <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _26362763 w-inline-block">
+        <a href="https://zelcore.io/" class="button_zelcore_round _26362763 w-inline-block">
           <div class="div-block-155">
             <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
             <div class="text-block-23">Download Zelcore</div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="download_div hide">
-      <div class="wrap_text">
-        <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
-      </div>
-      <div class="wrap_download">
-        <div class="zelcore_logo_icon"></div>
-        <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _26362763 _54353453 w-inline-block">
-          <div class="div-block-155">
-            <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
-            <div class="text-block-23">Download Zelcore</div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="download_div hide">
-      <div class="wrap_text">
-        <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
-      </div>
-      <div class="wrap_download">
-        <div class="zelcore_logo_icon"></div>
-        <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _23 w-inline-block">
-          <div class="div-block-155">
-            <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
-            <div class="text-block-23 _23">Download Zelcore</div>
           </div>
         </a>
       </div>
@@ -621,15 +442,15 @@ function updateSW5DropdownLinks(currentLang){
     <p class="p_h6">TRUSTED BY OUR PARTNERS</p>
     <div class="parners_wrapper">
       <a href="https://www.seeed.cc/" target="_blank" class="partner_slide s w-inline-block"><img src="images/seed.png" loading="lazy" alt="" class="img_part s"></a>
-      <a id="w-node-d5ac1d16-4ab2-dcbe-c2cc-725a70606bcf-23e68fc5" href="https://fluxofficial.medium.com/a-titan-is-born-flux-and-lumen-are-bringing-enterprise-to-the-flux-network-427f1ac2932b" target="_blank" class="partner_slide w-inline-block"><img src="images/Lumen-logo-noR.png" loading="lazy" alt="" class="img_part lumen"></a>
-      <a id="w-node-ef3f4d52-1397-438f-2d48-c629c2248644-23e68fc5" href="https://fluxofficial.medium.com/flux-releases-phase-two-for-kadena-network-hosting-services-721128ebfc57" target="_blank" class="partner_slide w-inline-block"><img src="images/kadena.png" loading="lazy" srcset="images/kadena-p-500.png 500w, images/kadena.png 861w" sizes="100vw" alt="kadena" class="img_part"></a>
-      <a href="https://www.sendwyre.com/" target="_blank" class="partner_slide w-inline-block"><img src="images/WyreLogoWhite.d20e266.png" loading="lazy" srcset="images/WyreLogoWhite.d20e266-p-500.png 500w, images/WyreLogoWhite.d20e266.png 516w" sizes="100vw" alt="wyre" class="img_part"></a>
+      <a id="w-node-d5ac1d16-4ab2-dcbe-c2cc-725a70606bcf-9c70572b" href="https://fluxofficial.medium.com/a-titan-is-born-flux-and-lumen-are-bringing-enterprise-to-the-flux-network-427f1ac2932b" target="_blank" class="partner_slide w-inline-block"><img src="images/Lumen-logo-noR.png" loading="lazy" alt="" class="img_part lumen"></a>
+      <a id="w-node-ef3f4d52-1397-438f-2d48-c629c2248644-9c70572b" href="https://fluxofficial.medium.com/flux-releases-phase-two-for-kadena-network-hosting-services-721128ebfc57" target="_blank" class="partner_slide w-inline-block"><img src="images/kadena.png" loading="lazy" srcset="images/kadena-p-500.png 500w, images/kadena.png 861w" sizes="(max-width: 479px) 14vw, (max-width: 767px) 11vw, (max-width: 991px) 9vw, 4vw" alt="kadena" class="img_part"></a>
+      <a href="https://www.sendwyre.com/" target="_blank" class="partner_slide w-inline-block"><img src="images/WyreLogoWhite.d20e266.png" loading="lazy" srcset="images/WyreLogoWhite.d20e266-p-500.png 500w, images/WyreLogoWhite.d20e266.png 516w" sizes="(max-width: 479px) 15vw, (max-width: 767px) 12vw, (max-width: 991px) 10vw, 4vw" alt="wyre" class="img_part"></a>
       <a href="https://www.nasdaq.com/articles/flux-crypto-turns-up-web-3.0-development-with-nvidia-partnership" target="_blank" class="partner_slide w-inline-block"><img src="images/nvidia-logo-1.png" loading="lazy" alt="" class="img_part"></a>
       <a href="https://kaddex.com/" target="_blank" class="partner_slide w-inline-block"><img src="images/KADDEX-logo.svg" loading="lazy" alt="" class="img_part kaddex"></a>
       <a href="https://fioprotocol.io/" target="_blank" class="partner_slide new1 w-inline-block"><img src="images/Logo-Color-Light12.png" loading="lazy" alt="" class="img_part"></a>
-      <a id="w-node-_290503f4-d0a0-9d0c-bff1-98813720430b-23e68fc5" href="https://fluxofficial.medium.com/firo-coming-to-fluxnodes-25cfc9adf0f6" target="_blank" class="partner_slide w-inline-block"><img src="images/firo.png" loading="lazy" srcset="images/firo-p-500.png 500w, images/firo.png 811w" sizes="100vw" alt="firo" class="img_part"></a>
-      <a href="https://fluxofficial.medium.com/staking-flux-on-coinmetro-is-a-massive-success-ac77012b8859" target="_blank" class="partner_slide w-inline-block"><img src="images/coinmetro_gray-1.png" loading="lazy" srcset="images/coinmetro_gray-1-p-500.png 500w, images/coinmetro_gray-1-p-800.png 800w, images/coinmetro_gray-1.png 1247w" sizes="100vw" alt="coinmetro" class="img_part"></a>
-      <a id="w-node-b0309e3a-8a4f-7a79-f0fb-6dcbff2875fc-23e68fc5" href="https://presearch.medium.com/presearch-partners-with-decentralized-cloud-provider-fluxos-to-decentralize-the-internet-b016300b475f" target="_blank" class="partner_slide w-inline-block"><img src="images/Group-10892.png" loading="lazy" srcset="images/Group-10892-p-500.png 500w, images/Group-10892-p-800.png 800w, images/Group-10892.png 1055w" sizes="100vw" alt="" class="img_part"></a>
+      <a id="w-node-_290503f4-d0a0-9d0c-bff1-98813720430b-9c70572b" href="https://fluxofficial.medium.com/firo-coming-to-fluxnodes-25cfc9adf0f6" target="_blank" class="partner_slide w-inline-block"><img src="images/firo.png" loading="lazy" srcset="images/firo-p-500.png 500w, images/firo.png 811w" sizes="(max-width: 479px) 14vw, (max-width: 767px) 11vw, (max-width: 991px) 9vw, 4vw" alt="firo" class="img_part"></a>
+      <a href="https://fluxofficial.medium.com/staking-flux-on-coinmetro-is-a-massive-success-ac77012b8859" target="_blank" class="partner_slide w-inline-block"><img src="images/coinmetro_gray-1.png" loading="lazy" srcset="images/coinmetro_gray-1-p-500.png 500w, images/coinmetro_gray-1-p-800.png 800w, images/coinmetro_gray-1.png 1247w" sizes="(max-width: 479px) 26vw, (max-width: 767px) 20vw, (max-width: 991px) 17vw, 7vw" alt="coinmetro" class="img_part"></a>
+      <a id="w-node-b0309e3a-8a4f-7a79-f0fb-6dcbff2875fc-9c70572b" href="https://presearch.medium.com/presearch-partners-with-decentralized-cloud-provider-fluxos-to-decentralize-the-internet-b016300b475f" target="_blank" class="partner_slide w-inline-block"><img src="images/Group-10892.png" loading="lazy" srcset="images/Group-10892-p-500.png 500w, images/Group-10892-p-800.png 800w, images/Group-10892.png 1055w" sizes="(max-width: 479px) 21vw, (max-width: 767px) 17vw, (max-width: 991px) 14vw, 6vw" alt="" class="img_part"></a>
     </div>
   </section>
   <section class="flux_eco_section a wf-section">
@@ -638,7 +459,7 @@ function updateSW5DropdownLinks(currentLang){
         <h5 class="heading-2 mob">FLUX ECOSYSTEM</h5>
         <h2 class="title_section">The sovereign <br>new Internet</h2>
       </div>
-      <div id="w-node-_81408e82-007c-32e6-3e9c-be0947e3b4c8-23e68fc5" class="text_right">
+      <div id="w-node-_81408e82-007c-32e6-3e9c-be0947e3b4c8-9c70572b" class="text_right">
         <p class="paragraph-3">The Flux ecosystem is made up of a number of different moving parts. FluxOS and FluxNodes provide the computational network, zelcore is the wallet with built in apps to power the wider ecosystem, the Flux blockchain is used to fund the ecosystem and the Flux parallel assets provide interoperability with other blockchains.</p>
       </div>
     </div>
@@ -655,7 +476,7 @@ function updateSW5DropdownLinks(currentLang){
     <div class="animation_50 a">
       <div class="info_anim"></div>
       <div class="ecosys_flux_50">
-        <div id="w-node-_1e706a9d-9bc0-8293-d52f-8b0129ddfe31-23e68fc5" class="flux_network_50">
+        <div id="w-node-_1e706a9d-9bc0-8293-d52f-8b0129ddfe31-9c70572b" class="flux_network_50">
           <div class="line_arrow_blue">
             <div class="arrow_blue_left"></div>
           </div>
@@ -743,7 +564,7 @@ function updateSW5DropdownLinks(currentLang){
             <div class="arrow_blue_right"></div>
           </div>
         </div>
-        <div id="w-node-_1e706a9d-9bc0-8293-d52f-8b0129ddfe3c-23e68fc5" class="wallet_eco_50">
+        <div id="w-node-_1e706a9d-9bc0-8293-d52f-8b0129ddfe3c-9c70572b" class="wallet_eco_50">
           <div class="line_arrow_right">
             <div class="arrow_purple_right"></div>
           </div>
@@ -799,7 +620,7 @@ function updateSW5DropdownLinks(currentLang){
       </div>
     </div>
     <div class="w-layout-grid flux_eco">
-      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21015-23e68fc5" class="wrapp_ill">
+      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21015-9c70572b" class="wrapp_ill">
         <div class="container_a">
           <div class="wrapper_case"><img src="images/fluxos.svg" loading="lazy" alt="" class="img_new">
             <p class="p_imgg">FluxOS</p>
@@ -830,7 +651,7 @@ function updateSW5DropdownLinks(currentLang){
           </div>
         </div>
       </div>
-      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21033-23e68fc5" class="wrapp_ill _2color">
+      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21033-9c70572b" class="wrapp_ill _2color">
         <div class="container_a">
           <div class="wrapper_case"><img src="images/flux.svg" loading="lazy" alt="flux-logo
 " class="img_new">
@@ -862,7 +683,7 @@ function updateSW5DropdownLinks(currentLang){
           </div>
         </div>
       </div>
-      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21051-23e68fc5" class="wrapp_ill paral _3color">
+      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21051-9c70572b" class="wrapp_ill paral _3color">
         <div class="container_a">
           <div class="wrapper_case"><img src="images/fluxkda.svg" loading="lazy" alt="" class="img_new">
             <p class="p_imgg">$FLUX-KDA</p>
@@ -893,7 +714,7 @@ function updateSW5DropdownLinks(currentLang){
           <div data-w-id="c310e2f6-ac62-09c7-84ff-99f1d4c2106d" class="show_button newww sho2"><img src="images/-perfect.png" loading="lazy" alt="" class="img_click"></div>
         </div>
       </div>
-      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c2106f-23e68fc5" class="wrapp_ill_2 _4color">
+      <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c2106f-9c70572b" class="wrapp_ill_2 _4color">
         <div class="container_a padd">
           <div class="wrapper_case"><img src="images/fusion.svg" loading="lazy" alt="" class="img_new">
             <p class="p_imgg">Flux</p>
@@ -910,7 +731,7 @@ function updateSW5DropdownLinks(currentLang){
             </div>
           </div>
         </div>
-        <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21080-23e68fc5" class="container_a last">
+        <div id="w-node-c310e2f6-ac62-09c7-84ff-99f1d4c21080-9c70572b" class="container_a last">
           <div class="wrapper_case"><img src="images/Group-10858.svg" loading="lazy" alt="" class="img_new">
             <p class="p_imgg">DEX</p>
             <div class="click_system">
@@ -937,7 +758,7 @@ function updateSW5DropdownLinks(currentLang){
     <div class="animation_50 b">
       <div class="info_anim b"></div>
       <div class="ecosys_flux_50 b">
-        <div id="w-node-_8cbff424-2605-dc39-8993-534993ff08e7-23e68fc5" class="div-block-77">
+        <div id="w-node-_8cbff424-2605-dc39-8993-534993ff08e7-9c70572b" class="div-block-77">
           <div class="flux_network_50 b">
             <div class="case_50 b">
               <div class="wrapper_case">
@@ -967,7 +788,7 @@ function updateSW5DropdownLinks(currentLang){
               </div>
             </div>
           </div>
-          <div id="w-node-b9a31155-c79b-c703-84b8-aadca104e811-23e68fc5" class="flux_network_50 b_1">
+          <div id="w-node-b9a31155-c79b-c703-84b8-aadca104e811-9c70572b" class="flux_network_50 b_1">
             <div class="div-block-78">
               <div class="flux_asset b">
                 <div class="wrapper_case"><img src="images/flux.svg" loading="lazy" alt="flux-logo
@@ -1022,7 +843,7 @@ function updateSW5DropdownLinks(currentLang){
               </div>
             </div>
           </div>
-          <div id="w-node-c0d02c86-779e-4f35-c8a5-20ee174a6f85-23e68fc5" class="flux_assets_50 b_2">
+          <div id="w-node-c0d02c86-779e-4f35-c8a5-20ee174a6f85-9c70572b" class="flux_assets_50 b_2">
             <div class="flux_parallel_50 flux-kda b">
               <div class="wrapper_case"><img src="images/fluxkda.svg" loading="lazy" alt="" class="fluxos_logo par">
                 <p class="paragraph-15">$FLUX-KDA</p>
@@ -1063,7 +884,7 @@ function updateSW5DropdownLinks(currentLang){
               </div>
             </div>
           </div>
-          <div id="w-node-_97fff19e-56d8-81f4-397c-24fde89bf10a-23e68fc5" class="flux_network_50 d_3">
+          <div id="w-node-_97fff19e-56d8-81f4-397c-24fde89bf10a-9c70572b" class="flux_network_50 d_3">
             <div class="case_50 fusion_eco b">
               <div class="wrapper_case"><img src="images/fusion.svg" loading="lazy" alt="" class="fluxos_logo">
                 <p class="paragraph-15">Fusion</p>
@@ -1088,7 +909,7 @@ function updateSW5DropdownLinks(currentLang){
                 </div>
               </div>
             </div>
-            <div id="w-node-b9a31155-c79b-c703-84b8-aadca104e826-23e68fc5" class="case_50 _0_3 b">
+            <div id="w-node-b9a31155-c79b-c703-84b8-aadca104e826-9c70572b" class="case_50 _0_3 b">
               <div class="wrapper_case"><img src="images/FluxNodes.svg" loading="lazy" alt="fluxnodes-logo" class="fluxos_logo">
                 <p class="paragraph-15">DEX</p>
                 <div class="hover_system">
@@ -1126,7 +947,7 @@ function updateSW5DropdownLinks(currentLang){
 }</script>
           </a>
           <div class="rundapp_video_bg _121 h1">
-            <div class="hover_2 _2_ h1"></div><img src="images/Untitle22223232323232d.png" loading="lazy" srcset="images/Untitle22223232323232d-p-500.png 500w, images/Untitle22223232323232d-p-800.png 800w, images/Untitle22223232323232d-p-1080.png 1080w, images/Untitle22223232323232d-p-1600.png 1600w, images/Untitle22223232323232d-p-2000.png 2000w, images/Untitle22223232323232d.png 2447w" sizes="100vw" alt="" class="runndapp_img h1">
+            <div class="hover_2 _2_ h1"></div><img src="images/Untitle22223232323232d.png" loading="lazy" srcset="images/Untitle22223232323232d-p-500.png 500w, images/Untitle22223232323232d-p-800.png 800w, images/Untitle22223232323232d-p-1080.png 1080w, images/Untitle22223232323232d-p-1600.png 1600w, images/Untitle22223232323232d-p-2000.png 2000w, images/Untitle22223232323232d.png 2447w" sizes="(max-width: 991px) 100vw, 50vw" alt="" class="runndapp_img h1">
           </div>
         </div>
       </div>
@@ -1149,15 +970,15 @@ function updateSW5DropdownLinks(currentLang){
       <p class="p_h6 new">SUPPORTED PLATFORMS RUNNING ON FLUX</p>
     </div>
     <div class="parners_wrapper ne">
-      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f74319-23e68fc5" href="https://privatebin.app.runonflux.io/" target="_blank" class="partner_slide new w-inline-block"><img src="images/Hue_Saturation-1.png" loading="lazy" alt="" class="img_part"></a>
-      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f7431d-23e68fc5" href="https://yearn.app.runonflux.io/#/portfolio" target="_blank" class="partner_slide new yearn w-inline-block"><img src="images/Group-10913.png" loading="lazy" alt="" class="img_part"></a>
-      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f7431b-23e68fc5" href="https://havenvaultmainnet.app.runonflux.io/#/" target="_blank" class="partner_slide haven w-inline-block"><img src="images/havenwhite11.svg" loading="lazy" alt="" class="img_part _3"></a>
-      <a href="/fluxos.html#dapps-section" target="_blank" class="partner_slide new w-inline-block"><img src="images/KADDEX-logo.svg" loading="lazy" alt="" class="img_part _33"></a>
-      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f74321-23e68fc5" href="https://keepnetwork.app.runonflux.io/overview" target="_blank" class="partner_slide new w-inline-block"><img src="images/g10.png" loading="lazy" srcset="images/g10-p-500.png 500w, images/g10.png 600w" sizes="100vw" alt="" class="img_part"></a>
+      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f74319-9c70572b" href="https://privatebin.app.runonflux.io/" target="_blank" class="partner_slide new w-inline-block"><img src="images/Hue_Saturation-1.png" loading="lazy" alt="" class="img_part"></a>
+      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f7431d-9c70572b" href="flux-dapps.html" class="partner_slide new yearn w-inline-block"><img src="images/Group-10913.png" loading="lazy" alt="" class="img_part"></a>
+      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f7431b-9c70572b" href="https://havenvaultmainnet.app.runonflux.io/?_gl=1*1vcxj0m*_ga*MjAxOTAxNjcxMi4xNjY3OTEwODgy*_ga_M3VPBDLWV7*MTY2NzkxMDg4Mi4xLjEuMTY2NzkxMTA0NC42MC4wLjA.#/" target="_blank" class="partner_slide haven w-inline-block"><img src="images/havenwhite11.svg" loading="lazy" alt="" class="img_part _3"></a>
+      <a href="flux-dapps.html" target="_blank" class="partner_slide new w-inline-block"><img src="images/KADDEX-logo.svg" loading="lazy" alt="" class="img_part _33"></a>
+      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f74321-9c70572b" href="https://keepnetwork.app.runonflux.io/overview" target="_blank" class="partner_slide new w-inline-block"><img src="images/g10.png" loading="lazy" srcset="images/g10-p-500.png 500w, images/g10.png 600w" sizes="(max-width: 479px) 22vw, (max-width: 767px) 12vw, (max-width: 991px) 13vw, 6vw" alt="" class="img_part"></a>
       <a href="https://liquity.app.runonflux.io/" target="_blank" class="partner_slide new w-inline-block"><img src="images/liquity.png" loading="lazy" alt="" class="img_part"></a>
-      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f7431f-23e68fc5" href="https://element.app.runonflux.io/#/welcome" target="_blank" class="partner_slide new w-inline-block"><img src="images/Mask-Group-102_1.png" loading="lazy" srcset="images/Mask-Group-102_1-p-500.png 500w, images/Mask-Group-102_1-p-800.png 800w, images/Mask-Group-102_1-p-1080.png 1080w, images/Mask-Group-102_1.png 1587w" sizes="100vw" alt="" class="img_part"></a>
+      <a id="w-node-fecc3b47-7c80-744a-acef-eaf449f7431f-9c70572b" href="flux-dapps.html" target="_blank" class="partner_slide new w-inline-block"><img src="images/Mask-Group-102_1.png" loading="lazy" srcset="images/Mask-Group-102_1-p-500.png 500w, images/Mask-Group-102_1-p-800.png 800w, images/Mask-Group-102_1-p-1080.png 1080w, images/Mask-Group-102_1.png 1587w" sizes="(max-width: 479px) 25vw, (max-width: 767px) 14vw, (max-width: 991px) 15vw, (max-width: 1919px) 7vw, 6vw" alt="" class="img_part"></a>
       <a href="https://ergoauctions.app.runonflux.io/#/auction/active?type=all" target="_blank" class="partner_slide new ergo w-inline-block"><img src="images/ergo-actions-flux.png" loading="lazy" alt="" class="img_part"></a>
-      <a id="w-node-_79cf20a7-7edc-18b2-78f8-3968b0871729-23e68fc5" href="/fluxos.html#dapps-section" target="_blank" class="partner_slide new w-inline-block"><img src="images/Group-9584.svg" loading="lazy" alt="" class="img_part _33"></a>
+      <a id="w-node-_79cf20a7-7edc-18b2-78f8-3968b0871729-9c70572b" href="https://kdlaunch.app.runonflux.io/" target="_blank" class="partner_slide new kdswap w-inline-block"><img src="images/Logo.5434370508c7.svg" loading="lazy" alt="" class="img_part _33"></a>
     </div>
     <div class="div-block-111">
       <a href="#" class="button01 w-button">Find MORE</a>
@@ -1165,7 +986,7 @@ function updateSW5DropdownLinks(currentLang){
   </section>
   <section class="fluxos_section wf-section">
     <div class="info_text_new fluxos_eco a">
-      <div id="w-node-f0a540ff-d8d8-ee18-06c8-d7159cacf00e-23e68fc5" class="title_left fluxos_eco">
+      <div id="w-node-f0a540ff-d8d8-ee18-06c8-d7159cacf00e-9c70572b" class="title_left fluxos_eco">
         <h5 class="heading-2 fluxos_eco">FLUXOS DAPPS</h5>
         <h2 class="title_section fluxos_eco">Applications <br>Running on <span class="text-span-40">FluxOS</span></h2>
         <p class="paragraph-3 fluxos_eco">Simplified decentralized cloud infrastructure is what FluxOS stands for. Flux Network computational power is giving you the liberty to not worry about your infrastructure. Focus on your development and leave the infrastructure work to us.</p>
@@ -1178,7 +999,7 @@ function updateSW5DropdownLinks(currentLang){
         <a href="https://presearch.medium.com/" target="_blank" class="dapps_os pre w-inline-block"></a>
         <a href="https://fluxofficial.medium.com/flux-releases-its-decentralized-networks-power-to-help-others-6802de9bee51" target="_blank" class="dapps_os fold w-inline-block"></a>
       </div>
-      <div id="w-node-a7869150-ebd5-fc25-f354-0cf3d5cb52b1-23e68fc5" class="div-block-12">
+      <div id="w-node-a7869150-ebd5-fc25-f354-0cf3d5cb52b1-9c70572b" class="div-block-12">
         <a data-w-id="5b0c2745-6840-85c0-6801-903474a669d4" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_0 w-button">Flux Dapps</a>
       </div>
       <div class="flux_dapps">
@@ -1191,49 +1012,49 @@ function updateSW5DropdownLinks(currentLang){
   </section>
   <section class="launch_app_section wf-section">
     <div class="runndapp osdapp">
-      <div id="w-node-_9d7f6b00-eda3-8efb-a460-ae491ee9c53e-23e68fc5" class="div-block-21">
+      <div id="w-node-_9d7f6b00-eda3-8efb-a460-ae491ee9c53e-9c70572b" class="div-block-21">
         <div class="info_text nodemap osapp">
-          <div id="w-node-_9d7f6b00-eda3-8efb-a460-ae491ee9c540-23e68fc5" class="title_left launch_app osapp">
+          <div id="w-node-_9d7f6b00-eda3-8efb-a460-ae491ee9c540-9c70572b" class="title_left launch_app osapp">
             <h2 class="title_section launch_app osapp">Try The New FluxOS App</h2>
             <p class="p_launchapp launch_app osapp">FluxOS platform gives developers and node operators the ability to easily use and perform functions like:</p>
             <div class="wrapp_options osapp">
               <div class="to_wrap">
-                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e200-23e68fc5" class="div-block-43">
+                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e200-9c70572b" class="div-block-43">
                   <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                   <div class="options_text">Deploy dApps</div>
                 </div>
-                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e205-23e68fc5" class="div-block-43">
+                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e205-9c70572b" class="div-block-43">
                   <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                   <div class="options_text">Check nodes</div>
                 </div>
-                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e20a-23e68fc5" class="div-block-43">
+                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e20a-9c70572b" class="div-block-43">
                   <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                   <div class="options_text">View resources</div>
                 </div>
               </div>
               <div class="to_wrap">
-                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e210-23e68fc5" class="div-block-43">
+                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e210-9c70572b" class="div-block-43">
                   <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                   <div class="options_text">View rewards</div>
                 </div>
-                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e215-23e68fc5" class="div-block-43">
+                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e215-9c70572b" class="div-block-43">
                   <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                   <div class="options_text">Use global apps</div>
                 </div>
-                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e21a-23e68fc5" class="div-block-43">
+                <div id="w-node-_55d6d0eb-b69e-8db1-b8da-0d82f257e21a-9c70572b" class="div-block-43">
                   <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                   <div class="options_text">Vote on XDAO</div>
                 </div>
               </div>
             </div>
             <div class="wrapper a_start osapp">
-              <a id="w-node-_6442c28a-3753-9d27-60f6-9ba91cbed2d4-23e68fc5" data-w-id="6442c28a-3753-9d27-60f6-9ba91cbed2d4" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_1 bt1-copy osapp w-button">Discover more</a>
+              <a id="w-node-_6442c28a-3753-9d27-60f6-9ba91cbed2d4-9c70572b" data-w-id="6442c28a-3753-9d27-60f6-9ba91cbed2d4" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_1 bt1-copy osapp w-button">Discover more</a>
             </div>
           </div>
         </div>
       </div>
       <div class="rundapp_video new osapp">
-        <div id="w-node-_0dd36d1a-0da6-c87e-180f-1b95033404a4-23e68fc5" class="div-block-97 _50-full">
+        <div id="w-node-_0dd36d1a-0da6-c87e-180f-1b95033404a4-9c70572b" class="div-block-97 _50-full">
           <a href="#" data-w-id="0dd36d1a-0da6-c87e-180f-1b95033404a5" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="play_button trans look w-inline-block w-lightbox"><img src="images/play_button.svg" loading="lazy" width="70" alt="" class="image-3 trans">
             <script type="application/json" class="w-json">{
   "items": [
@@ -1260,11 +1081,11 @@ function updateSW5DropdownLinks(currentLang){
   <div class="fluxos_app wf-section">
     <div class="div-block-21 start _1_">
       <div class="wrapper_start">
-        <div id="w-node-_8312933b-9e7c-956d-34c6-97711cd170a3-23e68fc5" class="info_text start">
+        <div id="w-node-_8312933b-9e7c-956d-34c6-97711cd170a3-9c70572b" class="info_text start">
           <div class="title_left flux_os">
             <h2 class="title_section a1">Try the FluxOS, today.<br></h2>
           </div>
-          <div id="w-node-_8312933b-9e7c-956d-34c6-97711cd170a7-23e68fc5" class="text_right flux_os start">
+          <div id="w-node-_8312933b-9e7c-956d-34c6-97711cd170a7-9c70572b" class="text_right flux_os start">
             <p class="paragraph-3 b_b">FluxOS platform gives developers and node operators the ability to easily use and perform functions like:<br></p>
             <div class="wrap_wrap">
               <div class="wrapper x">
@@ -1289,39 +1110,39 @@ function updateSW5DropdownLinks(currentLang){
           </div>
           <div class="wrapp_options">
             <div class="to_wrap">
-              <div id="w-node-_6586e4fa-c38e-f517-7c81-ae54f0953692-23e68fc5" class="div-block-43">
+              <div id="w-node-_6586e4fa-c38e-f517-7c81-ae54f0953692-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Deploy Dapps</div>
               </div>
-              <div id="w-node-_0c04f68b-89d4-8112-fbee-1e5f4330c04d-23e68fc5" class="div-block-43">
+              <div id="w-node-_0c04f68b-89d4-8112-fbee-1e5f4330c04d-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Check nodes</div>
               </div>
-              <div id="w-node-_8529cc65-e2d9-75d5-925d-0742c0ee2ca7-23e68fc5" class="div-block-43">
+              <div id="w-node-_8529cc65-e2d9-75d5-925d-0742c0ee2ca7-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">View resources</div>
               </div>
             </div>
             <div class="to_wrap">
-              <div id="w-node-_43648af4-5431-39c4-a844-e00e5d25465b-23e68fc5" class="div-block-43">
+              <div id="w-node-_43648af4-5431-39c4-a844-e00e5d25465b-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">View rewards</div>
               </div>
-              <div id="w-node-_43648af4-5431-39c4-a844-e00e5d254660-23e68fc5" class="div-block-43">
+              <div id="w-node-_43648af4-5431-39c4-a844-e00e5d254660-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Use global apps</div>
               </div>
-              <div id="w-node-_43648af4-5431-39c4-a844-e00e5d254665-23e68fc5" class="div-block-43">
+              <div id="w-node-_43648af4-5431-39c4-a844-e00e5d254665-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Vote on XDAO</div>
               </div>
             </div>
           </div>
           <div class="wrapper a_start">
-            <a id="w-node-_8312933b-9e7c-956d-34c6-97711cd170ae-23e68fc5" data-w-id="8312933b-9e7c-956d-34c6-97711cd170ae" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_1 bt1-copy w-button">Discover more</a>
+            <a id="w-node-_8312933b-9e7c-956d-34c6-97711cd170ae-9c70572b" data-w-id="8312933b-9e7c-956d-34c6-97711cd170ae" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_1 bt1-copy w-button">Discover more</a>
           </div>
         </div>
-        <div id="w-node-_8312933b-9e7c-956d-34c6-97711cd170b0-23e68fc5" class="div-block-97">
+        <div id="w-node-_8312933b-9e7c-956d-34c6-97711cd170b0-9c70572b" class="div-block-97">
           <a href="#" data-w-id="8312933b-9e7c-956d-34c6-97711cd170b1" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="play_button trans w-inline-block w-lightbox"><img src="images/play_button.svg" loading="lazy" width="70" alt="" class="image-3 trans">
             <script type="application/json" class="w-json">{
   "items": [
@@ -1346,11 +1167,11 @@ function updateSW5DropdownLinks(currentLang){
     </div>
     <div class="div-block-21 start _2_-copy hide">
       <div class="wrapper_start _2">
-        <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed391-23e68fc5" class="info_text start">
+        <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed391-9c70572b" class="info_text start">
           <div class="title_left flux_os">
             <h2 class="title_section a1">Try FluxOS App<br></h2>
           </div>
-          <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed396-23e68fc5" class="text_right flux_os start">
+          <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed396-9c70572b" class="text_right flux_os start">
             <p class="paragraph-3 nh">ryFluxOS platform gives developers and node operators the ability to easily use and perform functions like:<br></p>
             <div class="wrap_wrap">
               <div class="wrapper x">
@@ -1375,39 +1196,39 @@ function updateSW5DropdownLinks(currentLang){
           </div>
           <div class="wrapp_options">
             <div class="to_wrap">
-              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3af-23e68fc5" class="div-block-43">
+              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3af-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Deploy dApps</div>
               </div>
-              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3b4-23e68fc5" class="div-block-43">
+              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3b4-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Check nodes</div>
               </div>
-              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3b9-23e68fc5" class="div-block-43">
+              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3b9-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">View resources</div>
               </div>
             </div>
             <div class="to_wrap">
-              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3bf-23e68fc5" class="div-block-43">
+              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3bf-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">View rewards</div>
               </div>
-              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3c4-23e68fc5" class="div-block-43">
+              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3c4-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Use global apps</div>
               </div>
-              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3c9-23e68fc5" class="div-block-43">
+              <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3c9-9c70572b" class="div-block-43">
                 <div class="div-block-44"><img src="images/Group-101812x.png" loading="lazy" width="31" alt="" class="point_img"></div>
                 <div class="options_text">Vote on XDAO</div>
               </div>
             </div>
           </div>
           <div class="wrapper a_start">
-            <a id="w-node-e9c06e1e-9936-c876-8714-c109383ed3cf-23e68fc5" data-w-id="e9c06e1e-9936-c876-8714-c109383ed3cf" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_1 bt1-copy w-button">Discover more</a>
+            <a id="w-node-e9c06e1e-9936-c876-8714-c109383ed3cf-9c70572b" data-w-id="e9c06e1e-9936-c876-8714-c109383ed3cf" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="fluxos.html" class="button_1 bt1-copy w-button">Discover more</a>
           </div>
         </div>
-        <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3d1-23e68fc5" class="div-block-97 _2_ look">
+        <div id="w-node-e9c06e1e-9936-c876-8714-c109383ed3d1-9c70572b" class="div-block-97 _2_ look">
           <a href="#" data-w-id="e9c06e1e-9936-c876-8714-c109383ed3d2" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="play_button trans look w-inline-block w-lightbox"><img src="images/play_button.svg" loading="lazy" width="70" alt="" class="image-3 trans">
             <script type="application/json" class="w-json">{
   "items": [
@@ -1437,7 +1258,7 @@ function updateSW5DropdownLinks(currentLang){
         <h5 class="heading-2 mob">FLUXOS</h5>
         <h2 class="title_section a">Your Gateway to a <br><span class="text-span-48">Decentralized Web3</span></h2>
       </div>
-      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395a6-23e68fc5" class="text_right flux_os">
+      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395a6-9c70572b" class="text_right flux_os">
         <p class="paragraph-3 a">FluxOS is a revolutionary second-layer operating system that allows hardened dockerized apps to run on Flux’s fully decentralized computational network in an efficient, safe, and optimal way while providing API access and other core features.<br></p>
       </div>
     </div>
@@ -1449,22 +1270,22 @@ function updateSW5DropdownLinks(currentLang){
       </div>
     </div>
     <div class="cards_block hide">
-      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395af-23e68fc5" data-w-id="69ad62be-1f05-941a-116f-ddc8819395af" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
+      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395af-9c70572b" data-w-id="69ad62be-1f05-941a-116f-ddc8819395af" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos saf">
         <div class="img_div"><img src="images/Group-10752.svg" loading="lazy" alt="" class="card_img"></div>
         <h3 class="heading-3">Decentralized</h3>
         <p class="paragraph-4">Flux network is fully decentralized making it highly resilient to both system failure and outside attempts at censorship. Nodes are collateralized and managed by Flux node operators.</p>
       </div>
-      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395b6-23e68fc5" data-w-id="69ad62be-1f05-941a-116f-ddc8819395b6" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
+      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395b6-9c70572b" data-w-id="69ad62be-1f05-941a-116f-ddc8819395b6" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
         <div class="img_div"><img src="images/interperability_fluxos.svg" loading="lazy" alt="" class="card_img"></div>
         <h3 class="heading-3">Interoperable</h3>
         <p class="paragraph-4">FluxOS is fully compatible with any blockchain and any hardened dockerized applications. You can run any application on any blockchain on FluxOS.</p>
       </div>
-      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395bd-23e68fc5" data-w-id="69ad62be-1f05-941a-116f-ddc8819395bd" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
+      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395bd-9c70572b" data-w-id="69ad62be-1f05-941a-116f-ddc8819395bd" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
         <div class="img_div"><img src="images/redundant_fluxos.svg" loading="lazy" alt="" class="card_img"></div>
         <h3 class="heading-3">Redundant</h3>
         <p class="paragraph-4">FluxOS applications are redundantly spread across the node network with automatic failover to a new node if one becomes unavailable.<br></p>
       </div>
-      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395c4-23e68fc5" data-w-id="69ad62be-1f05-941a-116f-ddc8819395c4" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
+      <div id="w-node-_69ad62be-1f05-941a-116f-ddc8819395c4-9c70572b" data-w-id="69ad62be-1f05-941a-116f-ddc8819395c4" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards fluxos">
         <div class="img_div"><img src="images/api-fluxos-.svg" loading="lazy" alt="" class="card_img"></div>
         <h3 class="heading-3">API backed</h3>
         <p class="paragraph-4">Deployment and management of applications launched on Flux is API or UI backed, allowing for seamless integration with your services.<br></p>
@@ -1473,29 +1294,29 @@ function updateSW5DropdownLinks(currentLang){
   </section>
   <section class="fluxnodes_section wf-section">
     <div class="info_text nodemap">
-      <div id="w-node-bb8dd47a-f720-5a3f-edab-55b93905de76-23e68fc5" class="title_left nodemap white">
+      <div id="w-node-bb8dd47a-f720-5a3f-edab-55b93905de76-9c70572b" class="title_left nodemap white">
         <h5 class="heading-2 a">FLUXNODES  DISTRIBUTION</h5>
         <h2 class="title_section center a">Scalable and Decentralized <br>Computational Network</h2>
         <p class="p_fluxnodes white a">The FluxOS is powered by individual Flux holders running FluxNodes. These FluxNodes are geographically-spaced all over the world, so developers can be assured that their apps are accessible by users at all times and locations.</p>
       </div>
     </div>
     <div class="cards_block fluxnodes_distri">
-      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c1fe-23e68fc5" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c1fe" class="cards">
+      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c1fe-9c70572b" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c1fe" class="cards">
         <div class="img_div"><img src="images/enterprise_grade_flux.svg" loading="lazy" alt="flux nodes enterprise grade decentralized computational network" class="card_img_2"></div>
         <h3 class="heading-3">Enterprise grade</h3>
         <p class="paragraph-4">FluxNodes are hosted on Enterprise grade hardware in decentralized manner all over the world. Node operators have a host of choices including bare metal, cloud based, ARM64 and even VPS servers.</p>
       </div>
-      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c205-23e68fc5" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c205" class="cards">
+      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c205-9c70572b" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c205" class="cards">
         <div class="img_div"><img src="images/scalable_flux.svg" loading="lazy" alt="flux nodes scalable decentralized computational network" class="card_img_2"></div>
         <h3 class="heading-3">Scalable</h3>
         <p class="paragraph-4">FluxNodes must meet certain minimum requirements to be accepted by the network ensuring a predictable level of performance for applications running on the nodes.</p>
       </div>
-      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c20c-23e68fc5" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c20c" class="cards">
+      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c20c-9c70572b" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c20c" class="cards">
         <div class="img_div"><img src="images/rewards_flux.svg" loading="lazy" alt="Flux nodes operators are rewarded for running decentralized computational network" class="card_img_2"></div>
         <h3 class="heading-3">Rewards</h3>
         <p class="paragraph-4">FluxNode operators are rewarded daily for running a node with block rewards being split 50/50 between GPU miners and node operators.</p>
       </div>
-      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c213-23e68fc5" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c213" class="cards">
+      <div id="w-node-_5c56d078-cfb2-45bd-0c36-b5b1d2d9c213-9c70572b" data-w-id="5c56d078-cfb2-45bd-0c36-b5b1d2d9c213" class="cards">
         <div class="img_div"><img src="images/global_flux.svg" loading="lazy" alt="Flux nodes operators are running decentralized computational network around the world" class="card_img_2"></div>
         <h3 class="heading-3">Global</h3>
         <p class="paragraph-4">FluxNodes are run in dozens of countries around the world providing a truly distributed computational platform.</p>
@@ -1618,7 +1439,7 @@ function updateSW5DropdownLinks(currentLang){
       <a data-w-id="bb8dd47a-f720-5a3f-edab-55b93905de81" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://home.runonflux.io/dashboard/map" target="_blank" class="button_2 a ww w-button">Infrastructure Dashboard</a>
     </div>
     <div class="cards_block_nodes-copy">
-      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd81856a-23e68fc5" data-w-id="3f1ea600-67c5-3abb-962e-a7debd81856a" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card_node">
+      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd81856a-9c70572b" data-w-id="3f1ea600-67c5-3abb-962e-a7debd81856a" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card_node">
         <h3 class="heading_nodes">CUMULUS</h3>
         <h3 class="heading_coins">1000 FLUX</h3>
         <p class="paragraph-4">2 Core<br>4 Threads<br>8 GB RAM<br>220 GB SSD/NVME<br>25 Mb down/up speed</p>
@@ -1628,7 +1449,7 @@ function updateSW5DropdownLinks(currentLang){
         </div>
         <p class="paragraph-4 b">VPS &amp; ARM64 compatible</p>
       </div>
-      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd81857c-23e68fc5" data-w-id="3f1ea600-67c5-3abb-962e-a7debd81857c" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card_node">
+      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd81857c-9c70572b" data-w-id="3f1ea600-67c5-3abb-962e-a7debd81857c" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card_node">
         <h3 class="heading_nodes">NIMBUS</h3>
         <h3 class="heading_coins">12,500 FLUX</h3>
         <p class="paragraph-4">4 Core<br>8 Threads<br>32 GB RAM<br>440 GB SSD/NVME<br>50 Mb down/up speed</p>
@@ -1638,7 +1459,7 @@ function updateSW5DropdownLinks(currentLang){
         </div>
         <p class="paragraph-4 b">VPS &amp; ARM64 compatible</p>
       </div>
-      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd81858e-23e68fc5" data-w-id="3f1ea600-67c5-3abb-962e-a7debd81858e" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card_node">
+      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd81858e-9c70572b" data-w-id="3f1ea600-67c5-3abb-962e-a7debd81858e" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card_node">
         <h3 class="heading_nodes">STRATUS</h3>
         <h3 class="heading_coins">40,000 FLUX</h3>
         <p class="paragraph-4">8 Core<br>16 Threads<br>64 GB RAM<br>880 GB SSD/NVME<br>100 Mb down/up speed</p>
@@ -1648,7 +1469,7 @@ function updateSW5DropdownLinks(currentLang){
         </div>
         <p class="paragraph-4 b">VPS compatible</p>
       </div>
-      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd8185a0-23e68fc5" class="card_node">
+      <div id="w-node-_3f1ea600-67c5-3abb-962e-a7debd8185a0-9c70572b" class="card_node">
         <h3 class="heading_nodes big">RUN YOUR <br>OWN NODE</h3>
         <p class="paragraph-4 runnode">You can run FluxNodes from home or on a VPS in a data center as long as the hardware and bandwidth requirements are met. Cumulus nodes can run on a Raspberry Pi 4. Our easy to follow video guides will get you started in no time.<br></p>
         <a data-w-id="3f1ea600-67c5-3abb-962e-a7debd8185a5" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://medium.com/zelinsights/zelnode-setup-the-easy-peasy-lemon-squeezy-way-fd89706ea03c" target="_blank" class="button_2 runanode w-button">Run a FluxNode</a>
@@ -1676,12 +1497,12 @@ function updateSW5DropdownLinks(currentLang){
       </div>
     </div>
     <div class="info_text flux home">
-      <div id="w-node-_06bddac2-d826-ddce-483e-9c07ed9475c6-23e68fc5" class="title_left flux home">
+      <div id="w-node-_06bddac2-d826-ddce-483e-9c07ed9475c6-9c70572b" class="title_left flux home">
         <h5 class="heading-2 flux">FLUX ASSET</h5>
         <h2 class="title_section fx_asset"><span class="text-span-2">Flux</span> is the Gateway <br>to<span class="text-span-44"> Blockchain</span></h2>
         <p class="paragraph-3 flux p_asset">Flux is the cryptocurrency that powers the Flux ecosystem and is used for purchasing resources, collateralizing nodes, and fueling transactions on FluxOS, rewarding both miners for validating transactions and FluxNode operators for providing computational resources.</p>
       </div>
-      <div id="w-node-_06bddac2-d826-ddce-483e-9c07ed9475d3-23e68fc5" class="text_right flux"><img src="images/flux-asset-coin.svg" loading="lazy" alt="" class="image-14 a">
+      <div id="w-node-_06bddac2-d826-ddce-483e-9c07ed9475d3-9c70572b" class="text_right flux"><img src="images/flux-asset-coin.svg" loading="lazy" alt="" class="image-14 a">
         <a data-w-id="06bddac2-d826-ddce-483e-9c07ed9475d5" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="flux.html" class="flux_button w-button">Discover more</a>
       </div>
     </div>
@@ -1777,7 +1598,7 @@ function updateSW5DropdownLinks(currentLang){
             <h3 class="heading-3 parallel_trx">FLUX-TRX</h3>
             <div class="div-block-18 c1 hom"><img src="images/flux-tron2x.png" loading="lazy" alt="" class="image-12"></div>
           </div>
-          <div id="w-node-_42fdfe56-276c-e287-3f09-708202362ab3-23e68fc5" class="card_flux paralell _1st">
+          <div id="w-node-_42fdfe56-276c-e287-3f09-708202362ab3-9c70572b" class="card_flux paralell _1st">
             <div class="img_div parallel"><img src="images/terra-avalanche-flux-parallel-logo.png" loading="lazy" alt="" class="logo_img"></div>
             <p class="paragraph-4 flux">AVALANCHE</p>
             <h3 class="heading-3 parallel_ava">FLUX-AVA</h3>
@@ -1795,52 +1616,53 @@ function updateSW5DropdownLinks(currentLang){
     </div>
   </section>
   <section class="zelcore_wallet_section wf-section">
-    <div class="div-block-25"><img src="images/zelcore_wallet.png" loading="lazy" width="308" alt="Zelcore wallet is a multi asset crypto wallet and platform with more than 270 assets and blockchains" class="image-16"></div>
-    <div class="title_left zelcore_app">
-      <h2 id="w-node-_28eb6547-954a-d704-4526-3062e46d1da2-23e68fc5" class="title_section zell a">Download the <span class="text-span-38">one wallet </span>for all your crypto needs</h2>
-      <div id="w-node-_75004df2-9dca-b201-c379-39b6f944fee5-23e68fc5" class="walle_img"><img src="images/mobile_complete-min.png" loading="lazy" width="354" srcset="images/mobile_complete-min-p-500.png 500w, images/mobile_complete-min-p-800.png 800w, images/mobile_complete-min.png 2316w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 69vw, (max-width: 991px) 58vw, (max-width: 1919px) 43vw, 37vw" alt="" class="image-18"></div>
-      <p id="w-node-_28eb6547-954a-d704-4526-3062e46d1da6-23e68fc5" class="paragraph-3 zell a">Zelcore is a multi-asset crypto wallet and platform with support for over 500 assets. The free to use version has a long list of features including built-in quick-swap exchanges, decentralized 2FA, CoinRequest, WalletConnect and easy ETH token importing. Unlock additional premium features with Zelcore+.</p>
-    </div>
-    <div class="title_left zelcore_app new">
-      <div class="walle_img mobile"><img src="images/phones_mobile1-min.png" loading="lazy" width="267" alt="" class="image-18 neww"></div>
-      <h2 id="w-node-_321947b5-6d8c-a04b-2ae1-40b6e27e4d8e-23e68fc5" class="title_section zell a mobile">Download the one wallet for all your crypto needs</h2>
-      <p id="w-node-_321947b5-6d8c-a04b-2ae1-40b6e27e4d92-23e68fc5" class="paragraph-3 zell a mobile">Zelcore is a multi-asset crypto wallet and platform with support for over 275 assets. The free to use version has a long list of features including built-in quick-swap exchanges, decentralized 2FA, CoinRequest, WalletConnect and easy ETH token importing. Unlock further premium features with Zelcore+</p>
-    </div>
-    <div class="div-block-38">
-      <div id="w-node-ef56d730-c684-68ee-e201-12c273ddd634-23e68fc5" class="div-block-39">
-        <p class="paragraph-10">+4</p>
-        <p class="p_info_zel">Years of<br>Experience</p>
+    <div class="div-block-168">
+      <div class="div-block-25"><img src="images/zelcore_wallet.png" loading="lazy" width="308" alt="Zelcore wallet is a multi asset crypto wallet and platform with more than 270 assets and blockchains" class="image-16"></div>
+      <div class="title_left zelcore_app">
+        <h2 id="w-node-_28eb6547-954a-d704-4526-3062e46d1da2-9c70572b" class="title_section zell a">Download the <span class="text-span-38">one wallet </span>for all your crypto needs</h2>
+        <div id="w-node-_75004df2-9dca-b201-c379-39b6f944fee5-9c70572b" class="walle_img"><img src="images/smartphone-mockup-c3333lay-09-1-1.png" loading="lazy" width="354" srcset="images/smartphone-mockup-c3333lay-09-1-1.png 500w, images/smartphone-mockup-c3333lay-09-1-1.png 800w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 69vw, (max-width: 991px) 64vw, (max-width: 1919px) 43vw, 40vw" alt="" class="image-18"></div>
+        <p id="w-node-_28eb6547-954a-d704-4526-3062e46d1da6-9c70572b" class="paragraph-3 zell a">Zelcore is a multi-asset crypto wallet and platform with support for over 500 assets. The free to use version has a long list of features including built-in quick-swap exchanges, decentralized 2FA, CoinRequest, WalletConnect and easy ETH token importing. Unlock additional premium features with Zelcore+.</p>
       </div>
-      <div id="w-node-ec6a6852-b088-435f-d549-8064359b39a3-23e68fc5" class="div-block-39">
-        <p class="paragraph-10">+500</p>
-        <p class="p_info_zel">Coins &amp; <br>Tokens</p>
+      <div class="title_left zelcore_app new">
+        <div class="walle_img mobile"><img src="images/perfect-mobile-1-1.png" loading="lazy" width="267" srcset="images/perfect-mobile-1-1.png 500w, images/perfect-mobile-1-1.png 800w" sizes="100vw" alt="" class="image-18 neww"></div>
+        <h2 id="w-node-_321947b5-6d8c-a04b-2ae1-40b6e27e4d8e-9c70572b" class="title_section zell a mobile">Download the one wallet for all your crypto needs</h2>
+        <p id="w-node-_321947b5-6d8c-a04b-2ae1-40b6e27e4d92-9c70572b" class="paragraph-3 zell a mobile">Zelcore is a multi-asset crypto wallet and platform with support for over 275 assets. The free to use version has a long list of features including built-in quick-swap exchanges, decentralized 2FA, CoinRequest, WalletConnect and easy ETH token importing. Unlock further premium features with Zelcore+</p>
       </div>
-    </div>
-    <div class="div-block-40">
-      <div id="w-node-_53bb6435-7697-c6de-dae5-a5be9cc96a97-23e68fc5" class="div-block-42">
-        <div class="div-block-41">
-          <div id="w-node-a5f12bf7-865f-704e-c4c2-2a5388d69aac-23e68fc5" class="div-block-43">
-            <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
-            <div class="text-block-4">Portfolio Management</div>
-          </div>
-          <div id="w-node-f3c75b59-8303-07b0-0515-8db6db098384-23e68fc5" class="div-block-43">
-            <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
-            <div class="text-block-4">Built-in exchanges</div>
-          </div>
-          <div id="w-node-_755b7ff2-c432-75f2-c2ba-f78b462f5cce-23e68fc5" class="div-block-43">
-            <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
-            <div class="text-block-4">Buy with Debit Card</div>
-          </div>
-          <div id="w-node-_49aea9ab-ab2f-8bf3-aaac-ef1c684ea250-23e68fc5" class="div-block-43">
-            <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
-            <div class="text-block-4">Cross platform</div>
-          </div>
+      <div class="div-block-38">
+        <div id="w-node-ef56d730-c684-68ee-e201-12c273ddd634-9c70572b" class="div-block-39">
+          <p class="paragraph-10">+4</p>
+          <p class="p_info_zel">Years of<br>Experience</p>
+        </div>
+        <div id="w-node-ec6a6852-b088-435f-d549-8064359b39a3-9c70572b" class="div-block-39">
+          <p class="paragraph-10">+500</p>
+          <p class="p_info_zel">Coins &amp; <br>Tokens</p>
         </div>
       </div>
-      <div class="div-block-46">
-        <div class="wrapper zelcorre">
-          <a href="#" id="w-node-_4780d827-e790-6f12-6971-344e675e21a2-23e68fc5" data-w-id="4780d827-e790-6f12-6971-344e675e21a2" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="play_button w-inline-block w-lightbox"><img src="images/play_button_v.svg" loading="lazy" width="70" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="4780d827-e790-6f12-6971-344e675e21a3" alt="" class="image-3">
-            <script type="application/json" class="w-json">{
+      <div class="div-block-40">
+        <div id="w-node-_53bb6435-7697-c6de-dae5-a5be9cc96a97-9c70572b" class="div-block-42">
+          <div class="div-block-41">
+            <div id="w-node-a5f12bf7-865f-704e-c4c2-2a5388d69aac-9c70572b" class="div-block-43">
+              <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
+              <div class="text-block-4">Portfolio Management</div>
+            </div>
+            <div id="w-node-f3c75b59-8303-07b0-0515-8db6db098384-9c70572b" class="div-block-43">
+              <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
+              <div class="text-block-4">Built-in exchanges</div>
+            </div>
+            <div id="w-node-_755b7ff2-c432-75f2-c2ba-f78b462f5cce-9c70572b" class="div-block-43">
+              <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
+              <div class="text-block-4">Buy with Debit Card</div>
+            </div>
+            <div id="w-node-_49aea9ab-ab2f-8bf3-aaac-ef1c684ea250-9c70572b" class="div-block-43">
+              <div class="div-block-44"><img src="images/Group-10188.svg" loading="lazy" width="31" alt="" class="point_img"></div>
+              <div class="text-block-4">Cross platform</div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-46">
+          <div class="wrapper zelcorre-copy">
+            <a href="#" id="w-node-_4780d827-e790-6f12-6971-344e675e21a2-9c70572b" data-w-id="4780d827-e790-6f12-6971-344e675e21a2" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="play_button w-inline-block w-lightbox"><img src="images/play_button_v.svg" loading="lazy" width="70" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="4780d827-e790-6f12-6971-344e675e21a3" alt="" class="image-3">
+              <script type="application/json" class="w-json">{
   "items": [
     {
       "url": "https://www.youtube.com/watch?v=fSqcmJm1gh8",
@@ -1854,44 +1676,45 @@ function updateSW5DropdownLinks(currentLang){
   ],
   "group": ""
 }</script>
-          </a>
-          <a data-w-id="440f5434-61f5-c1fc-fa4d-c15d25873d07" href="parallel.html" class="button_1 zel w-button">Discover more assets</a>
+            </a>
+            <a data-w-id="440f5434-61f5-c1fc-fa4d-c15d25873d07" href="parallel.html" class="button_1 zel-copy w-button">Discover more assets</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="cards_block zelcore">
-      <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f6b-23e68fc5" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f6b" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
-        <div class="img_div"><img src="images/enterprise_grade_flux.svg" loading="lazy" alt="flux nodes enterprise grade decentralized computational network"></div>
-        <h3 class="heading-3">Enterprise grade</h3>
-        <p class="paragraph-4">ZelCore keeps your assets safe and supports over 500+ coins and over 50,000 tokens including $FLUX, $BTC, $LTC, $ETH, $XMR, $ZEC, $USDT and $SOL. Take advantage of multiple wallets and assign them to exchanges, CoinRequest, FIO and other services.</p>
+      <div class="cards_block zelcore">
+        <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f6b-9c70572b" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f6b" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
+          <div class="img_div"><img src="images/enterprise_grade_flux.svg" loading="lazy" alt="flux nodes enterprise grade decentralized computational network"></div>
+          <h3 class="heading-3">Enterprise grade</h3>
+          <p class="paragraph-4">ZelCore keeps your assets safe and supports over 500+ coins and over 50,000 tokens including $FLUX, $BTC, $LTC, $ETH, $XMR, $ZEC, $USDT and $SOL. Take advantage of multiple wallets and assign them to exchanges, CoinRequest, FIO and other services.</p>
+        </div>
+        <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f72-9c70572b" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f72" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
+          <div class="img_div"><img src="images/scalable_flux.svg" loading="lazy" alt="flux nodes scalable decentralized computational network"></div>
+          <h3 class="heading-3">Scalable</h3>
+          <p class="paragraph-4">Decentralized Two-Factor Authentication adds an extra layer of security to your ZelCore account without the need to trust anyone. d2FA empowers you to be your own custodian and keeps you safe from centralized database breaches and attacks.</p>
+        </div>
+        <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f79-9c70572b" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f79" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
+          <div class="img_div"><img src="images/rewards_flux.svg" loading="lazy" alt="Flux nodes operators are rewarded for running decentralized computational network"></div>
+          <h3 class="heading-3">Built-in exchanges</h3>
+          <p class="paragraph-4">Do all your trading in one app! ZelCore directly integrates several QuickSwap Exchanges like Instaswap, Changelly, Kyber, CoinSwitch. Including the ability to sync your own exchange accounts in CoinbasePro, KuCoin, FTX, Binance, Kraken, Huobi, Gemini, Bittrex, Gate.io, Stex, AscendEX using secure API keys.</p>
+        </div>
+        <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f80-9c70572b" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f80" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
+          <div class="img_div"><img src="images/global_flux.svg" loading="lazy" alt="Flux nodes operators are running decentralized computational network around the world"></div>
+          <h3 class="heading-3">Cross platform</h3>
+          <p class="paragraph-4">ZelCore is available on iOS and Android as well as macOS, Windows and Linux. No matter what device you use, ZelCore has got you covered!</p>
+        </div>
       </div>
-      <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f72-23e68fc5" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f72" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
-        <div class="img_div"><img src="images/scalable_flux.svg" loading="lazy" alt="flux nodes scalable decentralized computational network"></div>
-        <h3 class="heading-3">Scalable</h3>
-        <p class="paragraph-4">Decentralized Two-Factor Authentication adds an extra layer of security to your ZelCore account without the need to trust anyone. d2FA empowers you to be your own custodian and keeps you safe from centralized database breaches and attacks.</p>
-      </div>
-      <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f79-23e68fc5" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f79" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
-        <div class="img_div"><img src="images/rewards_flux.svg" loading="lazy" alt="Flux nodes operators are rewarded for running decentralized computational network"></div>
-        <h3 class="heading-3">Built-in exchanges</h3>
-        <p class="paragraph-4">Do all your trading in one app! ZelCore directly integrates several QuickSwap Exchanges like Instaswap, Changelly, Kyber, CoinSwitch. Including the ability to sync your own exchange accounts in CoinbasePro, KuCoin, FTX, Binance, Kraken, Huobi, Gemini, Bittrex, Gate.io, Stex, AscendEX using secure API keys.</p>
-      </div>
-      <div id="w-node-_05f9c7a6-616f-fc64-2a57-005be1894f80-23e68fc5" data-w-id="05f9c7a6-616f-fc64-2a57-005be1894f80" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cards">
-        <div class="img_div"><img src="images/global_flux.svg" loading="lazy" alt="Flux nodes operators are running decentralized computational network around the world"></div>
-        <h3 class="heading-3">Cross platform</h3>
-        <p class="paragraph-4">ZelCore is available on iOS and Android as well as macOS, Windows and Linux. No matter what device you use, ZelCore has got you covered!</p>
-      </div>
-    </div>
-    <div class="download_div">
-      <div class="wrap_text">
-        <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
-      </div>
-      <div class="wrap_download">
-        <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _26362763 _223 w-inline-block">
-          <div class="div-block-155">
-            <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
-            <div class="text-block-23">Download Zelcore</div>
-          </div>
-        </a>
+      <div class="download_div">
+        <div class="wrap_text">
+          <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
+        </div>
+        <div class="wrap_download">
+          <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _26362763 _223 w-inline-block">
+            <div class="div-block-155">
+              <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
+              <div class="text-block-23">Download Zelcore</div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1914,7 +1737,7 @@ function updateSW5DropdownLinks(currentLang){
       <div data-w-id="00fc5df0-ed7c-2b65-1651-e56ca373e669" style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="img-popup">
         <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FGJVk_LfASxk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGJVk_LfASxk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FGJVk_LfASxk%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" allowfullscreen="" title="Don't Be Evil, Again..."></iframe></div><img src="images/gogreen-min.jpg" loading="lazy" srcset="images/gogreen-min-p-500.jpg 500w, images/gogreen-min-p-800.jpg 800w, images/gogreen-min-p-1080.jpg 1080w, images/gogreen-min-p-1600.jpg 1600w, images/gogreen-min.jpg 1920w" sizes="100vw" alt="" class="img_dektop">
         <div class="content-wrapper-popup">
-          <a id="w-node-a9be7f7d-a70f-d8ba-57fa-d6116b712193-23e68fc5" href="https://runonflux.io/flux-carbon-neutrality.html" class="button_9 carbon popup pop-up-button w-button">Read more</a>
+          <a id="w-node-a9be7f7d-a70f-d8ba-57fa-d6116b712193-9c70572b" href="https://runonflux.io/flux-carbon-neutrality.html" class="button_9 carbon popup pop-up-button w-button">Read more</a>
         </div><img src="images/gogreen-min.jpg" loading="lazy" srcset="images/gogreen-min-p-500.jpg 500w, images/gogreen-min-p-800.jpg 800w, images/gogreen-min-p-1080.jpg 1080w, images/gogreen-min-p-1600.jpg 1600w, images/gogreen-min.jpg 1920w" sizes="100vw" alt="" class="img_mobile"><img src="images/x-button-white.svg" data-w-id="00fc5df0-ed7c-2b65-1651-e56ca373e66d" width="26" height="16" alt="" class="close-popup pop">
       </div>
       <div data-w-id="00fc5df0-ed7c-2b65-1651-e56ca373e66e" class="overlay-close"></div>
