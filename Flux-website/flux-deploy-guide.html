@@ -1,12 +1,10 @@
 <!DOCTYPE html><!--  Last Published: Fri Dec 02 2022 20:56:26 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="635fb62a5dee792968705731" data-wf-site="60c73eaed3399e074029d643">
+<html data-wf-page="637cd8e15615c868de6d62c0" data-wf-site="60c73eaed3399e074029d643">
 <head>
   <meta charset="utf-8">
-  <title>Bug Bounty Program</title>
-  <meta content="Bug Bounty Program" property="og:title">
-  <meta content="https://uploads-ssl.webflow.com/60c73eaed3399e074029d643/617eb77ecb2380d92b096ac6_flux-web3.png" property="og:image">
-  <meta content="Bug Bounty Program" property="twitter:title">
-  <meta content="https://uploads-ssl.webflow.com/60c73eaed3399e074029d643/617eb77ecb2380d92b096ac6_flux-web3.png" property="twitter:image">
+  <title>flux-deploy-guide</title>
+  <meta content="flux-deploy-guide" property="og:title">
+  <meta content="flux-deploy-guide" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -16,16 +14,9 @@
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Global site tag (gtag.js) - Google Analytics  -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-M3VPBDLWV7"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-M3VPBDLWV7');
-</script>
+  <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-<body class="body-7">
+<body class="body-30">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-in" data-easing2="ease-out" role="banner" class="navbar new w-nav">
     <div class="flux-menu-wrapp">
       <div class="wrapper-menu-bar">
@@ -219,7 +210,7 @@
                   <p class="dropdown_link">Careers</p>
                   <p class="paragraph-5">See current open positions and come to work with Flux.</p>
                 </a>
-                <a href="bug-bounty-program.html" aria-current="page" class="wrapp-pages w-inline-block w--current">
+                <a href="bug-bounty-program.html" class="wrapp-pages w-inline-block">
                   <p class="dropdown_link">Bug bounty</p>
                   <p class="paragraph-5">Get rewarded for finding bugs and exploits.</p>
                 </a>
@@ -278,21 +269,153 @@
       </div>
     </div>
   </div>
-  <div class="section_general bug_bounty wf-section">
+  <div class="section_general bug_bounty section-deploy-guide wf-section">
     <div class="container bug">
       <div class="title_left">
-        <h5 class="heading-2 mob"><strong>BUG BOUNTY</strong></h5>
-        <h2 class="h2_head"><strong class="bold-text-11">Flux bug bounty program</strong></h2>
-      </div>
-      <div id="w-node-_89002756-f6a1-ebc1-3810-c4477442dd85-68705731" class="text_right">
-        <p class="paragraph-3 bug">The Flux Community and Foundation are happy to announce the Flux bug bounty program to reward security researchers and developers who invest their time and effort into finding bugs or exploits in Flux.</p>
+        <h5 class="heading-2 mob"><strong>Step by step guide</strong></h5>
+        <h2 class="h2_head"><strong class="bold-text-11">Create a </strong><span class="text-span-86"><strong class="flux-dapp-spam">Flux dApp</strong></span></h2>
+        <p class="p_header_guide">Are you ready to create the next great decentralized application and disrupt with us on Web 3.0? Let&#x27;s go!<br></p>
       </div>
     </div>
-    <div class="container bugg">
-      <div class="title_left flux_os">
-        <p class="h3 bug">What can you earn?</p>
+    <div class="container guide">
+      <div class="script_text">
+        <div class="multi-tool-box script">
+          <p class="p_title">Docker Installation</p>
+          <p class="p_script">1) Log in <span class="text-span-9">root</span> account</p>
+          <p class="p_script">2) Type &quot; <span class="text-span-8">bash -i &lt;(curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/master/multitoolbox.sh)</span> &quot;</p>
+          <p class="p_script">3) Select option &quot;Install Docker&quot; ( just hit &quot;1&quot;)</p>
+          <p class="p_script">4) Put your user name</p>
+          <p class="p_script">5) Reboot or Switch to user accont</p>
+        </div>
+        <div class="multi-tool-box script">
+          <p class="p_title">Node Installation</p>
+          <p class="p_script">1) Log in <span class="text-span-10">user</span> account</p>
+          <p class="p_script">2) Type &quot; <span class="text-span-8">bash -i &lt;(curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/master/multitoolbox.sh)</span> &quot;</p>
+          <p class="p_script">3) Select option &quot;Install FluxNode&quot; ( just hit &quot;2&quot;)</p>
+        </div>
+        <div class="multi-tool-box script">
+          <p class="p_title">Verification</p>
+          <p class="p_script">1) Type &quot; <span class="text-span-8">bash -i &lt;(curl -s https://raw.githubusercontent.com/RunOnFlux/fluxnode-multitool/master/multitoolbox.sh)</span> &quot;</p>
+          <p class="p_script">2) Select &quot;FluxNode analizer and fixer&quot; ( just hit &quot;3&quot;)</p>
+          <p class="p_script">3) Have a nice day !!! ;)</p>
+          <a href="https://github.com/XK4MiLX/zelnode/blob/master/README.md" target="_blank" class="p_script_info_title">MORE INFO</a>
+          <a href="https://github.com/XK4MiLX/zelnode/blob/master/README.md" target="_blank" class="link-block-5 w-inline-block"></a>
+        </div>
       </div>
-      <p class="paragraph-3 bug">All bugs will be evaluated according to the CVSS scoring scale and rewarded accordingly. The CVSS levels are:</p>
+      <div class="title_left flux_os">
+        <p class="h3 guide">Prerequisites</p>
+      </div>
+      <ol role="list" class="list-guide">
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Windows 10 or 11</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">WSL 2 (Windows Subsystem for Linux - Ubuntu)</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Stop / Disable any previously installed web servers on your system</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">An account on <a href="https://hub.docker.com/" target="_blank"><strong>https://hub.docker.com/</strong></a> (Docker Username aka Docker ID)</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">A terminal (Such as Windows Powershell)<br></p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">A Code Editor such as VS Code, Atom or Notepad++</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Zelcore Wallet and Zelcore ID <a href="https://zelcore.io/" target="_blank"><strong>https://zelcore.io/</strong></a>
+          </p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Supported Browser for ZelCore Wallet: Chrome / Edge / Brave</p>
+        </li>
+      </ol>
+      <p class="h2 guide">Guide to Creating a Flux dApp</p>
+      <p class="h3 bug">Install Basic Tools</p>
+      <ol role="list" class="list-guide">
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Download and install WSL 2 ( <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank"><strong>Windows Subsystem for Linux</strong></a> )</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Click on START and type in POWERSHELL</p>
+          <div class="img-list-guide"><img src="images/image13.png" loading="lazy" alt=""></div>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Click on RUN AS ADMINISTRATOR</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">When the command line opens type in:</p>
+          <div>
+            <div class="ttool-box-guide guide">
+              <p class="p_guide">WSL ––install -d ubuntu</p>
+            </div>
+            <p class="paragraph-3 guide-butitle">The following will appear after typing the command:</p>
+            <div class="img-list-guide"><img src="images/image21.png" loading="lazy" alt=""></div>
+          </div>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 bug_2">Restart computer</p>
+        </li>
+        <li class="list_bug">
+          <p class="paragraph-3 guide-dapp">Open up the newly installed program UBUNTU and follow the instructions for the first time install. E.G: it may ask for a new username, password etc<br></p>
+        </li>
+        <li class="list-guide-dapps">
+          <p class="paragraph-3 bug_2">When the command prompt comes up, type: <strong>sudo apt update</strong></p>
+          <div>
+            <p class="paragraph-3 guide-butitle latin"><em>This will update the core system ahead of the new installs coming up</em></p>
+          </div>
+        </li>
+        <li class="list-guide-dapps">
+          <p class="paragraph-3 bug_2">Download and install Docker Desktop by following these steps:</p>
+          <div>
+            <ol role="list" class="list-steps">
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Make all possible effort to not interrupt or degrade our service.</p>
+              </li>
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Open Docker and skip the tutorial</p>
+              </li>
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Sign in to Docker (top right) and create a Docker account if you don&#x27;t have one already</p>
+              </li>
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Click on SETTINGS &gt; RESOURCES &gt; WSL INTEGRATION &gt; Checkmark both options</p>
+              </li>
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Enable integration with my default WSL distro</p>
+              </li>
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Ubuntu</p>
+              </li>
+              <li class="list-step-guide">
+                <p class="paragraph-3 list-step">Click Apply &amp; Restart</p>
+              </li>
+            </ol>
+          </div>
+          <div class="img-list-guide"><img src="images/image6.png" loading="lazy" sizes="(max-width: 767px) 86vw, (max-width: 991px) 88vw, 34vw" srcset="images/image6-p-500.png 500w, images/image6.png 720w" alt=""></div>
+          <div>
+            <p class="h3 guide-title-dapp">Create a Sample dApp</p>
+            <p class="paragraph-3 guide-subtitle">This guide explains how to create a simple html / javascript dApp:</p>
+          </div>
+        </li>
+        <li class="list-guide-dapps">
+          <p class="paragraph-3 bug_2">Create a folder somewhere on your computer called <strong>noderank</strong> ... E.G: C:\noderank</p>
+        </li>
+        <li class="list-guide-dapps">
+          <p class="paragraph-3 bug_2">In that new folder, create a file called index.html and save the following:</p>
+          <div class="img-list-guide">
+            <ul role="list" class="list-8">
+              <li>
+                <p class="paragraph-3 bug_2">&lt; html &gt;<br>&lt; head &gt; <br> &lt; meta   name = &quot;viewport&quot;   content = &quot;width=device-width, initial-scale=1&quot; &gt;  &lt; title &gt;Node Rank&lt;/ title &gt;  &lt; script   src = &quot; https://code.jquery.com/jquery-3.6.0.min.js &quot; &gt;&lt;/ script &gt;  &lt; script &gt;  function getNodeStats (){    if ( $ ( &quot;#node_ip&quot; ). val ())    {      var settings = {                &quot;cache&quot; :   false ,                &quot;dataType&quot; :  &quot;jsonp&quot;,                &quot;async&quot; :   true ,                &quot;crossDomain&quot; :   true ,                &quot;url&quot; :  &quot; https://explorer.flux.zelcore.io/api/fluxnode/listfluxnodes/ &quot; + $ ( &quot;#node_ip&quot; ). val () ,                &quot;method&quot; :  &quot;GET&quot;,                &quot;headers&quot; :  {                    &quot;accept&quot; :  &quot;application/json&quot;,                    &quot;Access-Control-Allow-Origin&quot; : &quot;*&quot;          }      }      $ . ajax (settings). done ( function  (data) {          if (data. result [ 0 ]. ip   ==   $ ( &quot;#node_ip&quot; ). val ()) {            $ ( &quot;#rank&quot; ). text ( &quot;#&quot; + data. result [ 0 ]. rank );            $ ( &quot;#time_to_front&quot; ). text ( Math . round (data. result [ 0 ]. rank   *   2  / 60 ) +   &quot; hrs&quot; );         }             });    }  }  &lt;/ script &gt;&lt;/ head &gt;&lt; body &gt;&lt; h1 &gt;Flux Node Rank&lt;/ h1 &gt;&lt; p &gt;&lt; label &gt;Node IP&lt;/ label &gt; &lt; input   type = &quot;text&quot;   id = &quot;node_ip&quot; &gt; &lt; button   onclick = &quot;getNodeStats()&quot; &gt;Go&lt;/ button &gt;&lt;/ p &gt;&lt; table   width = &quot;300&quot; &gt;  &lt; tr &gt;    &lt; td   width = &quot;130&quot; &gt;Queue Position&lt;/ td &gt; &lt; td   id = &quot;rank&quot; &gt;&lt;/ td &gt;  &lt;/ tr &gt;  &lt; tr &gt;    &lt; td &gt;Time to Front&lt;/ td &gt; &lt; td   id = &quot;time_to_front&quot; &gt;&lt;/ td &gt;  &lt;/ tr &gt;&lt;/ table &gt;&lt;/ body &gt;&lt;/ html &gt;</p>
+              </li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
       <div class="cvss_levels">
         <p class="p_h5">Severity</p>
         <p class="p_h5">CVSS Score</p>
@@ -313,8 +436,8 @@
         <p class="p_info">0</p>
         <p class="p_info">10 Flux</p>
       </div>
-      <p class="h3 bug">How it works</p>
-      <div id="w-node-_89002756-f6a1-ebc1-3810-c4477442ddb3-68705731" class="text_right node">
+      <p class="h3 guide">Prerequisites</p>
+      <div id="w-node-_34fbc3e1-c60e-ceb3-7c2e-cf00d3d107ab-de6d62c0" class="text_right node">
         <p class="paragraph-3 bug">You will receive rewards based on the severity of the issue found if you:</p>
         <ol role="list" class="list-2">
           <li class="list_bug">
@@ -460,6 +583,154 @@
       </div>
     </div>
   </div>
+  <div class="section wf-section">
+    <div class="flux-content">
+      <div class="title_left flux_os">
+        <h5 class="heading-2 mob">FLUXOS</h5>
+        <h2 class="title_section">Your gateway to a <br>Dcentralized world</h2>
+      </div>
+      <div id="w-node-_97df5265-22b0-913e-df73-871d48afffaa-48afffa1" class="text_right flux_os">
+        <p class="paragraph-3">FluxOS is a revolutionary second-layer operating system/application that allows hardened Dockerized apps to run on Flux’s fully decentralized computational network.</p>
+        <div class="wrapper">
+          <a href="#" id="w-node-_97df5265-22b0-913e-df73-871d48afffae-48afffa1" class="play_button w-inline-block w-lightbox"><img src="images/play_button.svg" loading="lazy" width="70" alt="" class="image-3">
+            <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+          </a>
+          <a id="w-node-_97df5265-22b0-913e-df73-871d48afffb0-48afffa1" href="#" class="button_1 w-button">Discover more</a>
+        </div>
+      </div>
+    </div>
+    <div class="cards_block">
+      <div id="w-node-_97df5265-22b0-913e-df73-871d48afffb3-48afffa1" class="cards">
+        <div class="img_div"><img src="images/Group-10752.svg" loading="lazy" alt="" class="card_img"></div>
+        <h3 class="heading-3">Decentralized</h3>
+        <p class="paragraph-4">Nodes are collaterized, but user operated, ensuring spread is fully decentralized.</p>
+      </div>
+      <div id="w-node-_97df5265-22b0-913e-df73-871d48afffba-48afffa1" class="cards">
+        <div class="img_div"><img src="images/interperability_fluxos.svg" loading="lazy" alt=""></div>
+        <h3 class="heading-3">Interoperable</h3>
+        <p class="paragraph-4">FluxOS is fully compatibile with any blockchain meaning you can run any app on any chain on FluxOS.</p>
+      </div>
+      <div id="w-node-_97df5265-22b0-913e-df73-871d48afffc1-48afffa1" class="cards">
+        <div class="img_div"><img src="images/redundant_fluxos.svg" loading="lazy" alt=""></div>
+        <h3 class="heading-3">Redundant</h3>
+        <p class="paragraph-4">FluxOS applications are redundantly spread across the node network with automatic failover to a new node if one becomes unavaible.</p>
+      </div>
+      <div id="w-node-_97df5265-22b0-913e-df73-871d48afffc8-48afffa1" class="cards">
+        <div class="img_div"><img src="images/api-fluxos-.svg" loading="lazy" alt=""></div>
+        <h3 class="heading-3">API backed</h3>
+        <p class="paragraph-4">Deployment and management of apps launched on Flux can be via API or UI, allowing for seamless integration with your services.</p>
+      </div>
+    </div>
+    <div class="download_div">
+      <div class="wrap_text">
+        <div class="text-block-2">Download our multi-asset crypto wallet</div>
+      </div>
+      <div data-w-id="1160ae90-3229-31e8-9d1a-551f87d88ae2" class="wrap_download">
+        <div class="zelcore_logo_icon"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
+        <a data-w-id="1160ae90-3229-31e8-9d1a-551f87d88ae5" href="https://zelcore.io/" target="_blank" class="button_zelcore-copy w-button">Download Zelcore<br>‍</a>
+      </div>
+    </div>
+  </div>
+  <div class="flux-content r_structure">
+    <div class="title_left flux_os">
+      <h5 class="heading-2 mob">FLUX NODE SETUP</h5>
+      <h2 class="title_section">Setting up your FluxNode</h2>
+    </div>
+    <div class="div-block-60">
+      <p class="paragraph-3 node_setup _2">In order to run a FluxNode you need to meet certain required collateral and hardware specifications.</p>
+      <a href="#" class="button_1 node_setup w-button">FluxNode Requirements</a>
+    </div>
+    <p class="h3">FluxNode Video Setup</p>
+    <div id="w-node-_3737ccbf-7c6a-62b1-97d7-66c4843612b9-843612ac" class="text_right node">
+      <p class="paragraph-3 node_setup">Setting up a FluxNode is easy, you just need to be comfortable with working on the command line. There are multiple ways to setup a FluxNode and here we share to most used ones for beginers. Below are a series of video guides which walk you through the setup process bit by bit.</p>
+    </div>
+  </div>
+  <div class="fluxnodes_tiers">
+    <div id="w-node-e535332a-af2d-fadd-24f9-13887b3832ce-7b3832cd" class="card_tiers">
+      <h3 class="heading_nodes tiers">CUMULUS</h3>
+      <h3 class="heading_coins tiers">1000 FLUX</h3>
+      <p class="paragraph-4 tiers">Hardware Requirements</p>
+      <p class="paragraph-4 tiers">2 Cores<br>4 Threads<br>4 GB RAM<br>50 GB HDD/SSD<br>2.5 TB Bandwidth</p>
+      <p class="paragraph-4 tiers"><em>VPS and ARM64 compatible</em></p>
+      <div class="apr_block tiers">
+        <h3 class="heading_nodes tiers">Deterministic Block Reward</h3>
+        <h3 class="heading_coins apy tiers">7,5%</h3>
+      </div>
+    </div>
+    <div id="w-node-e535332a-af2d-fadd-24f9-13887b3832e5-7b3832cd" class="card_tiers">
+      <h3 class="heading_nodes tiers">NIMBUS</h3>
+      <h3 class="heading_coins tiers">25,000 FLUX</h3>
+      <p class="paragraph-4 tiers">Hardware Requirements</p>
+      <p class="paragraph-4 tiers">4 vCore<br>8 GB RAM<br>150 GB SSD<br>4 TB Bandwidth</p>
+      <p class="paragraph-4 tiers"><em>VPS and ARM64 compatible</em></p>
+      <div class="apr_block tiers">
+        <h3 class="heading_nodes tiers">Deterministic Block Reward</h3>
+        <h3 class="heading_coins apy tiers">12,5%</h3>
+      </div>
+    </div>
+    <div id="w-node-e535332a-af2d-fadd-24f9-13887b3832fc-7b3832cd" class="card_tiers">
+      <h3 class="heading_nodes tiers">STRATUS</h3>
+      <h3 class="heading_coins tiers">100,000 FLUX</h3>
+      <p class="paragraph-4 tiers">Hardware Requirements</p>
+      <p class="paragraph-4 tiers">8 vCore<br>32 GB RAM<br>600 GB SSD<br>6 TB Bandwidth</p>
+      <p class="paragraph-4 tiers"><em>VPS compatible</em></p>
+      <div class="apr_block tiers">
+        <h3 class="heading_nodes tiers">Deterministic Block Reward</h3>
+        <h3 class="heading_coins apy tiers">30%</h3>
+      </div>
+    </div>
+    <div id="w-node-e535332a-af2d-fadd-24f9-13887b383313-7b3832cd" class="flux-content tiers_mobile">
+      <div id="w-node-e535332a-af2d-fadd-24f9-13887b383314-7b3832cd" class="text_right node mobile">
+        <p class="paragraph-3 tiers_info mobile">The above requirements are the minimum that a node provider must have to overcome the benchmarking system. If a node owner provides more resources than the above, the network will use all the resources that can be found on the specific server.</p>
+        <div class="wrapper tiers_mobile">
+          <a id="w-node-e535332a-af2d-fadd-24f9-13887b383318-7b3832cd" href="#" class="button_1 _5 w-button">FluxNode Setup Guide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section_flux wf-section">
+    <div class="header_fluxos">
+      <div class="title">
+        <div class="pre_head_flux"><img src="images/flux_asset.svg" loading="lazy" width="258" alt="Flux is the gateway to blockchain" class="image-14 flux"></div>
+        <h2 class="title_header flux">A world powered <span class="text-span-35">by Flux</span></h2>
+      </div>
+      <p class="p_header_flux">Flux is the next generation computational network, decentralized Web 3.0. Flux provides the critical, high availability infrastructure for the New Internet. Any hardened dockerized application can run on Flux’s fully decentralized computational network. The Flux service offers an alternative to other cloud service providers, while maintaining competitive pricing. <br>Flux as the cryptocurrency powers the Flux ecosystem and is used for purchasing resources, collateralizing nodes and fueling transactions on FluxOS, rewarding both miners for validating transactions and FluxNode operators for providing computational resources.<br></p>
+      <div id="w-node-_9f059c07-7f6c-d847-39ea-ee41a1b77ec3-de6d62c0" class="wrapper_buttons f">
+        <div data-hover="false" data-delay="0" id="w-node-_9f059c07-7f6c-d847-39ea-ee41a1b77ec4-de6d62c0" class="dropdown w-dropdown">
+          <div class="flux_button wp w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div class="text-block-10">Whitepapers</div>
+          </div>
+          <nav class="dropdown-list-3 w-dropdown-list">
+            <div class="div-block-107">
+              <a href="https://fluxwhitepaper.app.runonflux.io/" target="_blank" class="white_link w-dropdown-link">English</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_v1.1-CN.pdf" target="_blank" class="white_link w-dropdown-link">Chinese</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_whitepaper_Russian.pdf" target="_blank" class="white_link w-dropdown-link">Russian</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Persian_Whitepaper.pdf" target="_blank" class="white_link w-dropdown-link">Persian</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Polish.pdf" target="_blank" class="white_link w-dropdown-link">Polish</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_v1Greg_Droid-Francais.pdf" target="_blank" class="white_link w-dropdown-link">French</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_v1_Claari-Italiano.pdf" target="_blank" class="white_link w-dropdown-link">Italian</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_v1.1_Parker.en.ur.pdf" target="_blank" class="white_link w-dropdown-link">Urdu</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Czech.pdf" target="_blank" class="white_link w-dropdown-link">Czech</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_v1.1_NL.pdf" target="_blank" class="white_link w-dropdown-link">Dutch</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Spanish.pdf" target="_blank" class="white_link w-dropdown-link">Spanish</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Indonesian.pdf" target="_blank" class="white_link w-dropdown-link">Indonesian</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_German.pdf" target="_blank" class="white_link w-dropdown-link">German</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Romanian.pdf" target="_blank" class="white_link w-dropdown-link">Romanian</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Serbia_Croatia_Bosnia_Montenegro.pdf" target="_blank" class="white_link w-dropdown-link">Croatian</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_White_Paper_Greek.pdf" target="_blank" class="white_link w-dropdown-link">Greek</a>
+              <a href="https://translations.app.runonflux.io/translations/Flux_Whitepaper_Portuguese.pdf" target="_blank" class="white_link w-dropdown-link">Portuguese</a>
+              <a href="https://translations.app.runonflux.io/" target="_blank" class="white_link blue w-dropdown-link">Translations</a>
+            </div>
+          </nav>
+        </div>
+        <a id="w-node-_9f059c07-7f6c-d847-39ea-ee41a1b77eef-de6d62c0" href="documents/ZelHash_v1.0.pdf" target="_blank" class="flux_button wp w-button">ZelHash Whitepaper</a>
+      </div>
+    </div>
+  </section>
   <footer id="fotter" class="fotter_section a b">
     <div data-w-id="9b56e3a6-d60b-f76b-09d3-85897d94bf93" class="popup_wraps">
       <div class="overlay-close"></div>
@@ -572,7 +843,7 @@
             <a href="https://github.com/RunOnFlux" target="_blank" class="link b">Github</a>
             <a href="https://github.com/RunOnFlux/press" target="_blank" class="link b">Brand Assets</a>
             <a href="careers.html" target="_blank" class="link b">Careers</a>
-            <a href="bug-bounty-program.html" target="_blank" aria-current="page" class="link b w--current">Bug bounty</a>
+            <a href="bug-bounty-program.html" target="_blank" class="link b">Bug bounty</a>
             <a href="donate.html" target="_blank" class="link b">Donate</a>
           </div>
         </div>
@@ -586,7 +857,7 @@
           <a href="privacy-policy.html" target="_blank" class="w-inline-block">
             <p class="paragraph-7 links mid b">Privacy Policy</p>
           </a>
-          <a href="bug-bounty-program.html" target="_blank" aria-current="page" class="w-inline-block w--current">
+          <a href="bug-bounty-program.html" target="_blank" class="w-inline-block">
             <p class="paragraph-7 links b">Bug Bounty Program</p>
           </a>
         </div>
