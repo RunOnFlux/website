@@ -24236,7 +24236,7 @@ Webflow.define('forms', module.exports = function ($, _) {
     formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
 
     if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-      formUrl = formUrl.replace("https://webflow.com", "https://formdata.webflow.com");
+      formUrl = formUrl.replace("https://webflow.com", "http://formdata.webflow.com");
     }
 
     signFileUrl = "".concat(formUrl, "/signFile");
