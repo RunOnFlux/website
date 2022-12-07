@@ -7784,6 +7784,7 @@ var ActionTypeConsts = {
   STYLE_OPACITY: 'STYLE_OPACITY',
   STYLE_SIZE: 'STYLE_SIZE',
   STYLE_FILTER: 'STYLE_FILTER',
+  STYLE_FONT_VARIATION: 'STYLE_FONT_VARIATION',
   STYLE_BACKGROUND_COLOR: 'STYLE_BACKGROUND_COLOR',
   STYLE_BORDER: 'STYLE_BORDER',
   STYLE_TEXT_COLOR: 'STYLE_TEXT_COLOR',
@@ -17535,12 +17536,13 @@ var _animationActions$Act = _animationActions.ActionTypeConsts,
     TRANSFORM_ROTATE = _animationActions$Act.TRANSFORM_ROTATE,
     TRANSFORM_SKEW = _animationActions$Act.TRANSFORM_SKEW,
     STYLE_SIZE = _animationActions$Act.STYLE_SIZE,
-    STYLE_FILTER = _animationActions$Act.STYLE_FILTER;
+    STYLE_FILTER = _animationActions$Act.STYLE_FILTER,
+    STYLE_FONT_VARIATION = _animationActions$Act.STYLE_FONT_VARIATION;
 /**
  * Reduced Motion: Action types to bypass during `prefers-reduced-motion`
  */
 
-var ReducedMotionTypes = (_ReducedMotionTypes = {}, (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_MOVE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SCALE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_ROTATE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SKEW, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_SIZE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_FILTER, true), _ReducedMotionTypes);
+var ReducedMotionTypes = (_ReducedMotionTypes = {}, (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_MOVE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SCALE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_ROTATE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SKEW, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_SIZE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_FILTER, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_FONT_VARIATION, true), _ReducedMotionTypes);
 exports.ReducedMotionTypes = ReducedMotionTypes;
 
 /***/ }),
@@ -17605,7 +17607,7 @@ exports.IX2_TEST_FRAME_RENDERED = IX2_TEST_FRAME_RENDERED;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.RENDER_PLUGIN = exports.RENDER_STYLE = exports.RENDER_GENERAL = exports.RENDER_TRANSFORM = exports.ABSTRACT_NODE = exports.PLAIN_OBJECT = exports.HTML_ELEMENT = exports.PRESERVE_3D = exports.PARENT = exports.SIBLINGS = exports.IMMEDIATE_CHILDREN = exports.CHILDREN = exports.BAR_DELIMITER = exports.COLON_DELIMITER = exports.COMMA_DELIMITER = exports.AUTO = exports.WILL_CHANGE = exports.FLEX = exports.DISPLAY = exports.COLOR = exports.BORDER_COLOR = exports.BACKGROUND = exports.BACKGROUND_COLOR = exports.HEIGHT = exports.WIDTH = exports.FILTER = exports.OPACITY = exports.SKEW_Y = exports.SKEW_X = exports.SKEW = exports.ROTATE_Z = exports.ROTATE_Y = exports.ROTATE_X = exports.SCALE_3D = exports.SCALE_Z = exports.SCALE_Y = exports.SCALE_X = exports.TRANSLATE_3D = exports.TRANSLATE_Z = exports.TRANSLATE_Y = exports.TRANSLATE_X = exports.TRANSFORM = exports.CONFIG_UNIT = exports.CONFIG_Z_UNIT = exports.CONFIG_Y_UNIT = exports.CONFIG_X_UNIT = exports.CONFIG_VALUE = exports.CONFIG_Z_VALUE = exports.CONFIG_Y_VALUE = exports.CONFIG_X_VALUE = exports.BOUNDARY_SELECTOR = exports.W_MOD_IX = exports.W_MOD_JS = exports.WF_PAGE = exports.IX2_ID_DELIMITER = void 0;
+exports.RENDER_PLUGIN = exports.RENDER_STYLE = exports.RENDER_GENERAL = exports.RENDER_TRANSFORM = exports.ABSTRACT_NODE = exports.PLAIN_OBJECT = exports.HTML_ELEMENT = exports.PRESERVE_3D = exports.PARENT = exports.SIBLINGS = exports.IMMEDIATE_CHILDREN = exports.CHILDREN = exports.BAR_DELIMITER = exports.COLON_DELIMITER = exports.COMMA_DELIMITER = exports.AUTO = exports.WILL_CHANGE = exports.FLEX = exports.DISPLAY = exports.COLOR = exports.BORDER_COLOR = exports.BACKGROUND = exports.BACKGROUND_COLOR = exports.HEIGHT = exports.WIDTH = exports.FONT_VARIATION_SETTINGS = exports.FILTER = exports.OPACITY = exports.SKEW_Y = exports.SKEW_X = exports.SKEW = exports.ROTATE_Z = exports.ROTATE_Y = exports.ROTATE_X = exports.SCALE_3D = exports.SCALE_Z = exports.SCALE_Y = exports.SCALE_X = exports.TRANSLATE_3D = exports.TRANSLATE_Z = exports.TRANSLATE_Y = exports.TRANSLATE_X = exports.TRANSFORM = exports.CONFIG_UNIT = exports.CONFIG_Z_UNIT = exports.CONFIG_Y_UNIT = exports.CONFIG_X_UNIT = exports.CONFIG_VALUE = exports.CONFIG_Z_VALUE = exports.CONFIG_Y_VALUE = exports.CONFIG_X_VALUE = exports.BOUNDARY_SELECTOR = exports.W_MOD_IX = exports.W_MOD_JS = exports.WF_PAGE = exports.IX2_ID_DELIMITER = void 0;
 var IX2_ID_DELIMITER = '|';
 exports.IX2_ID_DELIMITER = IX2_ID_DELIMITER;
 var WF_PAGE = 'data-wf-page';
@@ -17666,6 +17668,8 @@ var OPACITY = 'opacity';
 exports.OPACITY = OPACITY;
 var FILTER = 'filter';
 exports.FILTER = FILTER;
+var FONT_VARIATION_SETTINGS = 'font-variation-settings';
+exports.FONT_VARIATION_SETTINGS = FONT_VARIATION_SETTINGS;
 var WIDTH = 'width';
 exports.WIDTH = WIDTH;
 var HEIGHT = 'height';
@@ -18246,6 +18250,7 @@ var _constants$IX2EngineC = _constants.IX2EngineConstants,
     FLEX = _constants$IX2EngineC.FLEX,
     OPACITY = _constants$IX2EngineC.OPACITY,
     FILTER = _constants$IX2EngineC.FILTER,
+    FONT_VARIATION_SETTINGS = _constants$IX2EngineC.FONT_VARIATION_SETTINGS,
     WIDTH = _constants$IX2EngineC.WIDTH,
     HEIGHT = _constants$IX2EngineC.HEIGHT,
     BACKGROUND_COLOR = _constants$IX2EngineC.BACKGROUND_COLOR,
@@ -18272,6 +18277,7 @@ var _constants$ActionType = _constants.ActionTypeConsts,
     TRANSFORM_SKEW = _constants$ActionType.TRANSFORM_SKEW,
     STYLE_OPACITY = _constants$ActionType.STYLE_OPACITY,
     STYLE_FILTER = _constants$ActionType.STYLE_FILTER,
+    STYLE_FONT_VARIATION = _constants$ActionType.STYLE_FONT_VARIATION,
     STYLE_SIZE = _constants$ActionType.STYLE_SIZE,
     STYLE_BACKGROUND_COLOR = _constants$ActionType.STYLE_BACKGROUND_COLOR,
     STYLE_BORDER = _constants$ActionType.STYLE_BORDER,
@@ -18284,7 +18290,7 @@ var trim = function trim(v) {
 };
 
 var colorStyleProps = Object.freeze((_Object$freeze = {}, (0, _defineProperty2["default"])(_Object$freeze, STYLE_BACKGROUND_COLOR, BACKGROUND_COLOR), (0, _defineProperty2["default"])(_Object$freeze, STYLE_BORDER, BORDER_COLOR), (0, _defineProperty2["default"])(_Object$freeze, STYLE_TEXT_COLOR, COLOR), _Object$freeze));
-var willChangeProps = Object.freeze((_Object$freeze2 = {}, (0, _defineProperty2["default"])(_Object$freeze2, _IX2BrowserSupport.TRANSFORM_PREFIXED, TRANSFORM), (0, _defineProperty2["default"])(_Object$freeze2, BACKGROUND_COLOR, BACKGROUND), (0, _defineProperty2["default"])(_Object$freeze2, OPACITY, OPACITY), (0, _defineProperty2["default"])(_Object$freeze2, FILTER, FILTER), (0, _defineProperty2["default"])(_Object$freeze2, WIDTH, WIDTH), (0, _defineProperty2["default"])(_Object$freeze2, HEIGHT, HEIGHT), _Object$freeze2));
+var willChangeProps = Object.freeze((_Object$freeze2 = {}, (0, _defineProperty2["default"])(_Object$freeze2, _IX2BrowserSupport.TRANSFORM_PREFIXED, TRANSFORM), (0, _defineProperty2["default"])(_Object$freeze2, BACKGROUND_COLOR, BACKGROUND), (0, _defineProperty2["default"])(_Object$freeze2, OPACITY, OPACITY), (0, _defineProperty2["default"])(_Object$freeze2, FILTER, FILTER), (0, _defineProperty2["default"])(_Object$freeze2, WIDTH, WIDTH), (0, _defineProperty2["default"])(_Object$freeze2, HEIGHT, HEIGHT), (0, _defineProperty2["default"])(_Object$freeze2, FONT_VARIATION_SETTINGS, FONT_VARIATION_SETTINGS), _Object$freeze2));
 var objectCache = {};
 var instanceCount = 1;
 
@@ -18573,39 +18579,54 @@ var pxValueRegex = /px/;
 var getFilterDefaults = function getFilterDefaults(actionState, filters) {
   return filters.reduce(function (result, filter) {
     if (result[filter.type] == null) {
-      result[filter.type] = filterDefaults[filter.type];
+      result[filter.type] = filterDefaults[// $FlowFixMe - property `saturation` (did you mean `saturate`?) is missing in `filterDefaults`
+      filter.type];
     }
 
     return result;
   }, actionState || {});
 };
 
-function getInstanceOrigin( // $FlowFixMe
-element) {
+var getFontVariationDefaults = function getFontVariationDefaults(actionState, fontVariations) {
+  return fontVariations.reduce(function (result, fontVariation) {
+    if (result[fontVariation.type] == null) {
+      result[fontVariation.type] = fontVariationDefaults[fontVariation.type] || fontVariation.defaultValue || 0;
+    }
+
+    return result;
+  }, actionState || {});
+};
+
+function getInstanceOrigin(element) {
   var refState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var computedStyle = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-  var // $FlowFixMe
-  actionItem = arguments.length > 3 ? arguments[3] : undefined;
-  var // $FlowFixMe
-  elementApi = arguments.length > 4 ? arguments[4] : undefined;
-  var getStyle = elementApi.getStyle;
-  var actionTypeId = actionItem.actionTypeId,
-      config = actionItem.config;
+  var actionItem = arguments.length > 3 ? arguments[3] : undefined;
+  var elementApi = arguments.length > 4 ? arguments[4] : undefined;
+  var getStyle = elementApi.getStyle; // Flow Hack: Passing actionTypeId to isPluginType and then trying
+  // to do type refinement using the same variable via a switch statement
+  // breaks down. This is is a workaround to ensure we can use type refinement.
+
+  var actionTypeId = actionItem.actionTypeId;
 
   if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
     // $FlowFixMe
     return (0, _IX2VanillaPlugins.getPluginOrigin)(actionTypeId)(refState[actionTypeId]);
   }
 
-  switch (actionTypeId) {
+  switch (actionItem.actionTypeId) {
     case TRANSFORM_MOVE:
     case TRANSFORM_SCALE:
     case TRANSFORM_ROTATE:
     case TRANSFORM_SKEW:
-      return refState[actionTypeId] || transformDefaults[actionTypeId];
+      {
+        return refState[actionItem.actionTypeId] || transformDefaults[actionItem.actionTypeId];
+      }
 
     case STYLE_FILTER:
-      return getFilterDefaults(refState[actionTypeId], actionItem.config.filters);
+      return getFilterDefaults(refState[actionItem.actionTypeId], actionItem.config.filters);
+
+    case STYLE_FONT_VARIATION:
+      return getFontVariationDefaults(refState[actionItem.actionTypeId], actionItem.config.fontVariations);
 
     case STYLE_OPACITY:
       return {
@@ -18619,13 +18640,13 @@ element) {
         var widthValue;
         var heightValue; // When destination unit is 'AUTO', ensure origin values are in px
 
-        if (config.widthUnit === AUTO) {
+        if (actionItem.config.widthUnit === AUTO) {
           widthValue = pxValueRegex.test(inlineWidth) ? parseFloat(inlineWidth) : parseFloat(computedStyle.width);
         } else {
           widthValue = (0, _defaultTo["default"])(parseFloat(inlineWidth), parseFloat(computedStyle.width));
         }
 
-        if (config.heightUnit === AUTO) {
+        if (actionItem.config.heightUnit === AUTO) {
           heightValue = pxValueRegex.test(inlineHeight) ? parseFloat(inlineHeight) : parseFloat(computedStyle.height);
         } else {
           heightValue = (0, _defaultTo["default"])(parseFloat(inlineHeight), parseFloat(computedStyle.height));
@@ -18642,7 +18663,7 @@ element) {
     case STYLE_TEXT_COLOR:
       return parseColor({
         element: element,
-        actionTypeId: actionTypeId,
+        actionTypeId: actionItem.actionTypeId,
         computedStyle: computedStyle,
         getStyle: getStyle
       });
@@ -18651,20 +18672,39 @@ element) {
       return {
         value: (0, _defaultTo["default"])(getStyle(element, DISPLAY), computedStyle.display)
       };
+    // $FlowFixMe - `OBJECT_VALUE` is not an expected `actionTypeId`
 
     case OBJECT_VALUE:
-      return refState[actionTypeId] || {
+      return refState[actionItem.actionTypeId] || {
         value: 0
       };
 
     default:
-      return;
+      {
+        // As far as the type system can tell, we're missing a handler for
+        // PLUGIN_LOTTIE.
+        //
+        // This is actually handled by `isPluginType` above.
+        //
+        // $FlowFixMe
+
+        /*:: (actionItem: empty); */
+        return;
+      }
   }
 }
 
 var reduceFilters = function reduceFilters(result, filter) {
   if (filter) {
     result[filter.type] = filter.value || 0;
+  }
+
+  return result;
+};
+
+var reduceFontVariations = function reduceFontVariations(result, fontVariation) {
+  if (fontVariation) {
+    result[fontVariation.type] = fontVariation.value || 0;
   }
 
   return result;
@@ -18687,26 +18727,33 @@ var getItemConfigByKey = function getItemConfigByKey(actionTypeId, key, config) 
         return filter ? filter.value : 0;
       }
 
+    case STYLE_FONT_VARIATION:
+      {
+        var fontVariation = (0, _findLast["default"])(config.fontVariations, function (_ref7) {
+          var type = _ref7.type;
+          return type === key;
+        });
+        return fontVariation ? fontVariation.value : 0;
+      }
+
     default:
       return config[key];
   }
-}; // $FlowFixMe
-
+};
 
 exports.getItemConfigByKey = getItemConfigByKey;
 
-function getDestinationValues(_ref7) {
-  var element = _ref7.element,
-      actionItem = _ref7.actionItem,
-      elementApi = _ref7.elementApi;
-  var actionTypeId = actionItem.actionTypeId;
+function getDestinationValues(_ref8) {
+  var element = _ref8.element,
+      actionItem = _ref8.actionItem,
+      elementApi = _ref8.elementApi;
 
-  if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
+  if ((0, _IX2VanillaPlugins.isPluginType)(actionItem.actionTypeId)) {
     // $FlowFixMe
-    return (0, _IX2VanillaPlugins.getPluginDestination)(actionTypeId)(actionItem.config);
+    return (0, _IX2VanillaPlugins.getPluginDestination)(actionItem.actionTypeId)(actionItem.config);
   }
 
-  switch (actionTypeId) {
+  switch (actionItem.actionTypeId) {
     case TRANSFORM_MOVE:
     case TRANSFORM_SCALE:
     case TRANSFORM_ROTATE:
@@ -18783,6 +18830,11 @@ function getDestinationValues(_ref7) {
     case STYLE_FILTER:
       {
         return actionItem.config.filters.reduce(reduceFilters, {});
+      }
+
+    case STYLE_FONT_VARIATION:
+      {
+        return actionItem.config.fontVariations.reduce(reduceFontVariations, {});
       }
 
     default:
@@ -18883,10 +18935,16 @@ var filterDefaults = Object.freeze({
   contrast: 100,
   brightness: 100
 });
+var fontVariationDefaults = Object.freeze({
+  wght: 0,
+  opsz: 0,
+  wdth: 0,
+  slnt: 0
+});
 
 var getFilterUnit = function getFilterUnit(filterType, actionItemConfig) {
-  var filter = (0, _findLast["default"])(actionItemConfig.filters, function (_ref8) {
-    var type = _ref8.type;
+  var filter = (0, _findLast["default"])(actionItemConfig.filters, function (_ref9) {
+    var type = _ref9.type;
     return type === filterType;
   });
 
@@ -18912,19 +18970,19 @@ function renderTransform(element, refState, actionState, actionItem, elementApi)
   var newTransform = transformKeys.map(function (actionTypeId) {
     var defaults = transformDefaults[actionTypeId];
 
-    var _ref9 = refState[actionTypeId] || {},
-        _ref9$xValue = _ref9.xValue,
-        xValue = _ref9$xValue === void 0 ? defaults.xValue : _ref9$xValue,
-        _ref9$yValue = _ref9.yValue,
-        yValue = _ref9$yValue === void 0 ? defaults.yValue : _ref9$yValue,
-        _ref9$zValue = _ref9.zValue,
-        zValue = _ref9$zValue === void 0 ? defaults.zValue : _ref9$zValue,
-        _ref9$xUnit = _ref9.xUnit,
-        xUnit = _ref9$xUnit === void 0 ? '' : _ref9$xUnit,
-        _ref9$yUnit = _ref9.yUnit,
-        yUnit = _ref9$yUnit === void 0 ? '' : _ref9$yUnit,
-        _ref9$zUnit = _ref9.zUnit,
-        zUnit = _ref9$zUnit === void 0 ? '' : _ref9$zUnit;
+    var _ref10 = refState[actionTypeId] || {},
+        _ref10$xValue = _ref10.xValue,
+        xValue = _ref10$xValue === void 0 ? defaults.xValue : _ref10$xValue,
+        _ref10$yValue = _ref10.yValue,
+        yValue = _ref10$yValue === void 0 ? defaults.yValue : _ref10$yValue,
+        _ref10$zValue = _ref10.zValue,
+        zValue = _ref10$zValue === void 0 ? defaults.zValue : _ref10$zValue,
+        _ref10$xUnit = _ref10.xUnit,
+        xUnit = _ref10$xUnit === void 0 ? '' : _ref10$xUnit,
+        _ref10$yUnit = _ref10.yUnit,
+        yUnit = _ref10$yUnit === void 0 ? '' : _ref10$yUnit,
+        _ref10$zUnit = _ref10.zUnit,
+        zUnit = _ref10$zUnit === void 0 ? '' : _ref10$zUnit;
 
     switch (actionTypeId) {
       case TRANSFORM_MOVE:
@@ -18961,11 +19019,21 @@ function renderFilter(element, actionState, actionItemConfig, elementApi) {
   setStyle(element, FILTER, filterValue);
 }
 
-function hasDefined3dTransform(_ref10, _ref11) {
-  var actionTypeId = _ref10.actionTypeId;
-  var xValue = _ref11.xValue,
-      yValue = _ref11.yValue,
-      zValue = _ref11.zValue;
+function renderFontVariation(element, actionState, actionItemConfig, elementApi) {
+  var fontVariationValue = (0, _reduce["default"])(actionState, function (result, value, type) {
+    result.push("\"".concat(type, "\" ").concat(value));
+    return result;
+  }, []).join(', ');
+  var setStyle = elementApi.setStyle;
+  addWillChange(element, FONT_VARIATION_SETTINGS, elementApi);
+  setStyle(element, FONT_VARIATION_SETTINGS, fontVariationValue);
+}
+
+function hasDefined3dTransform(_ref11, _ref12) {
+  var actionTypeId = _ref11.actionTypeId;
+  var xValue = _ref12.xValue,
+      yValue = _ref12.yValue,
+      zValue = _ref12.zValue;
   // TRANSLATE_Z
   return actionTypeId === TRANSFORM_MOVE && zValue !== undefined || // SCALE_Z
   actionTypeId === TRANSFORM_SCALE && zValue !== undefined || // ROTATE_X or ROTATE_Y
@@ -18981,11 +19049,11 @@ function getFirstMatch(regex, value) {
   return match ? match[1] : '';
 }
 
-function parseColor(_ref12) {
-  var element = _ref12.element,
-      actionTypeId = _ref12.actionTypeId,
-      computedStyle = _ref12.computedStyle,
-      getStyle = _ref12.getStyle;
+function parseColor(_ref13) {
+  var element = _ref13.element,
+      actionTypeId = _ref13.actionTypeId,
+      computedStyle = _ref13.computedStyle,
+      getStyle = _ref13.getStyle;
   var prop = colorStyleProps[actionTypeId];
   var inlineValue = getStyle(element, prop);
   var value = rgbValidRegex.test(inlineValue) ? inlineValue : computedStyle[prop];
@@ -19000,10 +19068,8 @@ function parseColor(_ref12) {
 
 function renderStyle(element, refState, actionState, actionItem, styleProp, elementApi) {
   var setStyle = elementApi.setStyle;
-  var actionTypeId = actionItem.actionTypeId,
-      config = actionItem.config;
 
-  switch (actionTypeId) {
+  switch (actionItem.actionTypeId) {
     case STYLE_SIZE:
       {
         var _actionItem$config5 = actionItem.config,
@@ -19037,7 +19103,13 @@ function renderStyle(element, refState, actionState, actionItem, styleProp, elem
 
     case STYLE_FILTER:
       {
-        renderFilter(element, actionState, config, elementApi);
+        renderFilter(element, actionState, actionItem.config, elementApi);
+        break;
+      }
+
+    case STYLE_FONT_VARIATION:
+      {
+        renderFontVariation(element, actionState, actionItem.config, elementApi);
         break;
       }
 
@@ -19045,7 +19117,7 @@ function renderStyle(element, refState, actionState, actionItem, styleProp, elem
     case STYLE_BORDER:
     case STYLE_TEXT_COLOR:
       {
-        var prop = colorStyleProps[actionTypeId];
+        var prop = colorStyleProps[actionItem.actionTypeId];
         var rValue = Math.round(actionState.rValue);
         var gValue = Math.round(actionState.gValue);
         var bValue = Math.round(actionState.bValue);
@@ -19057,8 +19129,8 @@ function renderStyle(element, refState, actionState, actionItem, styleProp, elem
 
     default:
       {
-        var _config$unit = config.unit,
-            unit = _config$unit === void 0 ? '' : _config$unit;
+        var _actionItem$config$un = actionItem.config.unit,
+            unit = _actionItem$config$un === void 0 ? '' : _actionItem$config$un;
         addWillChange(element, styleProp, elementApi);
         setStyle(element, styleProp, actionState.value + unit);
         break;
@@ -19137,9 +19209,9 @@ function removeWillChange(element, prop, elementApi) {
 } // $FlowFixMe
 
 
-function clearAllStyles(_ref13) {
-  var store = _ref13.store,
-      elementApi = _ref13.elementApi;
+function clearAllStyles(_ref14) {
+  var store = _ref14.store,
+      elementApi = _ref14.elementApi;
 
   var _store$getState = store.getState(),
       ixData = _store$getState.ixData;
@@ -19171,11 +19243,11 @@ function clearAllStyles(_ref13) {
 } // $FlowFixMe
 
 
-function clearActionListStyles(_ref14) {
-  var _ref14$actionList = _ref14.actionList,
-      actionList = _ref14$actionList === void 0 ? {} : _ref14$actionList,
-      event = _ref14.event,
-      elementApi = _ref14.elementApi;
+function clearActionListStyles(_ref15) {
+  var _ref15$actionList = _ref15.actionList,
+      actionList = _ref15$actionList === void 0 ? {} : _ref15$actionList,
+      event = _ref15.event,
+      elementApi = _ref15.elementApi;
   var actionItemGroups = actionList.actionItemGroups,
       continuousParameterGroups = actionList.continuousParameterGroups;
   actionItemGroups && actionItemGroups.forEach(function (actionGroup) {
@@ -19197,14 +19269,14 @@ function clearActionListStyles(_ref14) {
   });
 }
 
-function clearActionGroupStyles(_ref15) {
-  var actionGroup = _ref15.actionGroup,
-      event = _ref15.event,
-      elementApi = _ref15.elementApi;
+function clearActionGroupStyles(_ref16) {
+  var actionGroup = _ref16.actionGroup,
+      event = _ref16.event,
+      elementApi = _ref16.elementApi;
   var actionItems = actionGroup.actionItems;
-  actionItems.forEach(function (_ref16) {
-    var actionTypeId = _ref16.actionTypeId,
-        config = _ref16.config;
+  actionItems.forEach(function (_ref17) {
+    var actionTypeId = _ref17.actionTypeId,
+        config = _ref17.config;
     var clearElement;
 
     if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
@@ -19252,10 +19324,10 @@ function cleanupHTMLElement(element, actionItem, elementApi) {
   }
 }
 
-var processElementByType = function processElementByType(_ref17) {
-  var effect = _ref17.effect,
-      actionTypeId = _ref17.actionTypeId,
-      elementApi = _ref17.elementApi;
+var processElementByType = function processElementByType(_ref18) {
+  var effect = _ref18.effect,
+      actionTypeId = _ref18.actionTypeId,
+      elementApi = _ref18.elementApi;
   return function (element) {
     switch (actionTypeId) {
       case TRANSFORM_MOVE:
@@ -19267,6 +19339,10 @@ var processElementByType = function processElementByType(_ref17) {
 
       case STYLE_FILTER:
         effect(element, FILTER, elementApi);
+        break;
+
+      case STYLE_FONT_VARIATION:
+        effect(element, FONT_VARIATION_SETTINGS, elementApi);
         break;
 
       case STYLE_OPACITY:
@@ -19347,10 +19423,10 @@ function getActionListProgress(actionList, instance) {
 } // $FlowFixMe
 
 
-function reduceListToGroup(_ref18) {
-  var actionList = _ref18.actionList,
-      actionItemId = _ref18.actionItemId,
-      rawData = _ref18.rawData;
+function reduceListToGroup(_ref19) {
+  var actionList = _ref19.actionList,
+      actionItemId = _ref19.actionItemId,
+      rawData = _ref19.rawData;
   var actionItemGroups = actionList.actionItemGroups,
       continuousParameterGroups = actionList.continuousParameterGroups;
   var newActionItems = [];
@@ -19363,14 +19439,14 @@ function reduceListToGroup(_ref18) {
     return actionItem.id === actionItemId;
   };
 
-  actionItemGroups && actionItemGroups.some(function (_ref19) {
-    var actionItems = _ref19.actionItems;
+  actionItemGroups && actionItemGroups.some(function (_ref20) {
+    var actionItems = _ref20.actionItems;
     return actionItems.some(takeItemUntilMatch);
   });
   continuousParameterGroups && continuousParameterGroups.some(function (paramGroup) {
     var continuousActionGroups = paramGroup.continuousActionGroups;
-    return continuousActionGroups.some(function (_ref20) {
-      var actionItems = _ref20.actionItems;
+    return continuousActionGroups.some(function (_ref21) {
+      var actionItems = _ref21.actionItems;
       return actionItems.some(takeItemUntilMatch);
     });
   });
@@ -19383,8 +19459,8 @@ function reduceListToGroup(_ref18) {
 } // $FlowFixMe
 
 
-function shouldNamespaceEventParameter(eventTypeId, _ref22) {
-  var basedOn = _ref22.basedOn;
+function shouldNamespaceEventParameter(eventTypeId, _ref23) {
+  var basedOn = _ref23.basedOn;
   return eventTypeId === _constants.EventTypeConsts.SCROLLING_IN_VIEW && (basedOn === _constants.EventBasedOn.ELEMENT || basedOn == null) || eventTypeId === _constants.EventTypeConsts.MOUSE_MOVE && basedOn === _constants.EventBasedOn.ELEMENT;
 }
 
@@ -24236,7 +24312,7 @@ Webflow.define('forms', module.exports = function ($, _) {
     formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
 
     if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-      formUrl = formUrl.replace("https://webflow.com", "http://formdata.webflow.com");
+      formUrl = formUrl.replace("https://webflow.com", "https://formdata.webflow.com");
     }
 
     signFileUrl = "".concat(formUrl, "/signFile");
