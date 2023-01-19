@@ -10217,6 +10217,12 @@ img {
   height: 1.8em;
 }
 
+.logo_img.rad0.nowwallet {
+  position: relative;
+  right: auto;
+  height: 3em;
+}
+
 .logo_img.rad00 {
   height: 2.2em;
   border-radius: 0em;
@@ -18185,6 +18191,10 @@ img {
   transform: scale(0.9);
 }
 
+.close-popup.pop {
+  z-index: 20;
+}
+
 .close-popup.pop.x2 {
   left: auto;
   top: 0.4em;
@@ -19581,7 +19591,7 @@ img {
   right: 0%;
   bottom: 0%;
   z-index: 900;
-  display: none;
+  display: block;
   width: 100vw;
   height: 100vh;
   margin: auto;
@@ -19615,12 +19625,26 @@ img {
 }
 
 .img_dektop {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 11;
   display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  border-radius: 0.5em;
+  width: 50em;
+  height: 30em;
+  margin: auto;
+  padding-right: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  background-color: transparent;
 }
 
 .pop_up_button {
@@ -19676,7 +19700,7 @@ img {
 
 .pop-up-system-button {
   position: absolute;
-  z-index: 100;
+  z-index: 1000;
   display: none;
   overflow: visible;
   width: 100%;
@@ -24824,6 +24848,10 @@ img {
 
 .button_9.carbon.campain.cab {
   margin-left: 0em;
+}
+
+.button_9.carbon.campain.popul {
+  margin-left: 0.8em;
 }
 
 .span_lab {
@@ -31014,7 +31042,7 @@ img {
 
 .pop-up-system-simple {
   position: absolute;
-  z-index: 100;
+  z-index: 1000;
   display: none;
   overflow: visible;
   width: auto;
@@ -31068,15 +31096,17 @@ img {
   left: 0%;
   top: auto;
   right: 0%;
-  bottom: 10%;
+  bottom: 19%;
+  z-index: 12;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  margin-left: 6%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .wrapper-menu {
@@ -34591,6 +34621,11 @@ img {
   transition-property: none;
 }
 
+.a-icon-regular.new {
+  width: 1.2em;
+  height: auto;
+}
+
 .a-cta-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -34624,9 +34659,16 @@ img {
 }
 
 .a-cta-content.new {
+  display: -ms-grid;
+  display: grid;
   max-width: 100%;
+  grid-auto-columns: 1fr;
   grid-column-gap: 2em;
   grid-row-gap: 2em;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .a-cta-grid-wrapper {
@@ -35935,7 +35977,7 @@ img {
 .paragraph-regular-6 {
   margin-bottom: 0px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 0.8em;
   line-height: 24px;
 }
 
@@ -36071,7 +36113,7 @@ img {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 280px;
+  min-height: auto;
   border-radius: 24px;
   background-color: #e9eced;
 }
@@ -41487,6 +41529,12 @@ img {
     height: 4em;
   }
 
+  .logo_img.rad0.nowwallet {
+    position: relative;
+    right: auto;
+    height: 6em;
+  }
+
   .logo_img.rad00 {
     height: 4em;
   }
@@ -45669,6 +45717,10 @@ img {
     padding-left: 42px;
   }
 
+  .button_9.carbon.campain.popul {
+    margin-left: 1.5em;
+  }
+
   .lab_pillar {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -46638,7 +46690,8 @@ img {
   }
 
   .content-wrapper-popup {
-    bottom: 5%;
+    left: -5%;
+    bottom: 21%;
   }
 
   .wrapper-menu {
@@ -47496,6 +47549,10 @@ img {
   .a-icon-regular {
     width: 3em;
     height: 3em;
+  }
+
+  .a-icon-regular.new {
+    width: 3.3em;
   }
 
   .a-cta-content {
@@ -50638,6 +50695,11 @@ img {
     height: 5em;
   }
 
+  .logo_img.rad0.nowwallet {
+    right: auto;
+    height: 7em;
+  }
+
   .h5_green {
     font-size: 1.6em;
     text-align: left;
@@ -52780,6 +52842,10 @@ img {
     height: auto;
   }
 
+  .img_mobile {
+    height: auto;
+  }
+
   .careers_section {
     margin-top: 0em;
     margin-bottom: 0em;
@@ -53567,6 +53633,10 @@ img {
     margin-right: 0em;
   }
 
+  .button_9.carbon.campain.popul {
+    margin-left: 1.8em;
+  }
+
   .social_icon {
     top: 74%;
     right: 8%;
@@ -54239,8 +54309,8 @@ img {
   }
 
   .content-wrapper-popup {
-    left: 0%;
-    bottom: 5%;
+    left: -6%;
+    bottom: 25%;
   }
 
   .lottie-div {
@@ -54625,6 +54695,10 @@ img {
   .a-icon-regular {
     width: 4em;
     height: 4em;
+  }
+
+  .a-icon-regular.new {
+    width: 4.4em;
   }
 
   .a-cta-content {
@@ -57054,7 +57128,7 @@ img {
   }
 
   .img_div.ex2 {
-    width: 12em;
+    width: auto;
     height: 12em;
   }
 
@@ -59107,6 +59181,19 @@ img {
     position: relative;
     right: auto;
     height: 8em;
+    padding-left: 0px;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .logo_img.rad0.digitalexchange._23 {
+    margin-left: -3.2em;
+  }
+
+  .logo_img.rad0.nowwallet {
+    position: relative;
+    right: auto;
+    height: 12em;
     -o-object-fit: fill;
     object-fit: fill;
   }
@@ -62846,6 +62933,10 @@ img {
     justify-content: center;
   }
 
+  .button_9.carbon.campain.popul {
+    margin-left: 0em;
+  }
+
   .lab_pillar {
     margin-top: 1.9em;
     margin-bottom: 1.9em;
@@ -63829,7 +63920,8 @@ img {
   }
 
   .content-wrapper-popup {
-    bottom: 4%;
+    left: -1%;
+    bottom: 22%;
   }
 
   .wrapper-menu {
@@ -64469,6 +64561,10 @@ img {
     height: 6em;
   }
 
+  .a-icon-regular.new {
+    width: 6.6em;
+  }
+
   .a-cta-content {
     margin-top: 7.2em;
     -webkit-box-orient: vertical;
@@ -64476,6 +64572,11 @@ img {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .a-cta-content.new {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .a-cta-icon-circle {
@@ -65440,6 +65541,17 @@ img {
 }
 
 #w-node-_968da01a-be1d-791f-b423-3f6a689b3e83-b6705741 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-ebfd84c9-27e2-a12f-e67d-f7dad45a0f1a-b6705741 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -67551,6 +67663,72 @@ img {
   }
 
   #w-node-_5871275a-5e63-c05b-5475-e294f3a7784b-5470574d {
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 2;
+    grid-row-end: 3;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+
+  #w-node-c07e89d9-c99d-cc37-7171-062315b9b081-5470574d {
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+
+  #w-node-c07e89d9-c99d-cc37-7171-062315b9b084-5470574d {
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 2;
+    grid-row-end: 3;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+
+  #w-node-_32f39e68-3fca-f513-c9c3-0dc504f212b4-5470574d {
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+
+  #w-node-_32f39e68-3fca-f513-c9c3-0dc504f212b7-5470574d {
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 2;
+    grid-row-end: 3;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+
+  #w-node-_75ea0580-51b1-d98b-9c5f-e5e5c29256b7-5470574d {
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+
+  #w-node-_75ea0580-51b1-d98b-9c5f-e5e5c29256ba-5470574d {
     -ms-grid-column-span: 1;
     grid-column-end: 2;
     -ms-grid-column: 1;
