@@ -6781,7 +6781,7 @@ img {
 }
 
 .card_img.goldie {
-  width: 5em;
+  width: 7em;
 }
 
 .card_img.horde {
@@ -6841,6 +6841,10 @@ img {
 }
 
 .card_img.techfleet {
+  width: 3.5em;
+}
+
+.card_img.swarms-finance {
   width: 3.5em;
 }
 
@@ -36635,6 +36639,116 @@ img {
   background-repeat: no-repeat;
 }
 
+.header-land {
+  min-height: 1024px;
+}
+
+.div-block-178 {
+  min-height: 60px;
+  background-color: #f5f5fa;
+}
+
+.div-block-178-copy {
+  background-color: rgba(49, 52, 87, 0.8);
+}
+
+.div-block-178-copy {
+  min-height: 60px;
+  background-color: rgba(49, 52, 87, 0.8);
+}
+
+.div-block-178-copy-copy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 1024px;
+  padding-right: 130px;
+  padding-left: 130px;
+  background-color: transparent;
+  background-image: url('../images/background-img.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.news-bar {
+  min-height: 40px;
+  background-color: #2b61d1;
+}
+
+.div-block-179 {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 60%;
+  margin: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.div-block-180 {
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  margin-top: 24px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.button-8 {
+  width: 170px;
+  height: 45px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.button-9 {
+  border-radius: 100px;
+  text-align: center;
+}
+
+.heading-10 {
+  color: #f5f5fa;
+  font-size: 4em;
+  line-height: 100%;
+}
+
+.paragraph-25 {
+  width: 65%;
+  color: hsla(0, 0%, 100%, 0.78);
+}
+
+.body-31 {
+  font-size: 1.2vw;
+  line-height: 1.7;
+}
+
+.div-block-181 {
+  width: 100vw;
+  height: auto;
+  min-height: 1024px;
+}
+
 @media screen and (min-width: 1920px) {
   .body {
     font-size: 1.1vw;
@@ -39878,7 +39992,7 @@ img {
   }
 
   .card_img.goldie {
-    width: 7em;
+    width: 9em;
     height: auto;
   }
 
@@ -39951,6 +40065,11 @@ img {
   }
 
   .card_img.techfleet {
+    width: 4.5em;
+    height: auto;
+  }
+
+  .card_img.swarms-finance {
     width: 4.5em;
     height: auto;
   }
@@ -49811,6 +49930,10 @@ img {
     width: 5em;
   }
 
+  .card_img.swarms-finance {
+    width: 5em;
+  }
+
   .bold-text {
     font-size: 2.5em;
   }
@@ -57639,7 +57762,7 @@ img {
   }
 
   .card_img.goldie {
-    width: 5em;
+    width: 6em;
   }
 
   .card_img.horde {
@@ -57699,6 +57822,10 @@ img {
   }
 
   .card_img.techfleet {
+    width: 3em;
+  }
+
+  .card_img.swarms-finance {
     width: 3em;
   }
 
