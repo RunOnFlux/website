@@ -169,7 +169,7 @@
             </div>
             <nav class="dropdown_list w-dropdown-list">
               <div class="wrapp-dropdown-list">
-                <a href="https://jetpack2.app.runonflux.io/hello.html" class="wrapp-pages w-inline-block">
+                <a href="https://cloud.runonflux.io/" class="wrapp-pages w-inline-block">
                   <p class="dropdown_link">App</p>
                   <p class="paragraph-5">Discover how to launch an app on the Flux network.</p>
                 </a>
@@ -316,7 +316,7 @@ Weglot.on('initialized', ()=>{
 	// get the current active language
   const currentLang = Weglot.getCurrentLang();
   // call updateDropdownLinks function
-  updateSW5DropdownLinks(currentLang); 
+  updateSW5DropdownLinks(currentLang);
 });
 // for each of the .wg-element-wrapper language links
 document.querySelectorAll('.wg-element-wrapper.sw5 [lang]').forEach((link)=>{
@@ -324,27 +324,27 @@ document.querySelectorAll('.wg-element-wrapper.sw5 [lang]').forEach((link)=>{
 		link.addEventListener('click', function(e){
     	// prevent default
 			e.preventDefault();
-      // switch to the current active language      
+      // switch to the current active language
       Weglot.switchTo(this.getAttribute('lang'));
       // call updateDropdownLinks function
       updateSW5DropdownLinks(this.getAttribute('lang'));
 		});
 });
 // updateDropdownLinks function
-function updateSW5DropdownLinks(currentLang){ 
+function updateSW5DropdownLinks(currentLang){
 	// get the wrapper element
-	const $wrapper = document.querySelector('.wg-element-wrapper.sw5'); 
+	const $wrapper = document.querySelector('.wg-element-wrapper.sw5');
   // if the .w-dropdown-toggle is not the current active language
  	if($wrapper.querySelector('.w-dropdown-toggle').getAttribute('lang') !== currentLang){
   	// get the current active language link
   	const $activeLangLink = $wrapper.querySelector('[lang='+currentLang+']');
     // swap the dropdown toggle's text with the current active language link text
 		const $toggle = $activeLangLink.closest('.wg-element-wrapper').querySelector('.w-dropdown-toggle');
-  	const toggleTxt = $toggle.textContent; 
+  	const toggleTxt = $toggle.textContent;
   	const activeLangLinkTxt = $activeLangLink.textContent;
   	$toggle.querySelector('div').textContent = activeLangLinkTxt;
   	$activeLangLink.textContent = toggleTxt;
-  	// swap the dropdown toggle's lang attr with the current active language link lang attr  
+  	// swap the dropdown toggle's lang attr with the current active language link lang attr
   	const lang = $activeLangLink.getAttribute('lang');
 		const toggleLang = $toggle.getAttribute('lang');
 		$toggle.setAttribute('lang', lang);
@@ -362,7 +362,7 @@ function updateSW5DropdownLinks(currentLang){
         <h1 class="heading ww">Decentralized <span class="text-span-24 ww">Web 3.0</span> The Next Generation Computational Network</h1>
         <p class="p_title white ww">Flux is the new generation of scalable decentralized cloud infrastructure. Simply develop, manage, and spawn your applications on multiple servers at once. Ready for Web 3.0, dApps, and more.<br></p>
         <div class="button_wrapper a _4button">
-          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143288-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143288" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://jetpack2.app.runonflux.io/hello.html#launch" target="_blank" class="button_0 a ww up w-button">Deploy App</a>
+          <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d143288-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d143288" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://cloud.runonflux.io/hello.html#launch" target="_blank" class="button_0 a ww up w-button">Deploy App</a>
           <a id="w-node-_88a48796-2c06-f2ee-2018-db3c8d14328a-9c70572b" data-w-id="88a48796-2c06-f2ee-2018-db3c8d14328a" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="flux-nodes.html" class="button_0 aaa green ww up w-button">Launch Node</a>
           <a data-w-id="4729cc83-b1af-8cce-aa6e-154591ae833f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://cloud.runonflux.io/hello.html#wordpress" target="_blank" class="button_0 aaa blue-2 ww up w-button">WordPress</a>
           <a data-w-id="b2921efc-9012-dfdf-e354-1e4641d6be1f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://cloud.runonflux.io/hello.html#flux-drive" target="_blank" class="button_0 aaa blue-1 ww up w-button">FluxDrive</a>
@@ -456,8 +456,8 @@ function updateSW5DropdownLinks(currentLang){
     animation-play-state: paused;
   }
 @keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-50%);  
+  100% {
+    transform: translateX(-50%);
   }
 }
 </style>
@@ -469,8 +469,8 @@ function updateSW5DropdownLinks(currentLang){
     animation-play-state: paused;
   }
 @keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-50%);  
+  100% {
+    transform: translateX(-50%);
   }
 }
 </style>
@@ -487,7 +487,7 @@ function updateSW5DropdownLinks(currentLang){
       </div>
       <div class="feature-container-2">
         <div class="w-layout-grid feature-grid-9">
-          <a href="https://jetpack2.app.runonflux.io/" target="_blank" class="feature-card-13 w-inline-block">
+          <a href="https://cloud.runonflux.io/" target="_blank" class="feature-card-13 w-inline-block">
             <div class="feature-icon-5">
               <div class="feature-icon-svg w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.5488 14.4462V20.4462C12.5488 20.9962 12.9988 21.4462 13.5488 21.4462H19.5488C20.0988 21.4462 20.5488 20.9962 20.5488 20.4462V14.4462C20.5488 13.8962 20.0988 13.4462 19.5488 13.4462H13.5488C12.9988 13.4462 12.5488 13.8962 12.5488 14.4462ZM3.54883 21.4462H9.54883C10.0988 21.4462 10.5488 20.9962 10.5488 20.4462V14.4462C10.5488 13.8962 10.0988 13.4462 9.54883 13.4462H3.54883C2.99883 13.4462 2.54883 13.8962 2.54883 14.4462V20.4462C2.54883 20.9962 2.99883 21.4462 3.54883 21.4462ZM2.54883 4.44621V10.4462C2.54883 10.9962 2.99883 11.4462 3.54883 11.4462H9.54883C10.0988 11.4462 10.5488 10.9962 10.5488 10.4462V4.44621C10.5488 3.89621 10.0988 3.44621 9.54883 3.44621H3.54883C2.99883 3.44621 2.54883 3.89621 2.54883 4.44621ZM15.4988 2.84621L11.2488 7.08621C10.8588 7.47621 10.8588 8.10621 11.2488 8.49621L15.4988 12.7462C15.8888 13.1362 16.5188 13.1362 16.9088 12.7462L21.1588 8.49621C21.5488 8.10621 21.5488 7.47621 21.1588 7.08621L16.9188 2.84621C16.5288 2.45621 15.8888 2.45621 15.4988 2.84621Z" fill="#F4F4F6"></path>
@@ -520,7 +520,7 @@ function updateSW5DropdownLinks(currentLang){
             </div>
             <div class="paragraph-small-2">Staking Flux with our network</div>
           </a>
-          <a href="https://jetpack2.app.runonflux.io/login.html" target="_blank" class="feature-card-13 w-inline-block">
+          <a href="https://cloud.runonflux.io/login.html" target="_blank" class="feature-card-13 w-inline-block">
             <div class="feature-icon-5">
               <div class="feature-icon-svg w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04Z" fill="#F4F4F6"></path>
@@ -633,8 +633,8 @@ function updateSW5DropdownLinks(currentLang){
     animation-play-state: paused;
   }
 @keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-50%);  
+  100% {
+    transform: translateX(-50%);
   }
 }
 </style>
@@ -646,8 +646,8 @@ function updateSW5DropdownLinks(currentLang){
     animation-play-state: paused;
   }
 @keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-50%);  
+  100% {
+    transform: translateX(-50%);
   }
 }
 </style>
@@ -1087,7 +1087,7 @@ function updateSW5DropdownLinks(currentLang){
           <div class="text-block-2 d">Download our multi-asset crypto wallet</div>
         </div>
         <div class="wrap_download">
-          <a href="https://runonflux.io/deploy-dapp.html" class="button_zelcore_round _26362763 _223 w-inline-block">
+          <a href="https://zelcore.io/" class="button_zelcore_round _26362763 _223 w-inline-block">
             <div class="div-block-155">
               <div class="img hide"><img src="images/logo_zelcore.svg" loading="lazy" width="63" alt="Zelcore logo" class="image-4"></div>
               <div class="text-block-23">Download Zelcore</div>
@@ -1224,7 +1224,7 @@ function updateSW5DropdownLinks(currentLang){
         <div id="w-node-de3b65b5-bfaf-fbe1-eb18-a61812643aeb-12643ace" class="menu-col">
           <h4 class="text-block footer b">EXPLORE</h4>
           <div class="submenu-col">
-            <a href="https://jetpack2.app.runonflux.io/hello.html" class="link b">App</a>
+            <a href="https://cloud.runonflux.io/" class="link b">App</a>
             <a href="https://medium.com/zelinsights/zelnode-setup-the-easy-peasy-lemon-squeezy-way-fd89706ea03c" target="_blank" class="link b">Node</a>
             <a href="mining.html" target="_blank" class="link b">Miner</a>
             <a href="https://runonflux.io/flux.html#exchanges" class="link b">Buy Flux</a>
