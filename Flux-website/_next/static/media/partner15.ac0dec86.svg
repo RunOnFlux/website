@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="541" height="138" viewBox="0 0 541 138">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1081" data-name="Rectangle 1081" width="541" height="138" transform="translate(9723 19883)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="rosseta" transform="translate(-9723 -19883)" clip-path="url(#clip-path)">
+    <g id="Rosetta-logo" transform="translate(9748 19900.48)">
+      <g id="Layer_1" data-name="Layer 1">
+        <g id="rosseta_kogo" data-name="rosseta kogo">
+          <rect id="Rectangle_750" data-name="Rectangle 750" width="44.59" height="84.64" transform="translate(0 10.01)" fill="#f21e26"/>
+          <rect id="Rectangle_751" data-name="Rectangle 751" width="44.59" height="41.52" transform="translate(50.804 62.017) rotate(-18)" fill="#fcc707"/>
+          <circle id="Ellipse_379" data-name="Ellipse 379" cx="23.66" cy="23.66" r="23.66" transform="translate(47.33 0)" fill="#2767c4"/>
+        </g>
+        <text id="Rosetta" transform="translate(137.9 86.52)" font-size="93.29" font-family="Quicksand-Bold, Quicksand" font-weight="700"><tspan x="0" y="0">Rosetta</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
