@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="308" height="306" viewBox="0 0 308 306">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1522" data-name="Rectangle 1522" width="308" height="306" transform="translate(-9047 10329)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.193" y1="0.307" x2="1.538" y2="0.69" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffc8"/>
+      <stop offset="1" stop-color="#00758c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffc8"/>
+      <stop offset="1" stop-color="#00959a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.307" x2="1" y2="0.307" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffc8"/>
+      <stop offset="1" stop-color="#00bbab"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_86" data-name="Mask Group 86" transform="translate(9047 -10329)" clip-path="url(#clip-path)">
+    <g id="icon" transform="translate(-9044.34 10390.105)">
+      <g id="Group-11">
+        <path id="Fill-5-Copy-4" d="M125.056,109.082a39.417,39.417,0,0,1-78.833,0V67.9h78.833Zm36.421-76.922V0H125.056V67.9H46.223V0H9.8V109.082a75.838,75.838,0,0,0,151.675,0V32.161Z" transform="translate(65.853 0)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+        <path id="Fill-5-Copy" d="M265.342,0a32.138,32.138,0,0,1-32.194,32.161H68.747A32.226,32.226,0,0,1,36.53,0H0C0,39.014,30.142,67.9,69.2,67.9H233.6c39.081,0,68.469-28.761,68.469-67.9Z" transform="translate(0 0)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+        <path id="Fill-5-Copy-4-2" data-name="Fill-5-Copy-4" d="M125.056,109.082a39.417,39.417,0,0,1-78.833,0V67.9h78.833Zm0-41.184H46.223V0H9.8V109.082a75.838,75.838,0,0,0,151.675,0V67.9Z" transform="translate(65.853 0)" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309" height="307" viewBox="0 0 309 307">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1538" data-name="Rectangle 1538" width="309" height="307" transform="translate(-12210 9903)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="bittrex_flux" transform="translate(12210 -9903)" clip-path="url(#clip-path)">
+    <path id="download_1_" data-name="download (1)" d="M247.968,176.031V0H71.937V52.116h32.157V32.157H215.811V143.874h-39.78V71.937H0V247.968H176.031V195.852H143.874v19.959H32.157V104.094h39.78v71.937ZM143.874,143.874h-39.78v-39.78h39.78Z" transform="translate(-12179 9933)" fill="#1c6fe8"/>
+  </g>
+</svg>
